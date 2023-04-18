@@ -1,0 +1,312 @@
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2_update6.3_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_增加切肤_修正版\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_预计20170102更新，主从表演示和日志导出异常\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)_20170103\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Factory.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.Redis.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Cache.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\LeaRun.Util.Extension.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Redis.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Text.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\bin\Debug\ServiceStack.Common.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.csprojResolveAssemblyReference.cache
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\4-18\code-1\code-load\LeaRun.Cache\LeaRun.Cache.Factory\obj\Debug\LeaRun.Cache.Factory.pdb

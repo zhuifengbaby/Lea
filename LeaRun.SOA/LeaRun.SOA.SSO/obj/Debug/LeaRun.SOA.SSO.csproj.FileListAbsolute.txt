@@ -1,0 +1,1018 @@
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+D:\Products\Product\A\6.14\V6.1(改版前)\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+D:\LeaRun\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+D:\lr\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+D:\taobaoSVN\敏捷企业专业版V6.1_2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\V6.1\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+E:\0327\力软敏捷企业专业版6.1.2.1(1)\力软敏捷企业专业版6.1.2.1\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll.config
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.SOA.SSO.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Newtonsoft.Json.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.Entity.EF6.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Interfaces.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\MySql.Data.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Oracle.DataAccess.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXmlFormats.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Busines.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Code.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Entity.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Mapping.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Factory.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.EF.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Log.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WebControl.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\EntityFramework.SqlServer.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Net.Http.Formatting.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Web.Http.WebHost.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.IService.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.WeChat.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.Repository.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Application.Service.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Offices.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Extension.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.SignalR.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Cache.Redis.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Data.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.Ioc.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\log4net.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\LeaRun.Util.FlowWork.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OOXML.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Redis.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Text.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\System.Data.SQLite.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\NPOI.OpenXml4Net.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\ServiceStack.Common.xml
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.csprojResolveAssemblyReference.cache
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.dll
+C:\Users\zhuifeng\Desktop\工作文档\农房建设\code\LeaRun.SOA\LeaRun.SOA.SSO\obj\Debug\LeaRun.SOA.SSO.pdb

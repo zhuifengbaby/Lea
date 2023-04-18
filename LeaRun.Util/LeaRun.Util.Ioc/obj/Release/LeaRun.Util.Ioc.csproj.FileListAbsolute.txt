@@ -1,0 +1,42 @@
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\LeaRun.Util.Ioc.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\LeaRun.Util.Ioc.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.csprojResolveAssemblyReference.cache
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.dll
+D:\taobaoSVN\力软敏捷企业专业版(V6.1_升级版)\V6.1\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2\code\LeaRun.Framework V6.1\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\LeaRun.Util.Ioc.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.ServiceLocation.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.csprojResolveAssemblyReference.cache
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.dll
+E:\开发框架\力软敏捷企业专业版6.1.2.1\code\LeaRun.Util\LeaRun.Util.Ioc\obj\Release\LeaRun.Util.Ioc.pdb

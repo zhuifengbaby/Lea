@@ -1,0 +1,163 @@
+<div class="from-card">
+    <div class="from-card-hd"> <span class="from-title">房屋信息</span></div>
+    <div class="from-card-bd">
+        <div class="u-flex">
+            <div style="width:180px;min-width:180px;height:120px;background:#f3f3f3;border-radius: 6px;"> </div>
+            <div style="margin-left: 30px;">
+                <div>
+                    <div class="nui-inline" style="width:300px">
+                        <div class="form-element">
+                            <label class="form-title">所属网格</label> <span
+                                style="font-size: 13px;">{{d.selectHome.ArearNumber}}</span>
+                        </div>
+                    </div>
+                    <div class="nui-inline" style="width:300px">
+                        <div class="form-element">
+                            <label class="form-title">二维码门牌</label> <span
+                                style="font-size: 13px;">{{d.selectHome.CodeNumber}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="nui-inline" style="width:300px">
+                        <div class="form-element">
+                            <label class="form-title">详细地址</label> <span
+                                style="font-size: 13px;">{{d.selectHome.AllAddress}}</span>
+                        </div>
+                    </div>
+                    <div class="nui-inline" style="width:300px">
+                        <div class="form-element">
+                            <label class="form-title">产权人</label> <span
+                                style="font-size: 13px;">{{d.selectHome.CQRen}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="nui-inline">
+                        <div class="form-element">
+                            <label class="form-title">房屋人员</label> <span
+                                style="font-size: 13px;">{{d.selectHome.Name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="u-flex u-flex--start" style="margin-top:10px">
+    <div class="u-flex__item">
+        <div class="from-card">
+            <div class="from-card-hd"><span class="from-title">房屋列表</span></div>
+            <div class="from-card-bd">
+                <div class="from-tag active" data-tpl-event="searchHome">
+                    <span>房屋总数</span><span data-tpl-count="HouseType">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>宅基地</span><span data-tpl-count="宅基地">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>拆迁公寓</span><span data-tpl-count="拆迁公寓">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>临时建筑</span><span data-tpl-count="临时建筑">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>员工宿舍</span><span data-tpl-count="员工宿舍">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>商铺</span><span data-tpl-count="商铺">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>门面房</span><span data-tpl-count="门面房">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>车库</span><span data-tpl-count="车库">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>公房</span><span data-tpl-count="公房">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>辅房</span><span data-tpl-count="辅房">0</span>
+                </div>
+                <div class="from-tag" data-tpl-event="searchHome">
+                    <span>其他</span><span data-tpl-count="其他">0</span>
+                </div>
+                <div style="height:387px;margin-top:12px"> {{ d.table }}</div>
+            </div>
+        </div>
+    </div>
+    <div style="width:12px;"></div>
+    <div class="u-flex__item">
+        <div class="from-card">
+            <div class="from-card-hd"> <span class="from-title">人口信息</span></div>
+            <div class="from-card-bd">
+                <div class="u-flex" style="justify-content: space-between;">
+                    <div class="from-dt" style="width:100px;min-width:100px;padding-right:12px"
+                        data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":""}'>
+                        <span>人员总数</span>
+                        <span data-tpl-count="RenAllCount">0</span>
+                    </div>
+                    <div class="u-flex__item">
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"常住","ImpRen":""}'>
+                            <span>常住</span>
+                            <span data-tpl-count="HouseCZCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"老宅","ImpRen":""}'>
+                            <span>老宅</span>
+                            <span data-tpl-count="HouseLZCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"租住","ImpRen":""}'>
+                            <span>租住</span>
+                            <span data-tpl-count="HouseZZCount">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-flex" style="justify-content: space-between;">
+                    <div class="from-dt" style="width:100px;min-width:100px;padding-right:12px"
+                        data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"重点人员"}'>
+                        <span>重点人员</span>
+                        <span data-tpl-count="RenImpCount">0</span>
+                    </div>
+                    <div class="u-flex__item">
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"低保人员"}'>
+                            <span>低保人员</span>
+                            <span data-tpl-count="RenDBCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"保边缘人员"}'>
+                            <span>保边缘人员</span>
+                            <span data-tpl-count="RenDBBYCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"残疾人员"}'>
+                            <span>残疾人员</span>
+                            <span data-tpl-count="RenCJRCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"孕妇"}'>
+                            <span>孕妇</span>
+                            <span data-tpl-count="RenYFCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"重病人员"}'>
+                            <span>重病人员</span>
+                            <span data-tpl-count="RenZBRYCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"高龄人员"}'>
+                            <span>高龄人员</span>
+                            <span data-tpl-count="RenGLCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"优抚对象"}'>
+                            <span>优抚对象</span>
+                            <span data-tpl-count="RenYFDXCount">0</span>
+                        </div>
+                        <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"其他"}'>
+                            <span>其他</span>
+                            <span data-tpl-count="RenQiCount">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-element" style="padding: 12px;">
+                <a class="nui-btn nui-btn-width nui-btn-default" style="border-radius: 40px;">重置</a>
+                <a class="nui-btn nui-btn-width nui-btn-default" style="border-radius: 40px;">关闭</a>
+            </div>
+        </div>
+    </div>
+</div>

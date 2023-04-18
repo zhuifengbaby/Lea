@@ -1,0 +1,368 @@
+﻿@{;
+ViewBag.Title = "列表页面";
+Layout = "~/Views/Shared/_Index.cshtml";
+}
+<script>
+
+    $(function () {
+        InitialPage();
+        GetGrid();
+        GetGrid2();
+    });
+    //初始化页面
+    function InitialPage() {
+        //resize重设布局;
+        $(window).resize(function (e) {
+            window.setTimeout(function () {
+                $('#gridTable').setGridWidth(($('.gridPanel').width()));
+                $('#gridTable').setGridHeight($(window).height() - 136.5);
+                $('#gridTable2').setGridWidth(($('.gridPanel2').width()));
+                $('#gridTable2').setGridHeight($(window).height() - 230.5);
+            }, 200);
+            e.stopPropagation();
+        });
+    }
+    //加载表格导出表格
+    function GetGrid2() {
+        var $gridTable2 = $('#gridTable2');
+        $gridTable2.jqGrid({
+            url: "../../BaseManage/H_HouseMain/GetPageListJson3",
+            datatype: "json",
+            height: $(window).height() - 230.5,
+            autowidth: true,
+            colModel: [
+                { name: "Address", label: "房屋地址门牌号", width: 180, align: "center" },
+                //{ name: "HuName", label: "成员/租户", width: 110, align: "center" },
+                { name: "HuGuanX", label: "户主关系", width: 80, align: "center" },
+                { name: "CQZ", label: "产权证", width: 200, align: "center" },
+                { name: "CQZNumber", label: "产权证号", width: 100, align: "center" },
+                { name: "Area", label: "面积", width: 200, align: "center" },
+                { name: "Name", label: "姓名", width: 200, align: "center" },
+                { name: "Sex", label: "性别", width: 200, align: "center" },
+                { name: "CardNumber", label: "身份证号码", width: 150, align: "center" },
+                { name: "SheBaoNumber", label: "社保编号", width: 100, align: "center" },
+                { name: "Phone", label: "电话", width: 200, align: "center" },
+                { name: "WorkAdress", label: "工作地址", width: 300, align: "center" },
+                { name: "HJD", label: "户籍地", width: 100, align: "center" },
+                { name: "HouseType", label: "房屋类型", width: 200, align: "center" },
+                { name: "HouseStatus", label: "房屋状态", width: 150, align: "center" },
+                { name: "HouseTX", label: "房屋特性", width: 100, align: "center" },
+                { name: "FeiFArea", label: "非法面积", width: 150, align: "center" }
+
+            ],
+            viewrecords: true,
+            rowNum: 1000,
+            footerrow: true,
+            gridComplete: function () {
+                //var totalamount = $(this).getCol("amount", false, "sum");
+                ////合计
+                //$(this).footerData("set", {
+                //    "location": "合计：",
+                //    "amount": totalamount,
+                //});
+                //$('table.ui-jqgrid-ftable td').prevUntil().css("border-right-color", "#fff");
+            }
+        });
+    }
+    //加载表格
+    function GetGrid() {
+        var selectedRowIndex = 0;
+        var $gridTable = $('#gridTable');
+        $gridTable.jqGrid({
+            autowidth: true,
+            height: $(window).height() - 136.5,
+            url: "../../BaseManage/H_HouseMain/GetPageListJson",
+            datatype: "json",
+            colModel: [
+                { label: '序号', name: 'ID', index: 'ID', width: 80, align: 'center', sortable: true},
+                { label: '村(社区)', name: 'ArearName', index: 'ArearName', width: 100, align: 'center', sortable: true },
+                { label: '村落(小区)', name: 'CommunityName', index: 'CommunityName', width: 250, align: 'center', sortable: true },
+                { label: '房屋地址门牌号', name: 'Address', index: 'Address', width: 300, align: 'center', sortable: true },
+                { label: '户主', name: 'HuName', index: 'HuName', width: 150, align: 'center', sortable: true },
+                { label: '宅基地批复', name: 'TDNumber', index: 'CQZ', width: 150, align: 'center', sortable: true },
+                { label: '宅基地登记面积', name: 'Area', index: 'Area', width: 100, align: 'center', sortable: true },
+                { label: '产权证', name: 'CQZ', index: 'CQZ', width: 150, align: 'center', sortable: true },
+                { label: '产权证号', name: 'CQZNumber', index: 'CQZNumber', width: 100, align: 'center', sortable: true },
+                { label: '房子属性', name: 'HouseType', index: 'HouseType', width: 100, align: 'center', sortable: true },
+                { label: '房屋状态', name: 'HouseStatus', index: 'HouseStatus', width: 100, align: 'center', sortable: true },
+                { label: '房屋特性', name: 'HouseTX', index: 'HouseTX', width: 100, align: 'center', sortable: true },
+                { label: '违建面积', name: 'FeiFArea', index: 'FeiFArea', width: 100, align: 'center', sortable: true },
+            ],
+            viewrecords: true,
+            rowNum: 100,
+            rowList: [30, 50, 100],
+            pager: "#gridPager",
+            sortname: 'ID',
+            sortorder: 'desc',
+            rownumbers: true,
+            shrinkToFit: false,
+            gridview: true,
+            onSelectRow: function () {
+                selectedRowIndex = $('#' + this.id).getGridParam('selrow');
+            },
+            gridComplete: function () {
+                $('#' + this.id).setSelection(selectedRowIndex, false);
+            },
+            subGrid: true,
+            subGridRowExpanded: function (subgrid_id, row_id) {
+                var keyValue = $gridTable.jqGrid('getRowData', row_id)['ID'];
+                var subgrid_table_id = subgrid_id + "_t";
+                var subgrid_table_id2 = subgrid_id + "_tt";
+                $("#" + subgrid_id).html("<table id='" + subgrid_table_id + "'></table><table id='" + subgrid_table_id2 + "'></table>");
+                $("#" + subgrid_table_id).jqGrid({
+                    url: "../../BaseManage/H_HouseMain/GetDetailsJson",
+                    postData: { keyValue: keyValue },
+                    datatype: "json",
+                    height: "100%",
+                    colModel: [
+                //{ label: 'ID', name: 'ID', index: 'ID', width: 80, align: '',sortable: true  },
+                //{ label: 'FInterID', name: 'FInterID', index: 'FInterID', width: 80, align: '',sortable: true  },
+                { label: '姓名', name: 'Name', index: 'Name', width: 80, align: '', sortable: true },
+                { label: '性别', name: 'Sex', index: 'Sex', width: 80, align: '', sortable: true },
+                { label: '身份证号码', name: 'CardNumber', index: 'CardNumber', width: 180, align: '', sortable: true },
+                { label: '社保号码', name: 'SheBaoNumber', index: 'SheBaoNumber', width: 180, align: '', sortable: true },
+                { label: '手机号码', name: 'Phone', index: 'Phone', width: 120, align: '', sortable: true },
+                { label: '工作单位', name: 'WorkAdress', index: 'WorkAdress', width: 200, align: '', sortable: true },
+                { label: '与户主关系', name: 'HuGuanX', index: 'HuGuanX', width: 80, align: '', sortable: true },
+                { label: '户籍地', name: 'HJD', index: 'HJD', width: 80, align: '', sortable: true },
+                { label: '人员类型', name: 'JuZhuDi', index: 'JuZhuDi', width: 80, align: '', sortable: true},
+                    ],
+                    caption: "成员信息",
+                    rowNum: "1000",
+                    rownumbers: true,
+                    shrinkToFit: false,
+                    gridview: true,
+                    hidegrid: false
+                })
+                $("#" + subgrid_table_id2).jqGrid({
+                    url: "../../BaseManage/H_HouseMain/GetDetailsJson2",
+                    postData: { keyValue: keyValue },
+                    datatype: "json",
+                    height: "100%",
+                    colModel: [
+                //{ label: 'ID', name: 'ID', index: 'ID', width: 80, align: '',sortable: true  },
+                //{ label: 'FInterID', name: 'FInterID', index: 'FInterID', width: 80, align: '',sortable: true  },
+                { label: '姓名', name: 'Name', index: 'Name', width: 80, align: '', sortable: true },
+                { label: '性别', name: 'Sex', index: 'Sex', width: 80, align: '', sortable: true },
+                { label: '身份证号码', name: 'CardNumber', index: 'CardNumber', width: 180, align: '', sortable: true },
+                { label: '社保号码', name: 'SheBaoNumber', index: 'SheBaoNumber', width: 180, align: '', sortable: true },
+                { label: '手机号码', name: 'Phone', index: 'Phone', width: 120, align: '', sortable: true },
+                { label: '工作单位', name: 'WorkAdress', index: 'WorkAdress', width: 200, align: '', sortable: true },
+                { label: '户籍地', name: 'HJD', index: 'HJD', width: 80, align: '', sortable: true },
+                { label: '人员类型', name: 'JuZhuDi', index: '', width: 80, align: '', sortable: true },
+                    ],
+                    caption: "租户信息",
+                    rowNum: "1000",
+                    rownumbers: true,
+                    shrinkToFit: false,
+                    gridview: true,
+                    hidegrid: false
+                });
+            }
+        });
+        $("#queryCondition .dropdown-menu li").click(function () {
+            var text = $(this).find('a').html();
+            var value = $(this).find('a').attr('data-value');
+            $("#queryCondition .dropdown-text").html(text).attr('data-value', value)
+        });
+        //查询事件
+        $("#btn_Search").click(function () {
+            if (!$(".ui-filter-text").next('.ui-filter-list').is(":hidden")) {
+                $(".ui-filter-text").trigger("click");
+            }
+            var queryJson = {
+                txt_address: $("#txt_address").val(),
+                txt_Name: $("#txt_Name").val(),
+                txt_Phone: $("#txt_Phone").val(),
+                txt_CardNumber: $("#txt_CardNumber").val(),
+                txt_CommunityName: $("#txt_CommunityName").val(),
+                txt_SheBaoNumber: $("#txt_SheBaoNumber").val(),
+                txt_WorkAdress: $("#txt_WorkAdress").val(),
+                txt_HJD: $("#txt_HJD").val()
+            }
+            $gridTable.jqGrid('setGridParam', {
+                postData: { queryJson: JSON.stringify(queryJson) },
+                page: 1
+            }).trigger('reloadGrid');
+        });
+    }
+    //新增
+    function btn_add() {
+        dialogOpen({
+            id: 'Form',
+            title: '添加H_HouseMain',
+            url: '/BaseManage/H_HouseMain/H_HouseMainForm',
+            width: '1500px',
+            height: '800px',
+            callBack: function (iframeId) {
+                top.frames[iframeId].AcceptClick();
+            }
+        });
+    }
+    //编辑
+    function btn_edit() {
+        var keyValue = $('#gridTable').jqGridRowValue('ID');
+        if (checkedRow(keyValue)) {
+            dialogOpen({
+                id: 'Form',
+                title: '编辑',
+                url: '/BaseManage/H_HouseMain/H_HouseMainForm?keyValue=' + keyValue,
+                width: '1500px',
+                height: '800px',
+                callBack: function (iframeId) {
+                    top.frames[iframeId].AcceptClick();
+                }
+            })
+        }
+    }
+    //删除
+    function btn_delete() {
+        var keyValue = $('#gridTable').jqGridRowValue('ID');
+        if (keyValue) {
+            $.RemoveForm({
+                url: '../../BaseManage/H_HouseMain/RemoveForm',
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $('#gridTable').trigger('reloadGrid');
+                }
+            })
+        } else {
+            dialogMsg('请选择需要删除的H_HouseMain！', 0);
+        }
+    }
+    //详细
+    function btn_details() {
+        var keyValue = $('#gridTable').jqGridRowValue('ID');
+        if (checkedRow(keyValue)) {
+            dialogOpen({
+                id: 'Form',
+                title: '详细H_HouseMain',
+                url: '/BaseManage/H_HouseMain/H_HouseMainForm?keyValue=' + keyValue + '&isDeltail=true',
+                width: '1500px',
+                height: '800px',
+                btn: null,
+                callBack: function (iframeId) {
+                    top.frames[iframeId].AcceptClick();
+                }
+            })
+        }
+    }
+    //打印
+    function btn_print() {
+        $("#gridPanel2").printTable();
+    }
+    //导出
+    function btn_export() {
+        dialogOpen({
+            id: "ExcelIExportDialog",
+            title: '导出房屋报表',
+            url: '/Utility/ExcelExportForm?gridId=gridTable2',
+            width: "500px",
+            height: "380px",
+            callBack: function (iframeId) {
+                top.frames[iframeId].AcceptClick();
+            }, btn: ['导出Excel', '关闭']
+        });
+    }
+
+</script>
+
+<div class="titlePanel">
+    <div class="title-search">
+        <table>
+            <tr>
+                <td>查询条件</td>
+                <td style="padding-left: 10px;">
+                    <div class="ui-filter" style="width: 200px;">
+                        <div class="ui-filter-text">
+                            <strong id="SelectedStartTime"></strong>
+                        </div>
+                        <div class="ui-filter-list" style="width: 350px;">
+                            <table class="form" id="filter-form">
+                                <tr>
+                                    <th class="formTitle">地址：</th>
+                                    <td class="formValue">
+                                        <input id="txt_address" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">姓名：</th>
+                                    <td class="formValue">
+                                        <input id="txt_Name" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">电话：</th>
+                                    <td class="formValue">
+                                        <input id="txt_Phone" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">身份证号码：</th>
+                                    <td class="formValue">
+                                        <input id="txt_CardNumber" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">小区名：</th>
+                                    <td class="formValue">
+                                        <input id="txt_CommunityName" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">社保号：</th>
+                                    <td class="formValue">
+                                        <input id="txt_SheBaoNumber" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">工作地址：</th>
+                                    <td class="formValue">
+                                        <input id="txt_WorkAdress" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="formTitle">户籍地：</th>
+                                    <td class="formValue">
+                                        <input id="txt_HJD" type="text" class="form-control" />
+                                    </td>
+                                </tr>
+                            </table>
+                            @*<tr>
+                                    <td style="padding-left: 5px;">
+                                        <a id="btn_Search" class="btn btn-primary"><i class="fa fa-search"></i>&nbsp;查询</a>
+                                    </td>
+                                </tr>*@
+
+                            <div class="ui-filter-list-bottom">
+                                @*<a id="btn_Reset" class="btn btn-default">&nbsp;重&nbsp;&nbsp;置</a>*@
+                                <a id="btn_Search" class="btn btn-primary">&nbsp;查&nbsp;&nbsp;询</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="toolbar">
+        <div class="btn-group">
+            <a id="lr-replace" class="btn btn-default" onclick="reload()"><i class="fa fa-refresh"></i>刷新</a>
+            <a id="lr-add" class="btn btn-default" onclick="btn_add()"><i class="fa fa-plus"></i>新增</a>
+            <a id="lr-edit" class="btn btn-default" onclick="btn_edit()"><i class="fa fa-pencil-square-o"></i>编辑</a>
+            <a id="lr-delete" class="btn btn-default" onclick="btn_delete()"><i class="fa fa-trash-o"></i>删除</a>
+            <a id="lr-details" class="btn btn-default" onclick="btn_details()"><i class="fa fa-list-alt"></i>详细</a>
+            @*<a id="lr-print" class="btn btn-default" onclick="btn_print()"><i class="fa fa-print"></i>打印</a>*@
+            <a id="lr-export" class="btn btn-default" onclick="btn_export()"><i class="fa fa-sign-out"></i>导出</a>
+        </div>
+        @* <script>$('.toolbar').authorizeButton()</script>*@
+    </div>
+</div>
+<div class="gridPanel">
+    <table id="gridTable"></table>
+    <div id="gridPager"></div>
+</div>
+
+<div class="gridPanel2" style="display:none">
+    <table id="gridTable2"></table>
+</div>
+

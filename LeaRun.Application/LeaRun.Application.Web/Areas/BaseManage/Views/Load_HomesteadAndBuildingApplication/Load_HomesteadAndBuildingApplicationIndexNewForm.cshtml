@@ -1,0 +1,267 @@
+﻿@{
+    ViewBag.Title = "表单页面";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+
+<script>
+
+
+    var keyValue = request('keyValue');
+    $(function () {
+        initControl();
+    });
+    //初始化控件
+    function initControl() {
+        //获取表单
+        if (!!keyValue) {
+            $.SetForm({
+                url: "../../BaseManage/Load_HomesteadAndBuildingApplication/GetFormJson",
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $("#form1").SetWebControls(data);
+                }
+            })
+        }
+    }
+    //保存表单;
+    function AcceptClick() {
+        if (!$('#form1').Validform()) {
+            return false;
+        }
+        var postData = $("#form1").GetWebControls(keyValue);
+        $.SaveForm({
+            url: "../../BaseManage/Load_HomesteadAndBuildingApplication/SaveForm?keyValue=" + keyValue,
+            param: postData,
+            loading: "正在保存数据...",
+            success: function () {
+                $.currentIframe().$("#gridTable").trigger("reloadGrid");
+            }
+        })
+    }
+</script>
+<div style="margin-top: 20px; margin-right: 30px;">
+  
+    <table class="form">
+        
+            <tr>
+                <td class="formTitle">申请人姓名</td>
+                <td class="formValue">
+                    <input id="ApplicantName" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">性别</td>
+                <td class="formValue">
+                    <input id="Gender" type="text" class="form-control" />
+                </td>
+            </tr>
+      
+            <tr>
+                <td class="formTitle">年龄</td>
+                <td class="formValue">
+                    <input id="Age" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">联系电话</td>
+                <td class="formValue">
+                    <input id="ContactNumber" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">身份照号码</td>
+                <td class="formValue">
+                    <input id="IDNumber" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">户口所在地</td>
+                <td class="formValue">
+                    <input id="RegisteredResidence" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">家庭成员姓名</td>
+                <td class="formValue">
+                    <input id="FamilyMemberName" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">家庭成员与户主关系</td>
+                <td class="formValue">
+                    <input id="RelationshipWithHouseholder" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">家庭成员省份证号码</td>
+                <td class="formValue">
+                    <input id="FamilyMemberIDNumber" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">家庭成员户口所在地</td>
+                <td class="formValue">
+                    <input id="FamilyMemberRegisteredResidence" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">宅基地面积</td>
+                <td class="formValue">
+                    <input id="LandArea" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">建筑面积</td>
+                <td class="formValue">
+                    <input id="BuildingArea" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">权属证号码</td>
+                <td class="formValue">
+                    <input id="OwnershipCertificateNumber" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">宅基地情况</td>
+                <td class="formValue">
+                    <input id="LandSituation" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">申请宅基地面积</td>
+                <td class="formValue">
+                    <input id="AppliedLandArea" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">申请占地面积</td>
+                <td class="formValue">
+                    <input id="AppliedOccupiedArea" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">申请地址</td>
+                <td class="formValue">
+                    <input id="AppliedAddress" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">东至</td>
+                <td class="formValue">
+                    <input id="EasternBoundary" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">南至</td>
+                <td class="formValue">
+                    <input id="SouthernBoundary" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">西至</td>
+                <td class="formValue">
+                    <input id="WesternBoundary" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">北至</td>
+                <td class="formValue">
+                    <input id="NorthernBoundary" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">土地性质</td>
+                <td class="formValue">
+                    <input id="LandNature" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">建房类型</td>
+                <td class="formValue">
+                    <div class="layui-col-md9">
+                        <div class="layui-input-inline" style="width: 150px;">
+                            <select id="BuildingType" name="starts">
+                                <option value="3">异址新建</option>
+                                <option value="2">改 扩 建</option>
+                                <option value="1">原址翻建</option>
+                            </select>
+                        </div>
+                    </div>
+                </td>
+                <td class="formTitle">建筑面积</td>
+                <td class="formValue">
+                    <input id="AppliedBuildingArea" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">建筑层数</td>
+                <td class="formValue">
+                    <input id="BuildingFloors" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">建筑高度</td>
+                <td class="formValue">
+                    <input id="BuildingHeight" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">是否已征求意见</td>
+                <td class="formValue">
+                    <input id="ConsultationSought" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">状态</td>
+                <td class="formValue">
+                    <input id="Status" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="formTitle">申请理由</td>
+                <td class="formValue">
+                    <input id="ApplicationReason" type="text" class="form-control" />
+                </td>
+                <td class="formTitle">备注</td>
+                <td class="formValue">
+                    <input id="Remarks" type="text" class="form-control" />
+                </td>
+            </tr>
+</table>
+    <input type="file" id="file-input" accept="image/*">
+    <button type="button" id="upload-button">上传图片</button>
+    <!-- 图片预览 -->
+    <img src="" id='cert_view' />
+</div>
+
+<script>
+// 获取DOM元素
+var fileInput = document.getElementById('file-input');
+var uploadButton = document.getElementById('upload-button');
+
+// 绑定点击事件
+fileInput.onclick = function() {
+  // 清除已选择的文件
+  this.value = null;
+};
+
+uploadButton.onclick = function() {
+  // 检查是否已选择文件
+  if (fileInput.files.length === 0) {
+    alert('请选择一张图片');
+    return;
+  }
+
+  // 获取第一个已选择的文件
+  var file = fileInput.files[0];
+
+  // 检查文件类型是否为图片
+  if (!file.type.startsWith('image/')) {
+    alert('请选择一张图片');
+    return;
+  }
+
+  // 创建FormData对象
+  var formData = new FormData();
+
+  // 添加文件到FormData对象中
+  formData.append('file', file);
+
+  // 发送POST请求
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '../../BaseManage/Load_HomesteadAndBuildingApplication/upload');
+  xhr.onload = function() {
+    // 处理响应结果
+    if (xhr.status === 200) {
+      alert('上传成功');
+    } else {
+      alert('上传失败');
+    }
+  };
+  xhr.send(formData);
+};
+    // 图片预览元素
+var image = document.querySelector("cert_view");
+// 事件
+fileInput.onchange = function() {
+  // 上传的文件
+  var fileData = this.files[0];
+  // 预览
+  image.src = window.URL.createObjectURL(docObj.files[0]);
+}
+</script>

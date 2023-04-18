@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>天地图－地图API－范例-加载geojson数据</title>
+    <link href="https://map.tianditu.gov.cn/static/favicon.ico" type="image/x-icon" rel="Shortcut Icon" />
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        #map-canvas {
+            height: 100%;
+            fill: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map-canvas"></div>
+    <script src=" http://api.tianditu.gov.cn/api?v=4.0&tk=0a36d511144d97a52b7071bf141218e9"></script>
+    <script src="http://cdn.bootcss.com/d3/3.5.17/d3.js " charset="utf-8"></script>
+    <script src="http://lbs.tianditu.gov.cn/api/js4.0/opensource/openlibrary/D3SvgOverlay.js"></script>
+    <script src="./assets/geoJSON.js"></script>
+    <script>
+        var map = new T.Map("map-canvas");
+        map.centerAndZoom(new T.LngLat(121.25590842999998, 31.540530444000012), 12)
+        var countries = geoJSON.features;
+        var countriesOverlay = new T.D3Overlay(overLayColor('geojson'), overLayRedraw('geojson'));
+        map.addOverLay(countriesOverlay)
+        countriesOverlay.bringToBack();
+        function overLayColor(type) {
+            return function (sel, transform) {
+                var upd = sel.selectAll('path.' + type).data(countries);
+                upd.enter()
+                    .append('path')
+                    .attr("class", type)
+                    .attr('stroke', '#333')
+                    .attr('fill', function (d, i) {
+                        return d3.hsl(Math.random() * 360, 0.9, 0.5)
+                    })
+                    .attr('fill-opacity', '0.3')
+            }
+        }
+        function overLayRedraw(type) {
+            return function (sel, transform) {
+                sel.selectAll('path.' + type).each(
+                    function (d, i) {
+                        d3.select(this).attr('d', transform.pathFromGeojson)
+                    }
+                )
+            }
+        }
+    </script>
+
+</body>
+
+</html>

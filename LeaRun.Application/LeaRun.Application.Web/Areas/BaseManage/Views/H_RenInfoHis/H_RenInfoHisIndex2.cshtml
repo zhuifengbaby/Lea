@@ -1,0 +1,538 @@
+﻿@{;
+ViewBag.Title = "列表页面";
+Layout = "~/Views/Shared/_Index.cshtml";
+}
+<script>
+;
+    $(function () {
+        InitialPage();
+        GetGrid();
+    });
+    //初始化页面
+    function InitialPage() {
+        $("#Arear").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "Arear" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "请选择",
+            height: "200px"
+        });
+        $("#ArearNumber").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "ArearNumber" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "请选择",
+            height: "200px"
+        });
+        $("#HouseType").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "HouseType" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "请选择",
+            height: "200px"
+        });
+        $("#JZRenType").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "JZRenType" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "请选择",
+            height: "200px"
+        });
+        $("#ZhiYe").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "ZhiYe" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "请选择",
+            height: "200px"
+        });
+        $("#ImpRen").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "ImpRen" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "请选择",
+            height: "200px"
+        });
+        var role = '@LeaRun.Application.Code.OperatorProvider.Provider.Current().CompanyId';
+        if (role == "镇联动中心") {
+            $("#Arear").ComboBox({
+                url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+                param: { EnCode: "Arear" },
+                id: "ItemValue",
+                text: "ItemName",
+                description: "请选择",
+                height: "200px"
+            });
+            //$("#lr-add").attr("disabled", true);
+        } else if (role == "丁泾村,六尺社区")
+        {
+            $("#Arear").ComboBox({
+                url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+                param: { EnCode: "Arear2" },
+                id: "ItemValue",
+                text: "ItemName",
+                //description: "请选择",
+                height: "200px"
+            });
+            $("#Arear").ComboBoxSetValue("丁泾村");
+            
+        }
+        else if (role == "浮桥村,浮桥社区") {
+            $("#Arear").ComboBox({
+                url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+                param: { EnCode: "Arear3" },
+                id: "ItemValue",
+                text: "ItemName",
+                //description: "请选择",
+                height: "200px"
+            });
+            $("#Arear").ComboBoxSetValue("浮桥村");
+         
+        } else if (role == "浪港村,时思村") {
+            $("#Arear").ComboBox({
+                url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+                param: { EnCode: "Arear4" },
+                id: "ItemValue",
+                text: "ItemName",
+                //description: "请选择",
+                height: "200px"
+            });
+            $("#Arear").ComboBoxSetValue("浪港村");
+           
+        } else if (role == "时思社区,陆公社区") {
+            $("#Arear").ComboBox({
+                url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+                param: { EnCode: "Arear5" },
+                id: "ItemValue",
+                text: "ItemName",
+                //description: "请选择",
+                height: "200px"
+            });
+            $("#Arear").ComboBoxSetValue("时思社区");
+        
+        }
+        else
+        {
+            $("#Arear").ComboBox({
+                url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+                param: { EnCode: "Arear" },
+                id: "ItemValue",
+                text: "ItemName",
+                description: "请选择",
+                height: "200px"
+            });
+            $("#Arear").attr("disabled", true);
+            $("#Arear").ComboBoxSetValue(role);
+         
+
+        }
+        //resize重设布局;
+        $(window).resize(function (e) {
+            window.setTimeout(function () {
+                $('#gridTable').setGridWidth(($('.gridPanel').width()));
+                $('#gridTable').setGridHeight($(window).height() - 136.5);
+            }, 200);
+            e.stopPropagation();
+        });
+    }
+    //加载表格
+    function GetGrid() {
+        var queryJson = {
+            Arear: $("#Arear").attr("data-value"),
+            ArearNumber: $("#ArearNumber").attr("data-value"),
+            Address: $("#Address").val(),
+            HouseType: $("#HouseType").attr("data-value"),
+            CodeNumber: $("#CodeNumber").val(),
+            CQRen: $("#CQRen").val(),
+            JZRenName: $("#JZRenName").val(),
+            JZRenType: $("#JZRenType").attr("data-value"),
+            IDCard: $("#IDCard").val(),
+            SJJZAddress: $("#SJJZAddress").val(),
+            HJInfo: $("#HJInfo").val(),
+            ZhiYe: $("#ZhiYe").attr("data-value"),
+            ImpRen: $("#ImpRen").attr("data-value"),
+            ASTime: $("#StartTime").val(),
+            AETime: $("#EndTime").val(),
+            Status: "2",
+            role: '@LeaRun.Application.Code.OperatorProvider.Provider.Current().CompanyId'
+        }
+
+        var selectedRowIndex = 0;
+        var $gridTable = $('#gridTable');
+        $gridTable.jqGrid({
+            autowidth: true,
+            height: $(window).height() - 136.5,
+            url: "../../BaseManage/H_RenInfoHis/GetPageListJson",
+            postData: { queryJson: JSON.stringify(queryJson) },
+            datatype: "json",
+            colModel: [
+                { label: 'ID', name: 'Id', index: 'Id', width: 100, align: 'left', sortable: true, hidden: true },
+                { label: '操作类型', name: 'Status', index: 'Status', width: 100, align: 'left', sortable: true },
+                { label: '修改内容', name: 'ShenName', index: 'ShenName', width: 100, align: 'left', sortable: true },
+                { label: '村居', name: 'Arear', index: 'Arear', width: 100, align: 'left', sortable: true },
+                { label: '网格名称', name: 'ArearNumber', index: 'ArearNumber', width: 100, align: 'left', sortable: true },
+                { label: '坐落详址', name: 'Address', index: 'Address', width: 100, align: 'left', sortable: true },
+                { label: '房屋性质', name: 'HouseType', index: 'HouseType', width: 100, align: 'left', sortable: true },
+                { label: '二维码门牌', name: 'CodeNumber', index: 'CodeNumber', width: 100, align: 'left', sortable: true },
+                { label: '产权人', name: 'CQRen', index: 'CQRen', width: 100, align: 'left', sortable: true },
+                { label: '居住人姓名', name: 'JZRenName', index: 'JZRenName', width: 100, align: 'left', sortable: true },
+                { label: '性别', name: 'Sex', index: 'Sex', width: 70, align: 'left', sortable: true },
+                { label: '居住人员类别', name: 'JZRenType', index: 'JZRenType', width: 100, align: 'left', sortable: true },
+                { label: '身份证号码', name: 'IDCard', index: 'IDCard', width: 120, align: 'left', sortable: true },
+                { label: '居住证号码', name: 'JZNumber', index: 'JZNumber', width: 100, align: 'left', sortable: true },
+                { label: '联系电话', name: 'Phone', index: 'Phone', width: 100, align: 'left', sortable: true },
+                { label: '实际居住地址', name: 'SJJZAddress', index: 'SJJZAddress', width: 100, align: 'left', sortable: true },
+                { label: '户籍信息', name: 'HJInfo', index: 'HJInfo', width: 100, align: 'left', sortable: true },
+                { label: '职业', name: 'ZhiYe', index: 'ZhiYe', width: 100, align: 'left', sortable: true },
+                { label: '工作所在地', name: 'WordAddress', index: 'WordAddress', width: 100, align: 'left', sortable: true },
+                { label: '重点人员', name: 'ImpRen', index: 'ImpRen', width: 100, align: 'left', sortable: true },
+                { label: '具体情况', name: 'JTQingKuang', index: 'JTQingKuang', width: 100, align: 'left', sortable: true },
+                { label: '备注', name: 'Note', index: 'Note', width: 100, align: 'left', sortable: true },
+                { label: '创建类型', name: 'CreateType', index: 'CreateType', width: 100, align: 'left', sortable: true },
+                { label: '创建人', name: 'CreateName', index: 'CreateName', width: 100, align: 'left', sortable: true },
+                { label: '创建时间', name: 'CreateDate', index: 'CreateDate', width: 100, align: 'left', sortable: true },
+                //{ label: '审核时间', name: 'ShenDate', index: 'ShenDate', width: 100, align: 'left', sortable: true },
+            ],
+            viewrecords: true,
+            rowNum: 30,
+            rowList: [30, 50, 100],
+            pager: "#gridPager",
+            sortname: 'CreateDate desc',
+            sortorder: 'desc',
+            rownumbers: true,
+            shrinkToFit: false,
+            gridview: true,
+            onSelectRow: function () {
+                selectedRowIndex = $('#' + this.id).getGridParam('selrow');
+            },
+            ondblClickRow: function () {
+                var keyValue = $('#gridTable').jqGridRowValue('Id');
+                if (checkedRow(keyValue)) {
+                    dialogOpen({
+                        id: 'Form',
+                        title: '编辑H_RenInfoHis',
+                        url: '/BaseManage/H_RenInfoHis/H_RenInfoHisForm?keyValue=' + keyValue,
+                        width: '1000px',
+                        height: '750px',
+                        callBack: function (iframeId) {
+                            top.frames[iframeId].AcceptClick();
+                        }
+                    })
+                }
+            },
+            gridComplete: function () {
+                $('#' + this.id).setSelection(selectedRowIndex, false);
+            }
+        });
+        $("#time_horizon a.btn-default").click(function () {
+            $("#time_horizon a.btn-default").removeClass("active");
+            $(this).addClass("active");
+            switch ($(this).attr('data-value')) {
+                case "1"://今天
+                    $("#StartTime").val("@DateTime.Now.ToString("yyyy-MM-dd")");
+                    $("#EndTime").val("@DateTime.Now.ToString("yyyy-MM-dd")");
+                    break;
+                case "2"://近7天
+                    $("#StartTime").val("@DateTime.Now.AddDays(-7).ToString("yyyy-MM-dd")");
+                    $("#EndTime").val("@DateTime.Now.ToString("yyyy-MM-dd")");
+                    break;
+                case "3"://近一个月
+                    $("#StartTime").val("@DateTime.Now.AddMonths(-1).ToString("yyyy-MM-dd")");
+                    $("#EndTime").val("@DateTime.Now.ToString("yyyy-MM-dd")");
+                    break;
+                case "4"://近三个月
+                    $("#StartTime").val("@DateTime.Now.AddMonths(-3).ToString("yyyy-MM-dd")");
+                    $("#EndTime").val("@DateTime.Now.ToString("yyyy-MM-dd")");
+                    break;
+                default:
+                    break;
+            }
+            $("#SelectedStartTime").html($("#StartTime").val());
+            $("#SelectedEndTime").html($("#EndTime").val());
+            SearchEvent();
+        });
+        //查询条件
+        $("#queryCondition .dropdown-menu li").click(function () {
+            var text = $(this).find('a').html();
+            var value = $(this).find('a').attr('data-value');
+            $("#queryCondition .dropdown-text").html(text).attr('data-value', value)
+        });
+        //查询事件
+        $("#btn_Search").click(function () {
+            SearchEvent();
+            $(".ui-filter-text").trigger("click");
+            $("#SelectedStartTime").html($("#StartTime").val());
+            $("#SelectedEndTime").html($("#EndTime").val());
+        });
+        //查询回车
+        $('#txt_Keyword').bind('keypress', function (event) {
+            if (event.keyCode == "13") {
+                $('#btn_Search').trigger("click");
+            }
+        });
+    }
+    //新增
+    function btn_add() {
+        dialogOpen({
+            id: 'Form',
+            title: '添加H_RenInfoHis',
+            url: '/BaseManage/H_RenInfoHis/H_RenInfoHisForm',
+            width: '1000px',
+            height: '750px',
+            callBack: function (iframeId) {
+                top.frames[iframeId].AcceptClick();
+            }
+        });
+    }
+    //编辑
+    function btn_edit() {
+        var keyValue = $('#gridTable').jqGridRowValue('Id');
+        if (checkedRow(keyValue)) {
+            dialogOpen({
+                id: 'Form',
+                title: '编辑H_RenInfoHis',
+                url: '/BaseManage/H_RenInfoHis/H_RenInfoHisForm?keyValue=' + keyValue,
+                width: '1000px',
+                height: '750px',
+                callBack: function (iframeId) {
+                    top.frames[iframeId].AcceptClick();
+                }
+            })
+        }
+    }
+    //删除
+    function btn_delete() {
+        var keyValue = $('#gridTable').jqGridRowValue('Id');
+        if (keyValue) {
+            $.RemoveForm({
+                url: '../../BaseManage/H_RenInfoHis/RemoveForm',
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $('#gridTable').trigger('reloadGrid');
+                }
+            })
+        } else {
+            dialogMsg('请选择需要删除的H_RenInfoHis！', 0);
+        }
+    }
+    function btn_export() {
+        var gridTable = $('#gridTable');
+        var o = jQuery("#gridTable");
+        var rowNum = o.jqGrid('getGridParam', 'rowNum'); //获取显示配置记录数量
+        var total = o.jqGrid('getGridParam', 'records'); //获取查询得到的总记录数量
+        o.jqGrid('setGridParam', { rowNum: total }).trigger('reloadGrid'); //设置rowNum为总记录数量并且刷新jqGrid，使所有记录现出来调用getRowData方法才能获取到所有数据
+        var rows = o.jqGrid('getRowData');  //输出所有匹配的
+        dialogOpen({
+            id: "ExcelIExportDialog",
+            title: '导出救助信息列表',
+            url: '/Utility/ExcelExportForm?gridId=gridTable&filename=人员信息列表',
+            width: "500px",
+            height: "380px",
+            callBack: function (iframeId) {
+                top.frames[iframeId].AcceptClick();
+            }, btn: ['导出Excel', '关闭']
+        });
+    }
+    function btn_Shen() {
+        var keyValue = $('#gridTable').jqGridRowValue('Id');
+        var shen = $('#gridTable').jqGridRowValue('Status');
+        if (shen == "已审核") {
+            dialogMsg('已审核单据不能再次审核！', 0);
+        } else {
+            if (keyValue) {
+                $.SaveForm({
+                    url: '../../BaseManage/H_RenInfoHis/HuiForm',
+                    param: { keyValue: keyValue },
+                    success: function (data) {
+                        $('#gridTable').trigger('reloadGrid');
+                    }
+                })
+            } else {
+                dialogMsg('请选择需要恢复的人员信息！', 0);
+            }
+        }
+    }
+    function SearchEvent() {
+        var queryJson = {
+            Arear: $("#Arear").attr("data-value"),
+            ArearNumber: $("#ArearNumber").attr("data-value"),
+            Address: $("#Address").val(),
+            HouseType: $("#HouseType").attr("data-value"),
+            CodeNumber: $("#CodeNumber").val(),
+            CQRen: $("#CQRen").val(),
+            JZRenName: $("#JZRenName").val(),
+            JZRenType: $("#JZRenType").attr("data-value"),
+            IDCard: $("#IDCard").val(),
+            SJJZAddress: $("#SJJZAddress").val(),
+            HJInfo: $("#HJInfo").val(),
+            ZhiYe: $("#ZhiYe").attr("data-value"),
+            ImpRen: $("#ImpRen").attr("data-value"),
+            ASTime: $("#StartTime").val(),
+            AETime: $("#EndTime").val(),
+            Status: "2",
+            role: '@LeaRun.Application.Code.OperatorProvider.Provider.Current().CompanyId'
+        }
+        $("#gridTable").jqGrid('setGridParam', {
+            url: "../../BaseManage/H_RenInfoHis/GetPageListJson",
+            postData: { queryJson: JSON.stringify(queryJson) },
+            page: 1
+        }).trigger('reloadGrid');
+    }
+
+</script>
+<div class="titlePanel">
+    <div class="title-search">
+        <table>
+            <tr>
+                <td>查询条件</td>
+                <td style="padding-left: 10px;">
+                    <div class="ui-filter" style="width: 200px;">
+                        <div class="ui-filter-text">
+                            <strong id="SelectedStartTime">@DateTime.Now.AddDays(-7).ToString("yyyy-MM-dd")</strong> 至 <strong id="SelectedEndTime">@DateTime.Now.ToString("yyyy-MM-dd")</strong>
+                        </div>
+                        <div class="ui-filter-list" style="width: 600px;">
+                            <table class="form" id="filter-form">
+                                <tr>
+                                    <th class="formTitle">新增日期：</th>
+                                    <td class="formValue">
+                                        <input id="Category" type="hidden" value="1" />
+                                        <div style="float: left; width: 95%;">
+                                            <input id="StartTime" readonly type="text" value="@LeaRun.Util.Time.GetDate(-7)" class="form-control input-wdatepicker" onfocus="WdatePicker({maxDate:'%y-%M-%d'})">
+                                        </div>
+                                    </td>
+                                    <th class="formTitle">至</th>
+                                    <td>
+
+                                        <div style="float: left; width: 95%;">
+                                            <input id="EndTime" readonly type="text" value="@LeaRun.Util.Time.GetToday()" class="form-control input-wdatepicker" onfocus="WdatePicker({maxDate:'%y-%M-%d'})">
+                                        </div>
+                                    </td>
+                                </tr>
+            </tr>
+            <tr>
+                <th class="formTitle">村居：</th>
+                <td class="formValue">
+                    @*<input id="Arear" type="text" class="form-control" />*@
+                    <div id="Arear" type="select" class="ui-select"></div>
+                </td>
+
+                <th class="formTitle">网格名称：</th>
+                <td class="formValue">
+                    @*<input id="ArearNumber" type="text" class="form-control" />*@
+                    <div id="ArearNumber" type="select" class="ui-select"></div>
+                </td>
+            </tr>
+            <tr>
+                <th class="formTitle">坐落详址：</th>
+                <td class="formValue">
+                    <input id="Address" type="text" class="form-control" />
+                </td>
+
+                <th class="formTitle">房屋性质：</th>
+                <td class="formValue">
+                    @*<input id="HouseType" type="text" class="form-control" />*@
+                    <div id="HouseType" type="select" class="ui-select"></div>
+                </td>
+            </tr>
+            <tr>
+                <th class="formTitle">二维码门牌：</th>
+                <td class="formValue">
+                    <input id="CodeNumber" type="text" class="form-control" />
+                </td>
+
+                <th class="formTitle">产权人：</th>
+                <td class="formValue">
+                    <input id="CQRen" type="text" class="form-control" />
+                </td>
+            </tr>
+
+            <tr>
+                <th class="formTitle">居住人姓名：</th>
+                <td class="formValue">
+                    <input id="JZRenName" type="text" class="form-control" />
+                </td>
+
+                <th class="formTitle">居住人员类别：</th>
+                <td class="formValue">
+                    @*<input id="JZRenType" type="text" class="form-control" />*@
+                    <div id="JZRenType" type="select" class="ui-select"></div>
+                </td>
+            </tr>
+            <tr>
+                <th class="formTitle">身份证号码：</th>
+                <td class="formValue">
+                    <input id="IDCard" type="text" class="form-control" />
+                </td>
+
+                <th class="formTitle">实际居住地址：</th>
+                <td class="formValue">
+                    <input id="SJJZAddress" type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <th class="formTitle">户籍信息：</th>
+                <td class="formValue">
+                    <input id="HJInfo" type="text" class="form-control" />
+                </td>
+
+                <th class="formTitle">职业：</th>
+                <td class="formValue">
+                    @*<input id="ZhiYe" type="text" class="form-control" />*@
+                    <div id="ZhiYe" type="select" class="ui-select"></div>
+                </td>
+            </tr>
+            <tr>
+                <th class="formTitle">重点人员：</th>
+                <td class="formValue">
+                    @*<input id="ImpRen" type="text" class="form-control" />*@
+                    <div id="ImpRen" type="select" class="ui-select"></div>
+                </td>
+            </tr>
+        </table>
+        <div class="ui-filter-list-bottom">
+
+            <a id="btn_Search" class="btn btn-primary">&nbsp;查&nbsp;&nbsp;询</a>
+        </div>
+    </div>
+</div>
+                </td>
+<td style="padding-left: 10px;">
+    <div id="time_horizon" class="btn-group">
+        <a class="btn btn-default" data-value="1">今天</a>
+        <a class="btn btn-default active" data-value="2">近7天</a>
+        <a class="btn btn-default" data-value="3">近1个月</a>
+        <a class="btn btn-default" data-value="4">近3个月</a>
+    </div>
+</td>
+@*<ul class="dropdown-menu">
+        <li><a data-value="Arear">村居</a></li>
+        <li><a data-value="ArearNumber">网格名称</a></li>
+        <li><a data-value="Address">坐落详址</a></li>
+        <li><a data-value="HouseType">房屋性质</a></li>
+        <li><a data-value="CodeNumber">二维码门牌</a></li>
+        <li><a data-value="CQRen">产权人</a></li>
+        <li><a data-value="AllAddress">地址（全）</a></li>
+    </ul>*@
+            </tr>
+        </table>
+    </div>
+<div class="toolbar">
+    <div class="btn-group">
+        <a id="lr-replace" class="btn btn-default" onclick="reload()"><i class="fa fa-refresh"></i>&nbsp;刷新</a>
+       @*<a id="lr-add" class="btn btn-default" onclick="btn_Shen()"><i class="fa fa-plus"></i>&nbsp;恢复</a>*@
+        <a id="lr-replace" class="btn btn-default" onclick="btn_export()"><i class="fa fa-trash-o"></i>&nbsp;导出</a>
+         @*   <a id="lr-add" class="btn btn-default" onclick="btn_add()"><i class="fa fa-plus"></i>&nbsp;新增</a>
+    <a id="lr-edit" class="btn btn-default" onclick="btn_edit()"><i class="fa fa-pencil-square-o"></i>&nbsp;编辑</a>
+    <a id="lr-delete" class="btn btn-default" onclick="btn_delete()"><i class="fa fa-trash-o"></i>&nbsp;删除</a>*@
+    </div>
+</div>
+</div>
+<div class="gridPanel">
+    <table id="gridTable"></table>
+    <div id="gridPager"></div>
+</div>

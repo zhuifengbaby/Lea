@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图</title>
+    <meta name="keywords" content="浮桥镇以房管人大数据系统" />
+    <meta name="description" content="浮桥镇以房管人大数据系统" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="assets/nui.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body>
+    <h1 class="card titl"> 浮桥镇以房管人大数据系统</h1>
+    <ul class="u-flex">
+        <li style="width: 10px;"></li>
+        <li>
+            <div class="card">
+                <ul class="u-flex now--data">
+                    <li style="color:#f78207;">
+                        <h2>14<small>户</small></h2>
+                        <p>企业</p>
+                        <p><span class="nui-ml" style="color:#F55253">签约 5</span><span class="nui-ml"
+                                style="color:#178B50">完成 5</span><span class="nui-ml" style="color:#888">未签约 4</span>
+                        </p>
+                    </li>
+                    <li style="color:#f78207;">
+                        <h2>57<small>户</small></h2>
+                        <p>居民房</p>
+                        <p><span class="nui-ml" style="color:#F55253">签约 5</span><span class="nui-ml"
+                                style="color:#178B50">完成 6</span><span class="nui-ml" style="color:#888">未签约 46</span>
+                        </p>
+                    </li>
+                    <li style="color:#f78207;">
+                        <h2>67<small>户</small></h2>
+                        <p>门店</p>
+                        <p><span class="nui-ml" style="color:#F55253">签约 7</span><span class="nui-ml"
+                                style="color:#178B50">完成 6</span><span class="nui-ml" style="color:#888">未签约 54</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="card">
+                <!-- <div class="chart--title" style="color: #4f78f2;">浮桥镇每日居家观察人数变动表</div>
+                <div class="chart--body" id="line"></div> -->
+                <ul class="u-flex">
+                    <li>
+                        <div class="chart--title">宅基地</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">商品房</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">员工宿舍</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">拆迁公寓</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">其他</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                </ul>
+                <div class="pie--legend"></div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="card">
+                <div class="chart--title" style="color: #4f78f2;text-align: left; padding-left: 1em;">浮桥镇村社区人数</div>
+                <div class="chart--body" id="bar"></div>
+                <div class="bar--nav nui-btn-group" style="display: none;"></div>
+            </div>
+        </li>
+        <li style="width: 10px;"></li>
+        <li>
+            <div class="card">
+                <iframe class="area" id="area" src="/map.html" style="border: 0;"></iframe>
+            </div>
+            </div>
+        </li>
+        <li style="width: 10px;"></li>
+
+    </ul>
+    <div style="margin: 10px;">
+        <div class="card">
+            <a cid="speedInfo" href="javascript:;">其他</a>
+        </div>
+    </div>
+
+
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/nui.min.js"></script>
+    <script src="./assets/echarts.min.js"></script>
+    <script src="./assets/xml2json.js"></script>
+    <script src="./assets/main.js?v=1.0054"></script>
+    <!-- 服务器端 -->
+    <!-- <script src="https://www.tcfuqiao.com/Content/scripts/plugins/dialog/dialog.js"></script>
+    <script src="https://www.tcfuqiao.com/Content/scripts/utils/js"></script> -->
+
+    <script>
+        var LOAD_TIME = 5 * 6e4;
+        !function () {
+            // 地图初始化           
+            // @TODO 全局事件
+            var allfn = {
+                showTable: function (attr) {
+                    var loai = nui.showLoading("加载中");
+                    $api.getXianQin(attr, function (data) {
+                        // console.log(data)
+                        nui.hideToast(loai);
+                        var num = 0;
+                        data.map(function (a) { num += +a.JZMianJi || 0 });
+                        if (num) { num = num.toFixed(2) };
+                        var title = attr.Name // + "/合计 " + data.length + attr.tip;
+                        nui.open({
+                            content: userListTpl(data),
+                            shadow: false,
+                            title: title,
+                            width: ["90%", "80%"],
+                            full: true,
+                            offset: ["10%"],
+                            fixed: true,
+                            shadeClose: true,
+                            success: function (that, index) {
+                                var $some = that.find("[data-some]");
+                                $some.on("input", gofilter);
+                                // 清除
+                                that.find('.nui-btn').on("click", function () {
+                                    $some.each(function () { this.value = "" })
+                                    gofilter();
+                                })
+                                function gofilter() {
+                                    var log = {};
+                                    var _data = data;
+                                    $some.each(function () {
+                                        log[this.getAttribute('data-some')] = this.value;
+                                    })
+                                    for (var key in log) {
+                                        var value = log[key];
+                                        // console.log(key, value)
+                                        _data = _data.filter(function (item) {
+                                            // 没填写数据
+                                            if (!value) { return true }
+                                            try {
+                                                return item[key].indexOf(value) !== -1
+                                            } catch (e) {
+                                                // 防止数据中没有这个字段
+                                                console.error(e)
+                                                return false
+                                            }
+                                        })
+                                    }
+                                    //console.log(_data);
+                                    var html = $(getTpl(_data)).find('tbody').html();
+                                    that.find('tbody').html(html)
+                                }
+                            }
+                        })
+                    })
+                },
+                palyVideo: function () {
+                    var that = $(this), ext = that.data("ext");
+                    //console.log(ext)
+                    nui.open({
+                        // JKUser JKPassword IP Channel Show
+                        title: ext.Name + " " + (ext.Adress || ""),
+                        content: "video.html?JKUser=" + ext.JKUser + "&JKPassword=" + ext.JKPassword + "&IP=" + ext.IP + "&Channel=" + ext.Channel + "&Show=" + ext.Show,
+                        shadow: .6,
+                        width: ["905px", "645px"],
+                        full: true,
+                        offset: ["10%"],
+                        fixed: true,
+                        type: 2
+                    });
+                }
+            };
+            // @TODO 绑定全局事件
+            $("body").on("click", "[data-click]", function (e) {
+                var that = $(this), ops = that.data("click");
+                var fn = allfn[ops.fn];
+                if (typeof fn === "function") {
+                    fn.call(this, ops);
+                    e.stopPropagation()
+                }
+            });
+            // @TODO 初始化
+            function init() {
+                // @TODO 地图数据
+                function go() {
+                    console.log('--update ' + nui.util.date.format(new Date(), 'yyyy-MM-dd HH:mm:ss'));
+                    // @TODO 顶部条目数据 饼图
+                    // @test 添加测试数据
+                    var tests = ['房屋总数', '人员总数', '常住总数', '老宅总数', '租住总数']
+                    $api.getCount(function (data) {
+                        var tpll = '';
+                        data.map(function (item, index) {
+                            var name = (tests[index] || "");
+                            tpll += '<li style="color:' + COLORS[0] + ';"> <h2 data-click=\'{"fn":"showTable","Type":"' + (index + 1) + '","tip":"' + (index ? '人' : '户') + '","Name":"' + name + '"}\'>' + item.Qty + '<small>' + (index ? '人' : '户') + '</small></h2>' +
+                                '<p style="font-size:15px;font-weight: 700;color:' + COLORS[1] + '">' + name + '</p><p>' +
+                                '<span style="display:none;" data-cclick=\'{"fn":"showTable","Type":3,"Name":"' + name + '"}\' class="nui-ml" style="color:' + COLORS[2] + '">已审核 ' + item.WCQty + '</span>' +
+                                '<span style="display:none;" data-cclick=\'{"fn":"showTable","Type":4,"Name":"' + name + '"}\' class="nui-ml" style="color:' + COLORS[3] + '">未审核 ' + item.NoQty + '</span>' +
+                                '</p> </li>'
+                        })
+                        $(".now--data").html(tpll);
+                    });
+                    $api.getCount2(function (data) {
+                        // 饼图
+                        // console.log(data)
+                        PIE_CHART.render(data)
+
+                    })
+                    // @TODO  柱状图
+                    $api.getCountList(function (data) {
+                        BAR_CHART.render(data)
+                    })
+                }
+                go();
+                setInterval(go, LOAD_TIME);
+            }
+            init();
+        }()
+
+
+    </script>
+
+
+    <style>
+        .area {
+            width: 100%;
+            height: 782px;
+            position: relative;
+            background-color: #f5f4ee;
+        }
+
+        .user_table th {
+            word-wrap: break-word;
+            font-size: 13px;
+        }
+
+        .user_table td {
+            font-size: 12px;
+        }
+
+        .user_table td,
+        .user_table th {
+            padding: 5px;
+            word-break: break-all;
+        }
+    </style>
+    <script>
+
+        // 用户表格模板
+        function userListTpl(list) {
+            return nui.tpl('<div>' +
+                '<table class="nui-table user_table nui-mt"><thead><tr class="thead"><th width="30">序号</th><th>村居</th><th>网格名称</th><th width="150">坐落详址</th><th>房屋类型</th><th width="80">二维码门牌</th><th>产权人</th><th>居住人</th><th>性别</th><th>居住类型</th><th width="150">身份证号码</th><th width="150">居住证号码</th><th width="150">电话</th><th>居住地</th><th>户籍信息</th><th>职业</th><th>工作</th><th>重点人员</th><th>具体情况</th><th>备注</tr></thead>' +
+                '<tbody>{{# for(var i in d.data){var item=d.data[i];var index=+i+1;}}<tr>' +
+                '<td data-id="{{item.ID}}">{{index}}</td><td>{{item.Arear}}</td><td>{{item.ArearNumber}}</td><td>{{item.Address}}</td><td>{{item.HouseType}}</td><td>{{item.CodeNumber}}</td><td>{{item.CQRen}}</td><td>{{item.JZRenName}}</td><td>{{item.Sex}}</td><td>{{item.JZRenType}}</td><td>{{item.IDCard}}</td><td>{{item.JZNumber}}</td><td>{{item.Phone}}</td><td>{{item.SJJZAddress}}</td><td>{{item.HJInfo}}</td><td>{{item.ZhiYe}}</td><td>{{item.WordAddress}}</td><td>{{item.ImpRen}}</td><td>{{item.JTQingKuang}}</td><td>{{item.Note}}</td>' +
+                '</tr>{{# } }}</tbody></table></div>', { data: list })
+        }
+        // 用户选择模板
+        function selectUserTpl(list, selectIds) {
+            return nui.tpl('<div>' +
+                '<table class="nui-table user_table"><thead><tr class="thead"><th width="30">选择</th><th width="50">户主</th><th>地址</th></thead>' +
+                '<tbody>{{# for(var i in d.data){var item=d.data[i];var index=+i+1;}}<tr>' +
+                '<td><label data-id="{{item.ID}}" class="nui-form-checkbox-label {{ ~d.ids.indexOf(item.ID)?\'checked\':\'\'}}"></label></td><td>{{item.Name}}</td><td>{{item.Adress}}</td>' +
+                '</tr>{{# } }}</tbody></table></div>', { data: list, ids: selectIds })
+        }
+        /**
+         *  TODO: 地图锚点点击
+         * */
+        var $selectUserEl;
+        var selectIds = [];
+        nui.open({
+            content: '<div><div class="area--user__bd"></div><div class="area--user__fd center"><a class="nui-btn nui-btn-blue nui-btn-width">查询</a><a class="nui-btn nui-btn-default nui-btn-width">关闭</a></div></div>',
+            title: "户主列表",
+            shadow: false,
+            width: ["360px", "600px"],
+            offset: 'rb',
+            skin: 'area--user',
+            close: false,
+            fixed: true,
+            shadeClose: true,
+            success: function (that) {
+                $selectUserEl = that;
+                $selectUserEl.hide()
+            }
+        });
+        $(function () {
+            try {
+                $("#area").on("load", function () {
+                    var area = this;
+                    var el = area.contentWindow.document.querySelector(".area--full");
+                    el.onclick = function () {
+                        window.open(area.src);
+                    }
+                })
+            } catch (error) {
+                console.error(error)
+            }
+        })
+    </script>
+</body>
+
+</html>

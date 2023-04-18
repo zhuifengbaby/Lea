@@ -1,0 +1,189 @@
+﻿@{;
+    ViewBag.Title = "表单页面";
+    Layout = "~/Views/Shared/_OrderForm.cshtml";
+}
+<script>
+    var keyValue = request('keyValue');
+    $(function () {
+        InitialPage();
+        GetOrderEntryGrid();
+        initControl();
+    });
+    //初始化页面
+    function InitialPage() {;
+        //resize重设(表格、树形)宽高
+        $(window).resize(function (e) {
+            window.setTimeout(function () {
+                $('#gridTable').setGridWidth(($('.gridPanel').width()));
+                $('#gridTable').setGridHeight($(window).height() - 240.5);
+            }, 200);
+            e.stopPropagation();
+        });
+    }
+    //加载明细表
+    function GetOrderEntryGrid() {
+        var $grid = $('#gridTable');
+        $grid.jqGrid({
+            unwritten: false,
+            datatype: 'local',
+            height: $(window).height() - 240.5,
+            autowidth: true,
+            colModel: [
+{ label: '居住人姓名', name: 'JZRenName', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '性别', name: 'Sex', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '居住人员类别', name: 'JZRenType', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '身份证号码', name: 'IDCard', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '居住证号码', name: 'JZNumber', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '联系电话', name: 'Phone', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '实际居住地址', name: 'SJJZAddress', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '户籍信息', name: 'HJInfo', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '职业', name: 'ZhiYe', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '工作所在地', name: 'WordAddress', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '重点人员', name: 'ImpRen', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '具体情况', name: 'JTQingKuang', width: 80, align: '', sortable: false, resizable: false  },
+{ label: '备注', name: 'Note', width: 80, align: '', sortable: false, resizable: false  },
+            ],
+            pager: false,
+            rownumbers: true,
+            shrinkToFit: false,
+            gridview: true,
+            footerrow: false,
+            gridComplete: function () {
+            }
+        });
+        //默认添加13行 空行
+        for (var i = 1; i < 13; i++) {
+            var rowdata = {
+JZRenName: '<input name="JZRenName" type="text" class="editable center" />',
+Sex: '<input name="Sex" type="text" class="editable center" />',
+JZRenType: '<input name="JZRenType" type="text" class="editable center" />',
+IDCard: '<input name="IDCard" type="text" class="editable center" />',
+JZNumber: '<input name="JZNumber" type="text" class="editable center" />',
+Phone: '<input name="Phone" type="text" class="editable center" />',
+SJJZAddress: '<input name="SJJZAddress" type="text" class="editable center" />',
+HJInfo: '<input name="HJInfo" type="text" class="editable center" />',
+ZhiYe: '<input name="ZhiYe" type="text" class="editable center" />',
+WordAddress: '<input name="WordAddress" type="text" class="editable center" />',
+ImpRen: '<input name="ImpRen" type="text" class="editable center" />',
+JTQingKuang: '<input name="JTQingKuang" type="text" class="editable center" />',
+Note: '<input name="Note" type="text" class="editable center" />',
+            }
+            $grid.jqGrid('addRowData', i, rowdata);
+        };
+    }
+    //初始化控件
+    function initControl() {
+        //获取表单
+        if (!!keyValue) {
+            $.SetForm({
+                url: "../../BaseManage/H_House/GetFormJson",
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $("#form1").SetWebControls(data.entity);
+                    //明细
+                    var childEntity = data.childEntity;
+                    $('#gridTable').find('[role=row]').each(function (i) {
+                        var row = childEntity[i - 1];
+                        if (row != undefined) {
+$(this).find('input[name="JZRenName"]').val(row.JZRenName);
+$(this).find('input[name="Sex"]').val(row.Sex);
+$(this).find('input[name="JZRenType"]').val(row.JZRenType);
+$(this).find('input[name="IDCard"]').val(row.IDCard);
+$(this).find('input[name="JZNumber"]').val(row.JZNumber);
+$(this).find('input[name="Phone"]').val(row.Phone);
+$(this).find('input[name="SJJZAddress"]').val(row.SJJZAddress);
+$(this).find('input[name="HJInfo"]').val(row.HJInfo);
+$(this).find('input[name="ZhiYe"]').val(row.ZhiYe);
+$(this).find('input[name="WordAddress"]').val(row.WordAddress);
+$(this).find('input[name="ImpRen"]').val(row.ImpRen);
+$(this).find('input[name="JTQingKuang"]').val(row.JTQingKuang);
+$(this).find('input[name="Note"]').val(row.Note);
+                        }
+                    });
+                }
+            })
+        }
+    }
+    //保存表单;
+    function AcceptClick() {
+        if (!$('#form1').Validform()) {
+            return false;
+        }
+        var postData = $("#form1").GetWebControls(keyValue);
+        var childEntryJson = [];
+        $('#gridTable').find('[role=row]').each(function (i) {
+        if (!!$(this).find('input[name="JZRenName"]').val()) {
+            childEntryJson.push({
+JZRenName: $(this).find('input[name="JZRenName"]').val(),
+Sex: $(this).find('input[name="Sex"]').val(),
+JZRenType: $(this).find('input[name="JZRenType"]').val(),
+IDCard: $(this).find('input[name="IDCard"]').val(),
+JZNumber: $(this).find('input[name="JZNumber"]').val(),
+Phone: $(this).find('input[name="Phone"]').val(),
+SJJZAddress: $(this).find('input[name="SJJZAddress"]').val(),
+HJInfo: $(this).find('input[name="HJInfo"]').val(),
+ZhiYe: $(this).find('input[name="ZhiYe"]').val(),
+WordAddress: $(this).find('input[name="WordAddress"]').val(),
+ImpRen: $(this).find('input[name="ImpRen"]').val(),
+JTQingKuang: $(this).find('input[name="JTQingKuang"]').val(),
+Note: $(this).find('input[name="Note"]').val(),
+                 });
+            }
+        });
+        $.SaveForm({
+            url: "../../BaseManage/H_House/SaveForm?keyValue=" + keyValue,
+            param: { "strEntity": JSON.stringify(postData), "strChildEntitys": JSON.stringify(childEntryJson) },
+            loading: "正在保存数据...",
+            success: function () {
+                $.currentIframe().$("#gridTable").trigger("reloadGrid");
+            }
+        })
+    }
+</script>
+<div class="bills" >
+ <div style="height:190px;overflow-y:auto;margin:10px 10px;">
+    <table class="form" style="width: 100%;">
+        <tr>
+<th class="formTitle" style="width: 60px;">村居</th>
+<td class="formValue"><input id="Arear" type="text"  class="form-control" ></td>
+<th class="formTitle" style="width: 60px;">网格名称</th>
+<td class="formValue"><input id="ArearNumber" type="text"  class="form-control" ></td>
+<th class="formTitle" style="width: 60px;">坐落详址</th>
+<td class="formValue"><input id="Address" type="text"  class="form-control" ></td>
+</tr>
+<tr>
+<th class="formTitle" style="width: 60px;">房屋性质</th>
+<td class="formValue"><input id="HouseType" type="text"  class="form-control" ></td>
+<th class="formTitle" style="width: 60px;">二维码门牌</th>
+<td class="formValue"><input id="CodeNumber" type="text"  class="form-control" ></td>
+<th class="formTitle" style="width: 60px;">产权人</th>
+<td class="formValue"><input id="CQRen" type="text"  class="form-control" ></td>
+<th class="formTitle" style="width: 60px;">地址（全）</th>
+<td class="formValue"><input id="AllAddress" type="text"  class="form-control" ></td>
+</tr>
+
+    </table>
+ </div>
+ <div class="gridPanel" >
+     <table id="gridTable" ></table>
+ </div>
+</div>
+<style>
+    body {
+        margin:0px;
+    }
+    .bills {
+        overflow: hidden;
+        border-radius: 0px;
+        position: relative;
+        background: #FFFFFF;
+        border: 0px solid rgb(204, 204, 204);
+        box-shadow:none;
+        padding: 0px;
+    }
+    .ui-widget-content {
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+    }
+</style>

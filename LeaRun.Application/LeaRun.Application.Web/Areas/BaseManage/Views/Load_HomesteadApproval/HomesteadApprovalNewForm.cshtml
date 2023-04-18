@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "辅房审批";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<script>
+    var keyValue = request('keyValue');
+    $(function () {
+        initControl();
+    })
+    //初始化控件
+    function initControl() {
+        //获取表单
+        if (!!keyValue) {
+            $.SetForm({
+                url: "../../BaseManage/Load_HomesteadApproval/GetFormJson",
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $("#form1").SetWebControls(data);
+                }
+            })
+        }
+    }
+    //保存表单;
+    function AcceptClick() {
+        if (!$('#form1').Validform()) {
+            return false;
+        }
+        var postData = $("#form1").GetWebControls(keyValue);
+        $.SaveForm({
+            url: "../../BaseManage/Load_HomesteadApproval/SaveForm?keyValue=" + keyValue,
+            param: postData,
+            loading: "正在保存数据...",
+            success: function () {
+                $.currentIframe().$("#gridTable").trigger("reloadGrid");
+            }
+        })
+    }
+</script>
+<div style="margin-left: 30px; margin-top: 40px; margin-right: 30px;">
+    <table class="form">
+        <tr>
+            <th class="formTitle">户主姓名<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="HouseholderName" type="text" class="form-control" />
+            </td>
+            <th class="formTitle">宅基地批准书号<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="HomesteadNumber" type="text" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <th class="formTitle">批准用地面积<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="ApprovedLandArea" type="text" class="form-control">
+            </td>
+            <th class="formTitle">房屋占地面积<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="HouseArea" type="text" class="form-control">
+            </td>
+
+        </tr>
+        <tr>
+            <th class="formTitle">土地所有权人姓名<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="LandOwnerName" type="text" class="form-control">
+            </td>
+            <th class="formTitle">土地位置<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="LandLocation" type="text" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td class="formTitle">东至</td>
+            <td class="formValue">
+                <input id="EasternBoundary" type="text" class="form-control" />
+            </td>
+            <td class="formTitle">南至</td>
+            <td class="formValue">
+                <input id="SouthernBoundary" type="text" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <td class="formTitle">西至</td>
+            <td class="formValue">
+                <input id="WesternBoundary" type="text" class="form-control" />
+            </td>
+            <td class="formTitle">北至</td>
+            <td class="formValue">
+                <input id="NorthernBoundary" type="text" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <td class="formTitle">批准书有效期</td>
+            <td class="formValue">
+                <input id="ValidityPeriod" type="text" class="form-control" /><p>月</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="formTitle">批准时间</td>
+            <td class="formValue">
+                <input id="ApprovalDate" type="text" class="form-control" value="@LeaRun.Util.Time.GetToday()" />
+            </td>
+        </tr>
+        <tr>
+            <td class="formTitle">备注</td>
+            <td class="formValue">
+                <input id="Remarks" type="text" class="form-control" value="@LeaRun.Util.Time.GetToday()" />
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>token demo</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css">
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://js.arcgis.com/3.32/"></script>
+<script>
+    dojo.require("dijit.layout.BorderContainer");
+    dojo.require("dijit.layout.ContentPane");
+    dojo.require("esri.map");
+    dojo.require("esri/geometry/Point");
+    dojo.require("esri/graphic");
+    dojo.require("esri/layers/GraphicsLayer");
+    var map;
+    function init(token) {
+        map = new esri.Map("map");
+        var layerUrl = 'http://122.193.93.198:8080/OneMapServer/rest/services/tcyx_new/MapServer' + '?token=' + token;
+        var layer = new esri.layers.ArcGISTiledMapServiceLayer(layerUrl);
+        console.log(layer);
+        map.addLayer(layer);
+        var point = new Point([-98, 38]);
+        var resizeTimer;
+        dojo.connect(map, 'onLoad', function (theMap) {
+            dojo.connect(dijit.byId('map'), 'resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function () {
+                    map.resize();
+                    map.reposition();
+                }, 500);
+            });
+        });
+        // 添加点
+        //创建客户端图层
+        var graphicsLayer = new GraphicsLayer();
+        //将客户端图层添加到地图中
+        map.addLayer(graphicsLayer);
+
+        var geometry = new Point({
+            latitude: 121.20422765900003,
+            longitude: 31.596135602000004
+        });
+        var graphic = new Graphic(geometry, pSymbol);
+        graphicsLayer.add(graphic);
+    }
+    dojo.addOnLoad(function () {
+        const tokenServerUrl = "http://122.193.93.198:8080/RemoteTokenServer"
+        const username = 'fuqiao';  // 用户名
+        const password = 'fq123456';  // 密码
+        const clientid = 'ref.localhost';  // 有2种认证方式，referrer和ip，web页面适合使用referrer方式。生产环境中，需要把localhost替换为生产环境的域名
+        const expiration = 30; // token的有效时间，单位是分钟
+        // 使用jquery发送请求，获取token，存在跨域的问题，所以以jsonp方式发送请求
+        $.ajax({
+            url: tokenServerUrl,
+            jsonp: "callback",
+            dataType: "jsonp",
+            data: {
+                request: "getToken",
+                username: username,
+                password: password,
+                clientid: clientid,
+                expiration: expiration,
+                format: "json"
+            }
+        }).then(function (data) {
+            // 返回的数据中，data.token即为认证的token
+            console.log(data);
+            init(data.token)
+        });
+    });
+</script>
+
+</html>

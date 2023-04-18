@@ -1,0 +1,1300 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图</title>
+    <meta name="keywords" content="浮桥镇以房管人大数据系统" />
+    <meta name="description" content="浮桥镇以房管人大数据系统" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="assets/nui.min.css">
+    <link rel="stylesheet" href="assets/shaonq/index.css">
+    <style>
+        html,
+        body,
+        #area {
+            height: 100%;
+            color: #333;
+            line-height: 1.42857143;
+            font-family: tahoma, "microsoft yahei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+            background: #f5f4ee;
+        }
+
+        .esriMapLayers {
+            user-select: none;
+        }
+
+        .from-searchbox {
+            width: 600px;
+            min-height: 45px;
+            box-sizing: border-box;
+            background: #fff;
+            padding: 12px 0 18px;
+        }
+
+        .from-name {
+            font-size: 13px;
+            overflow: hidden;
+            color: #404040;
+        }
+
+        .from-dist {
+            margin-left: 10px;
+            margin-right: 5px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .from-input {
+            color: #333;
+            font-size: 12px;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 9px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #e6e6e6;
+            background-color: #fff;
+            border-radius: 3px;
+            box-sizing: border-box;
+            width: 200px
+        }
+
+        .form-element {
+            display: flex;
+            align-items: first baseline;
+            margin-bottom: 12px;
+        }
+
+        .form-element .nui-btn {
+            font-size: 13px;
+            vertical-align: baseline;
+        }
+
+        .form-title {
+            display: block;
+            font-size: 12px;
+            color: #999;
+            cursor: pointer;
+            width: 80px;
+            min-width: 80px;
+            left: 0;
+            top: 8px;
+        }
+
+        .form-message {
+            font-size: 12px;
+            color: #999;
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+
+        .from-dt {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: 5px;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .from-dd {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #999;
+            margin-top: 3px;
+            cursor: pointer;
+            transition: 200ms;
+        }
+
+        .from-dt:hover,
+        .from-dd:hover {
+            color: blue
+        }
+
+        .from-layer {
+            border: 0;
+            border-radius: 3px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+        }
+
+        .from-layer .nui-open-title {
+            line-height: 38px;
+            height: 38px;
+            font-size: 14px;
+            background-color: #fafafb;
+            border-bottom-color: #eaeaea;
+            font-weight: 700;
+        }
+
+        .area--s {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 500;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 0;
+            box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+        }
+
+        .area--s>div {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjUyNTk0NTM2NjU1IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE1NTQyIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik04NjIuNjA5IDgxNi45NTVMNzI2LjQ0IDY4MC43ODVsLTAuMDU5LTAuMDU2YTM1OC45MDcgMzU4LjkwNyAwIDAgMCA1Ni40My05MS45MjdjMTguODI0LTQ0LjUwNyAyOC4zNjktOTEuNzY3IDI4LjM2OS0xNDAuNDY3IDAtNDguNzAxLTkuNTQ1LTk1Ljk2LTI4LjM2OS0xNDAuNDY3LTE4LjE3Ni00Mi45NzMtNDQuMTktODEuNTYtNzcuMzE5LTExNC42ODktMzMuMTMtMzMuMTI5LTcxLjcxNy01OS4xNDQtMTE0LjY5LTc3LjMyLTQ0LjUwNy0xOC44MjUtOTEuNzY3LTI4LjM3LTE0MC40NjctMjguMzctNDguNzAxIDAtOTUuOTYgOS41NDUtMTQwLjQ2NyAyOC4zNy00Mi45NzMgMTguMTc2LTgxLjU2IDQ0LjE5LTExNC42ODkgNzcuMzItMzMuMTMgMzMuMTI5LTU5LjE0NCA3MS43MTctNzcuMzIgMTE0LjY4OS0xOC44MjUgNDQuNTA3LTI4LjM3IDkxLjc2Ny0yOC4zNyAxNDAuNDY3IDAgNDguNyA5LjU0NSA5NS45NiAyOC4zNyAxNDAuNDY3IDE4LjE3NiA0Mi45NzQgNDQuMTkgODEuNTYxIDc3LjMyIDExNC42OSAzMy4xMjkgMzMuMTI5IDcxLjcxNyA1OS4xNDQgMTE0LjY4OSA3Ny4zMTkgNDQuNTA3IDE4LjgyNCA5MS43NjcgMjguMzY5IDE0MC40NjcgMjguMzY5IDQ4LjcgMCA5NS45Ni05LjU0NSAxNDAuNDY3LTI4LjM2OSAzMi43OC0xMy44NjQgNjIuOTk3LTMyLjMwMyA5MC4xOTctNTQuOTY4IDAuMDYzIDAuMDY0IDAuMTIyIDAuMTMyIDAuMTg2IDAuMTk1bDEzNi4xNjkgMTM2LjE3YzYuMjUgNi4yNSAxNC40MzggOS4zNzMgMjIuNjI4IDkuMzczIDguMTg4IDAgMTYuMzgtMy4xMjUgMjIuNjI3LTkuMzcyIDEyLjQ5Ni0xMi40OTYgMTIuNDk2LTMyLjc1OCAwLTQ1LjI1NHogbS00MTIuMjc0LTY5LjQ2NmMtNzkuOTA3IDAtMTU1LjAzMS0zMS4xMTgtMjExLjUzNC04Ny42Mi01Ni41MDMtNTYuNTAzLTg3LjYyLTEzMS42MjctODcuNjItMjExLjUzNHMzMS4xMTctMTU1LjAzMSA4Ny42Mi0yMTEuNTM0YzU2LjUwMi01Ni41MDMgMTMxLjYyNi04Ny42MiAyMTEuNTM0LTg3LjYyczE1NS4wMzEgMzEuMTE3IDIxMS41MzQgODcuNjJjNTYuNTAyIDU2LjUwMiA4Ny42MiAxMzEuNjI2IDg3LjYyIDIxMS41MzRzLTMxLjExOCAxNTUuMDMxLTg3LjYyIDIxMS41MzRjLTU2LjUwMyA1Ni41MDItMTMxLjYyNyA4Ny42Mi0yMTEuNTM0IDg3LjYyeiIgZmlsbD0iIzcwNzA3MCIgcC1pZD0iMTU1NDMiPjwvcGF0aD48L3N2Zz4=);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: right center;
+            padding-right: 20px;
+        }
+
+        .area--s input {
+            padding: 0 8px;
+            border: none;
+            height: 20px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #242424;
+            cursor: pointer;
+        }
+
+        .area--user,
+        .area--tc,
+        .area--geo,
+        .area--point,
+        .area--full {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 500;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 0;
+            box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+            cursor: pointer;
+
+        }
+
+        .area--tc.active,
+        .area--geo.active,
+        .area--point.active,
+        .area--full.active {
+            background: #ddd;
+        }
+
+        .area--user::after,
+        .area--tc::after,
+        .area--geo::after,
+        .area--point::after,
+        .area--full::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg2MjYzNzMzNDk4IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjM3NjIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTY0MS43NTAxMDkgMzg0LjEwMDAyOGwyMDUuMjI3MTI4LTIwNC41MTktMC43MDQwMzUgMTE1Ljg5OTY2Yy0wLjI4MjQzMyA5LjYxMTkxNSA3LjQ4OTU3OCAxOC4wOTEwMyAxNy4xMDE0OTMgMTcuODA4NTk4bDEyLjI5NzA3MSAwYzkuNjExOTE1LTAuMjgzNDU2IDE3LjY2NzM4Mi01LjkzNjE5OSAxNy44MDg1OTgtMTUuNjg5MzMxbDAuNTY1ODg4LTE3Mi41Nzc1MmMwLTAuMTQyMjQgMC4yODI0MzMtOS4xODcyNDMgMC4yODI0MzMtOS4xODcyNDMgMC4xNDIyNC00LjgwNDQyMy0wLjk5MDU2LTkuMTg3MjQzLTQuMTAwMzg4LTEyLjI5NzA3MS0zLjEwOTgyOC0zLjEwOTgyOC03LjM0NzMzOS01LjA4Njg1NS0xMi4yOTcwNzEtNC45NDY2NjJsLTguNzYzNTk0IDAuMTQyMjRjLTAuMTQxMjE2IDAtMC4yNzgzMzkgMC0wLjQyMDU3OSAwLjE0MjI0TDY5Ny41ODE2OTYgOTguMTY2Nzg3Yy05LjYxMTkxNSAwLjI4MzQ1Ni0xNy42NjczODIgOC4yMDA3NzYtMTcuODA4NTk4IDE3Ljk1MDgzN2wwIDEyLjI5NzA3MWMxLjQxNjI1NiAxMS40NDg3NSAxMC40NTgxODkgMTguMDkyMDU0IDIwLjA3MDEwNCAxNy44MDg1OThsMTEyLjc4OTgzMiAwLjI4MzQ1Ni0yMDQuNjYxMjQgMjAzLjgxNDk2NWMtOS4zMjk0ODMgOS4zMjk0ODMtOS4zMjk0ODMgMjQuNDQ5ODU1IDAgMzMuNzc4MzE0IDkuMzI5NDgzIDkuNDcwNjk5IDI0LjQ1MjkyNSA5LjQ3MDY5OSAzMy43ODI0MDggMEw2NDEuNzUwMTA5IDM4NC4xMDAwMjh6TTM4My4wOTUxNDEgNTc2Ljg4OTg5MyAxNzcuNzI2Nzk3IDc4MC43MDU4ODFsMC43MDcxMDUtMTE1LjMzODg4OGMwLjI4MzQ1Ni05LjYwNzgyMi03LjQ5MjY0OC0xOC4wODY5MzctMTcuMTA0NTYzLTE3LjgwODU5OGwtMTMuMDAxMTA1IDBjLTkuNjExOTE1IDAuMjgzNDU2LTE3LjY2NzM4MiA1LjkzNzIyMy0xNy44MDg1OTggMTUuNjkwMzU0bC0wLjU2NTg4OCAxNzIuNzE4NzM3YzAgMC4xNDIyNC0wLjI4MjQzMyA5LjE4NzI0My0wLjI4MjQzMyA5LjE4NzI0My0wLjE0MjI0IDQuODA4NTE2IDAuOTkwNTYgOS4xODcyNDMgNC4wOTYyOTUgMTIuMjk3MDcxIDMuMTA5ODI4IDMuMTA5ODI4IDcuMzUxNDMyIDUuMDg2ODU1IDEyLjI5NzA3MSA0Ljk0NjY2Mmw4Ljc2MjU3MS0wLjE0MjI0YzAuMTQyMjQgMCAwLjI4MzQ1NiAwIDAuNDI1Njk1LTAuMTQyMjRsMTcxLjg3MzQ4NiAwLjcwODEyOGM5LjYwNzgyMi0wLjI4MzQ1NiAxNy42NjczODItOC4xOTY2ODMgMTcuODA4NTk4LTE3Ljk1MDgzN0wzNDQuOTM1MDMgODMyLjU3NTIyNmMtMS40MTUyMzItMTEuNDQ4NzUtMTAuNDYxMjU5LTE4LjA5MjA1NC0yMC4wNzQxOTgtMTcuODA4NTk4TDIxMi4wNjk5NzcgODE0LjQ4MzE3MiA0MTYuNTkgNjEwLjY3MTI3N2M5LjMyOTQ4My05LjMyOTQ4MyA5LjMyOTQ4My0yNC40NTM5NDggMC0zMy43ODI0MDhDNDA3LjQwNjg1IDU2Ny40MTgxNyAzOTIuNDI0NjI0IDU2Ny40MTgxNyAzODMuMDk1MTQxIDU3Ni44ODk4OTNMMzgzLjA5NTE0MSA1NzYuODg5ODkzek04OTQuMDQ3Mjc2IDgzNS45Njc0ODZsLTAuNDI0NjcyLTE3Mi43MTg3MzdjLTAuMjgzNDU2LTkuNjEyOTM4LTguMjAwNzc2LTE1LjQwNjg5OC0xNy44MDk2MjEtMTUuNjkwMzU0bC0xMi4yOTYwNDcgMGMtOS42MTI5MzgtMC4yNzgzMzktMTcuMjQzNzMzIDguMjAwNzc2LTE3LjEwNTU4NiAxNy44MDg1OThsMC43MDgxMjggMTE1LjkwMzc1M0w2NDEuNzUwMTA5IDU3Ni44ODk4OTNjLTkuMzI5NDgzLTkuMzI5NDgzLTI0LjQ1MjkyNS05LjMyOTQ4My0zMy43ODI0MDggMC05LjMyNTM4OSA5LjMyODQ1OS05LjMyNTM4OSAyNC40NTI5MjUgMCAzMy43ODI0MDhMODEyLjQ5MDc5NSA4MTQuNDgzMTcybC0xMTIuNzg5ODMyIDAuMjgzNDU2Yy05LjYxMTkxNS0wLjI4MzQ1Ni0xOC41MTU3MDIgNi41MDIwODgtMjAuMDczMTc0IDE3LjgwODU5OGwwIDEyLjI5NzA3MWMwLjI4MjQzMyA5LjYxMTkxNSA4LjIwMDc3NiAxNy42NjczODIgMTcuODA4NTk4IDE3Ljk1MDgzN2wxNzEuMTY2MzgxLTAuNzA4MTI4YzAuMTQxMjE2IDAgMC4yODI0MzMgMC4xNDIyNCAwLjQyNDY3MiAwLjE0MjI0bDguNzYzNTk0IDAuMTQyMjRjNC44MDMzOTkgMC4xNDEyMTYgOS4xODcyNDMtMS42OTQ1OTUgMTIuMjk2MDQ3LTQuOTQ2NjYyIDMuMTA5ODI4LTMuMTA5ODI4IDQuMjM4NTM0LTcuNDg4NTU1IDQuMDk3MzE4LTEyLjI5NzA3MSAwIDAtMC4xNDIyNC05LjA0NjAyNy0wLjE0MjI0LTkuMTg3MjQzTDg5NC4wNDcyNzYgODM1Ljk2ODUwOXpNMjEyLjIxNjMwOSAxNDYuNTA2NzQ4bDExMi43ODk4MzItMC4yODM0NTZjOS42MDc4MjIgMC4yODM0NTYgMTguNTEyNjMyLTYuNTAyMDg4IDIwLjA3MDEwNC0xNy44MDg1OThMMzQ1LjA3NjI0NiAxMTYuMTE2NjAxYy0wLjI4MzQ1Ni05LjYxMTkxNS04LjE5NjY4My0xNy42NjczODItMTcuODA4NTk4LTE3Ljk1MDgzN2wtMTcyLjAxMTYzMiAwLjcwODEyOGMtMC4xNDIyNCAwLTAuMjgzNDU2LTAuMTQyMjQtMC40MjU2OTUtMC4xNDIyNGwtOC43NjE1NDgtMC4xNDIyNGMtNC44MDg1MTYtMC4xNDEyMTYtOS4xODcyNDMgMS42OTQ1OTUtMTIuMjk3MDcxIDQuOTQ2NjYyLTMuMTA5ODI4IDMuMTA5ODI4LTQuMjQyNjI3IDcuNDg4NTU1LTQuMDk2Mjk1IDEyLjI5NzA3MSAwIDAgMC4yODI0MzMgOS4wNDYwMjcgMC4yODI0MzMgOS4xODcyNDNsMC40MjA1NzkgMTcyLjcxODczN2MwLjE0MjI0IDkuNjA4ODQ1IDguMjAwNzc2IDE1LjQwNjg5OCAxNy44MDg1OTggMTUuNjg2MjYxbDEzLjAwNTE5OCAwYzkuNjExOTE1IDAuMjgyNDMzIDE3LjI0MjcwOS04LjE5NjY4MyAxNy4xMDA0Ny0xNy44MDg1OThsLTAuNTY0ODY1LTExNS4zMzQ3OTUgMjA1LjIzMTIyMSAyMDMuOTU4MjI4YzkuMzI0MzY2IDkuMzI5NDgzIDI0LjQ0ODgzMiA5LjMyOTQ4MyAzMy43NzcyOTEgMCA5LjMyOTQ4My05LjMyOTQ4MyA5LjMyOTQ4My0yNC40NTI5MjUgMC0zMy43ODI0MDhMMjEyLjIxNjMwOSAxNDYuNTA2NzQ4IDIxMi4yMTYzMDkgMTQ2LjUwNjc0OHpNMjEyLjIxNjMwOSAxNDYuNTA2NzQ4IiBwLWlkPSIzNzYzIiBmaWxsPSIjNzA3MDcwIj48L3BhdGg+PC9zdmc+) no-repeat center;
+            background-size: cover;
+        }
+
+        .area--user::after {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjUyOTc3ODc2MDYyIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI0NjciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTg5OS4yMjA0OCA5MjkuMzg3NTJsLTY0LjA1MTItNjYuMDc4NzJjMjIuMTg0OTYtMjkuMDcxMzYgMzUuNTI3NjgtNjUuMjg1MTIgMzUuNTI3NjgtMTA0LjY4MzUyIDAtOTUuNDQxOTItNzcuMzY4MzItMTcyLjgxMDI0LTE3Mi44MTAyNC0xNzIuODEwMjRzLTE3Mi44MjA0OCA3Ny4zNTgwOC0xNzIuODIwNDggMTcyLjgxMDI0IDc3LjM3MzQ0IDE3Mi44IDE3Mi44MTAyNCAxNzIuODE1MzZjMzkuMzk4NCAwIDc1LjYyMjQtMTMuMzQ3ODQgMTA0LjY2MzA0LTM1LjU2MzUybDY0LjA1NjMyIDY2LjA3MzZhMjMuMDA5MjggMjMuMDA5MjggMCAwIDAgMzIuNTc4NTYgMCAyMy4wMDQxNiAyMy4wMDQxNiAwIDAgMCAwLjA0NjA4LTMyLjU2MzJ6IG0tMjAxLjMzODg4LTQ0LjA0NzM2Yy03MC4wMDU3NiAwLTEyNi43MDk3Ni01Ni43MTkzNi0xMjYuNzA5NzYtMTI2LjcxNDg4IDAtNzAuMDAwNjQgNTYuNzE5MzYtMTI2LjcyNTEyIDEyNi43MDk3Ni0xMjYuNzI1MTIgNzAuMDA1NzYgMCAxMjYuNzIgNTYuNzI0NDggMTI2LjcyIDEyNi43MjUxMiAwLjAxNTM2IDY5Ljk5NTUyLTU2LjcxNDI0IDEyNi43MTQ4OC0xMjYuNzIgMTI2LjcxNDg4ek00OTIuMDY3ODQgNDk0LjU5NzEyYzExOS44MDI4OCAwIDIxNC41MjI4OC05OS44NCAyMTQuNTIyODgtMjE0LjUyOCAwLTExOS44MDgtOTQuNzItMjE0LjUyOC0yMTQuNTIyODgtMjE0LjUyOC0xMTkuODA4IDAtMjE0LjUyOCA5NC43Mi0yMTQuNTI4IDIxNC41MjhzOTQuNzIgMjE0LjUyOCAyMTQuNTI4IDIxNC41Mjh6IiBmaWxsPSIjNzA3MDcwIiBwLWlkPSIyNDY4Ij48L3BhdGg+PHBhdGggZD0iTTYyMi45MzUwNCA1NDIuNjQzMmwtMjIwLjQ2NzItOC4xMjAzMmMtMTQ0LjM4OTEyIDAtMjI5LjM4MTEyIDEwOS41NjgtMjI5LjM4MTEyIDEwOS41NjgtNzkuODcyIDg5LjYtNzQuNzUyIDIxNC41MjgtNzQuNzUyIDIxNC41MjggMCA4NC40OCAxMjkuNTM2IDg5LjYgMTI5LjUzNiA4OS42IDQ1LjA1NiA1LjEyIDE2OS40NzcxMiA1LjEyIDIzNC40OTYgNS4xMiA0MC4xMTUyIDAgNjguODQzNTItNS4wNDMyIDg2LjI5MjQ4LTEzLjgxODg4LTQ0LjE2NTEyLTQ0LjMwMzM2LTcxLjQ3NTItMTA1LjQyMDgtNzEuNDc1Mi0xNzIuOTE3NzYgMC4wMDUxMi05OS45NTc3NiA1OS45MDkxMi0xODUuODcxMzYgMTQ1Ljc1MTA0LTIyMy45NTkwNHoiIGZpbGw9IiM3MDcwNzAiIHAtaWQ9IjI0NjkiPjwvcGF0aD48L3N2Zz4=);
+        }
+
+        .area--full[data-style]::after {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg2MjYzOTQwNDcwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjcxMDciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTE0Mi40IDk2LjhsLTQ0LjggNDQuOCAxNzMuNiAxNzQuNC02OCA2OEgzODRWMjAzLjJsLTY3LjIgNjcuMnpNNzUyLjggMzE2bDE3My42LTE3NC40LTQ0LjgtNDQuOC0xNzQuNCAxNzMuNi02Ny4yLTY3LjJWMzg0aDE4MC44ek0yNzAuNCA3MDcuMmwtMTY5LjYgMTcwLjQgNDQuOCA0OS42IDE3MC40LTE3NC40IDY4IDY4VjY0MEgyMDMuMnpNODIwLjggNjQwSDY0MHYxODAuOGw2OC02OCAxNzAuNCAxNzQuNCA0NC44LTQ5LjYtMTY5LjYtMTcwLjR6IiBwLWlkPSI3MTA4IiBmaWxsPSIjNzA3MDcwIj48L3BhdGg+PC9zdmc+);
+        }
+
+        .icon-svg-point>i,
+        .area--point::after {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjUyNTk1MTE2MTY3IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE3ODk4IiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik01MTIgMjIyLjU4NjQzNmMtNzQuODA3ODM1IDAtMTM1LjUyMTQ0IDU5LjgxMDEyOS0xMzUuNTIxNDQgMTMzLjU5NDAyNHM2MC42ODM0ODkgMTMzLjU5NDAyNCAxMzUuNTIxNDQgMTMzLjU5NDAyNCAxMzUuNTUxNTU2LTU5Ljc4MDAxMyAxMzUuNTUxNTU2LTEzMy41OTQwMjRDNjQ3LjU1MTU1NiAyODIuMzk2NTY1IDU4Ni43Nzc3MTkgMjIyLjU4NjQzNiA1MTIgMjIyLjU4NjQzNk01MTIgMEMzMTIuNDIyMDkzIDAgMTUwLjYwOTQ5NCAxNDkuMTAzNyAxNTAuNjA5NDk0IDMzMy4wODE1ODNjLTAuMDMwMTE2IDE4NC4wMDggMzYxLjM5MDUwNiA2OTAuOTE4NDE3IDM2MS4zOTA1MDYgNjkwLjkxODQxN3MzNjEuMzkwNTA2LTUwNi45MTA0MTcgMzYxLjM5MDUwNi02OTAuOTE4NDE3Qzg3My4zNjAzOTEgMTQ5LjE2MzkzMiA3MTEuNTc3OTA3IDAgNTEyIDBNNTEwLjk0NTk0NCA1NzUuMDAyNDEyYy0xMTkuNzcwODM3IDAtMjI4Ljk0MDg4Ni0xMjAuODg1MTI0LTIyOC45NDA4ODYtMjM0LjAwMDM1MyAwLTExMy4xNDUzNDQgMTEwLjIyNDEwNC0yMTIuOTc5NDcyIDIyOS45NjQ4MjYtMjEyLjk3OTQ3MlM3NDAuODgwNjU0IDIyOC45NzEwMDIgNzQwLjg4MDY1NCAzNDIuMDg2MjNDNzQwLjk0MDg4NiA0NTUuMTExMTExIDYzMC43NDY4OTcgNTc1LjAwMjQxMiA1MTAuOTQ1OTQ0IDU3NS4wMDI0MTIiIHAtaWQ9IjE3ODk5IiBmaWxsPSIjNzA3MDcwIj48L3BhdGg+PC9zdmc+);
+        }
+
+        .icon-svg-point>i {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-size: cover;
+        }
+
+        .icon-svg-point:active>i {
+            transform: scale(1.1);
+        }
+
+        .area--point {
+            right: 115px;
+        }
+
+        .area--tc {
+            right: 45px;
+        }
+
+        .area--geo {
+            right: 80px;
+        }
+
+        .area--tc::after {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5MTA4NjA1NjMzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjQ3NzMiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTgxMi44IDU1MS4yMzJjNTYtNzIuMzg0IDk5LjAwOC0xMzMuODI0IDk5LjAwOC0yMDMuMzI4IDAtMTEyLjg5Ni05NC44NDgtMjA0LjM1Mi0yMTEuOTY4LTIwNC4zNTJzLTIxMS45NjggOTEuNTItMjExLjk2OCAyMDQuMzUyYzAgNjIuNCAzNi44NjQgMTIxLjk4NCA4NS4wNTYgMTg2LjM2OGwtNTcuOTg0IDE4LjU2TDQwMi41NiA1MTcuMzEyQzQxNi40NDggNDk0LjA4IDQyNS4zNDQgNDcxLjU1MiA0MjUuMzQ0IDQ0Ny4yOTZjMC02NC4wNjQtNTEuODQtMTE1Ljk2OC0xMTUuNzEyLTExNS45NjgtNjMuOTM2IDAtMTE1LjcxMiA1MS45MDQtMTE1LjcxMiAxMTUuOTY4IDAgMjYuNzUyIDExLjcxMiA1Mi42NzIgMjguNjcyIDc5LjQ4OEwyMjIuMDggNTI2Ljg0OCA2NCA4ODAuNTEybDIzOC44NDgtOTAuMTEyIDIxNy4zNDQgOTAuMTEyIDIwNC4wMzItOTAuMTEyTDk2MCA4ODAuNTEyIDgxMi44IDU1MS4yMzJ6TTY5OS45MDQgMjQ4LjY0YzU2LjgzMiAwIDEwMi45MTIgNDQuNDE2IDEwMi45MTIgOTkuMjY0cy00Ni4xNDQgOTkuMzI4LTEwMi45MTIgOTkuMzI4Yy01Ni44OTYgMC0xMDIuOTEyLTQ0LjQ4LTEwMi45MTItOTkuMzI4UzY0My4wMDggMjQ4LjY0IDY5OS45MDQgMjQ4LjY0ek0zMDkuNjk2IDM5MC45NzZjMzAuOTc2IDAgNTYuMTkyIDI1LjIxNiA1Ni4xOTIgNTYuMzIgMCAzMS4wNC0yNS4yMTYgNTYuMzItNTYuMTkyIDU2LjMyLTMxLjA0IDAtNTYuMTkyLTI1LjI4LTU2LjE5Mi01Ni4zMkMyNTMuNTA0IDQxNi4xOTIgMjc4LjY1NiAzOTAuOTc2IDMwOS42OTYgMzkwLjk3NnpNNzIwLjEyOCA3MzYuODMybC0yMDAuMDY0IDg2LjY1Ni0yMTMuMjQ4LTg2LjY1Ni0xNTkuMDQgNzIuNDQ4IDkxLjEzNi0yMzUuMTM2IDE0Ljg0OC0yLjgxNmMxOC4xMTIgMjQuMTkyIDM3Ljg4OCA0OS43MjggNTUuOTM2IDc4LjA4QzMzMi4xNiA2MTMuNTA0IDM1NS43NzYgNTgzLjY4IDM3NS45MzYgNTU2LjI4OEw1MTUuMDcyIDYwMC45Nmw4Ny4xMDQtMjguMzUyYzMxLjg3MiA0MC44OTYgNjYuMTc2IDg0LjAzMiA5Ny42NjQgMTMxLjU4NCAyOS41MDQtNDUuMzEyIDYwLjAzMi04NC44NjQgODguNjQtMTIxLjUzNmw5MS45MDQgMjI5LjUwNEw3MjAuMTI4IDczNi44MzJ6IiBwLWlkPSI0Nzc0IiBmaWxsPSIjNzA3MDcwIj48L3BhdGg+PC9zdmc+);
+        }
+
+        .area--geo::after {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5MjA2ODQxMDIwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjExMjY5IiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik01MTEuOTggOTYyLjE2MWMtMjQ3LjgzNSAwLTQ0OC43NDctMjAwLjkxMi00NDguNzQ3LTQ0OC43NDdTMjY0LjE0NiA2NC42NjggNTExLjk4IDY0LjY2OCA5NjAuNzI3IDI2NS41OCA5NjAuNzI3IDUxMy40MTQgNzU5LjgxNSA5NjIuMTYxIDUxMS45OCA5NjIuMTYxeiBtMC04MTUuOTAzYy0yMDIuNzc2IDAtMzY3LjE1NiAxNjQuMzgtMzY3LjE1NiAzNjcuMTU2UzMwOS4yMDQgODgwLjU3IDUxMS45OCA4ODAuNTdzMzY3LjE1Ni0xNjQuMzggMzY3LjE1Ni0zNjcuMTU2UzcxNC43NTcgMTQ2LjI1OCA1MTEuOTggMTQ2LjI1OHogbTE4My45NTQgNTgzLjkwOWwtMTAuNTc0IDYuMzQ4LTMwLjU5NiAxOS4xMjEtMTguMDMxIDEzLjUyNGMtMTMuNDA1IDYuNTYtMjcuNDAyIDExLjc0NS00MS44ODQgMTYuMTYzdi0xOC4yMTFsLTUuMTAzLTQyLjA3MnMtMi41NDYtMjQuMjItNi4zNzItMzAuNTk2Yy0zLjgyNy02LjM3Mi0xMi43NDktMTUuMjk4LTIxLjY3NC0xOS4xMjUtOC45MjItMy44MjMtMTUuMjk0LTMuODIzLTIwLjM5My0xMC4xOTktNS4wOTktNi4zNzItOC45MjYtMTcuODQ0LTE1LjMwMi0yOC4wNDMtNi4zNzItMTAuMTk5LTE0LjAyMS0yMC4zOTgtMTQuMDIxLTI1LjUwMVY1NTQuMjFsNi4zNzYtNDguNDQ0IDE0LjAyMS0xMC4xOTkgMTYuNTcxLTE5LjEyMSAxMS40NzYtMy44MjcgMzkuNTIyIDcuNjQ5aDI4LjA0N2wxMS40NzIgMjQuMjIgMjYuNzcgMjEuNjc0IDE2LjU3NSAyNi43NyAyMS42NzQgNy42NDloMjQuMjJsMTYuNTc1IDIwLjM5OCAxMC4xOTkgMjEuNjc0IDMuODIzIDE1LjI5OHYyNS40OTdsLTIuNjE5IDE1LjA2NmMtMTYuMjEyIDI3LjI2NC0zNi43MTIgNTEuMjMxLTYwLjc1MiA3MS42NTN6IG0tOTguNTQxLTQzOS44NTNsLTI4LjA0MyAxNS4zMDItMTAuMTk5IDI5LjMxOS0xNi41NzUgMTUuMjk4SDQ4Ny43NmwtMjUuNTAxIDEwLjE5OS0xLjI3MyAyMC4zOTgtMTAuMTk5IDE2LjU3NS0yLjU1IDE3Ljg0OCA1LjA5OSAxNS4yOTQgNi4zNzYgMTUuMzAyczE1LjI5NCAxNy44NDQgMCAzMC41OTZjMCAwLTE5LjEyNSAwLTIyLjk0Ny02LjM3Ni0zLjgyNy02LjM3Ni0zMS44NzMtMjQuMjItMzYuOTczLTI5LjMyNC01LjA5OS01LjA5NS0yMS42Ny0xMC4xOTktMjEuNjctMTAuMTk5bC0yMC40MDItNy42NDktMTkuMTIxLTEuMjczIDEuMjc3LTI2Ljc3LTEuMjc3LTIyLjk1MS03LjY0OS0xNi41NzEtMjEuNjctMTYuNTc1LTEuMjc3LTE3Ljg0OCAyLjY0NC05LjkwOWM1MS42MzQtNTEuMzYxIDEyMi43NTMtODMuMTUzIDIwMS4zMzItODMuMTUzIDQ0LjMzMiAwIDg1Ljc4NCAxMC45NjIgMTIzLjIyMiAyOC45OTNsLTAuODM2IDYuNzAzLTM2Ljk3MiAyNi43NzF6IiBwLWlkPSIxMTI3MCIgZmlsbD0iIzcwNzA3MCI+PC9wYXRoPjwvc3ZnPg==);
+        }
+
+        .area--point>span {
+            box-sizing: border-box;
+            text-align: center;
+            position: absolute;
+            left: 8px;
+            top: -10px;
+            background: red;
+            color: #fff;
+            border-radius: 999px;
+            padding: 0 0.5em;
+            min-width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            transform: scale(.7);
+        }
+
+        .from-table th,
+        .from-table td {
+            font-size: 12px;
+            color: #404040;
+            padding: 5px 5px;
+            border-color: #eaeaea;
+        }
+
+        .from-table tr.active {
+            background-color: #edf2fd;
+        }
+
+        .from-table .thead {
+            background-color: #fafafb;
+        }
+
+        .from-title {
+            font-weight: 700;
+            color: #2058e1;
+        }
+
+        .layer-tip {
+            -webkit-animation-name: fade-in !important;
+            animation-name: fade-in !important;
+            min-width: auto;
+            font-size: 12px;
+            padding: 5px 12px 3px;
+            border: 0;
+            color: #999;
+            border-radius: 3px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+        }
+
+        .from-tag {
+            display: inline-block;
+            text-align: center;
+            width: 70px;
+            font-size: 12px;
+            margin-bottom: 3px;
+            margin-right: 3px;
+            height: 26px;
+            line-height: 26px;
+            cursor: pointer;
+            border: 1px solid #eaeaea;
+            border-radius: 4px;
+            color: #999;
+            background-color: #f4f4f5;
+            transition: 200ms;
+            box-sizing: border-box;
+        }
+
+        .from-tag.active {
+            background: #1780fb;
+            color: #fff;
+            border-color: #1780fb;
+        }
+
+        .from-card {
+            color: #404040;
+            border: 1px solid #eaeaea;
+            margin-bottom: 10px;
+            background: #fff;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+
+        .from-card-hd {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 38px;
+            padding: 0 12px;
+            border-bottom: 1px solid #f6f6f6;
+            box-sizing: border-box;
+        }
+
+        .from-card-bd {
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .svg-active {
+            position: relative;
+            transform: translateY(0);
+            /* 以上代码是固定发送动画位置用的 */
+        }
+
+        .svg-active {
+            animation: svg-bounce 250ms alternate ease-out infinite;
+        }
+
+        @keyframes svg-bounce {
+            100% {
+                transform: translateY(-40px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        <div class="area--s" data-event="showSearchbox">
+            <div><input readonly placeholder="搜索" title="搜索"></div>
+        </div>
+        <i class="area--user" title="用户查询" style="left: 200px;right: auto;"></i>
+        <i class="area--full" title="全屏"></i>
+        <i class="area--tc" data-event="showMapWxt" title="卫星图"></i>
+        <i class="area--geo" data-event="showTcGeo" title="区域"></i>
+        <i class="area--point" data-event="showSelected" title="选中的点"></i>
+    </div>
+
+    <!-- 搜索功能 -->
+    <div style="display:none;">
+        <div class="from-searchbox">
+            <div class="nui-grid">
+                <div class="nui-grid-50">
+                    <div class="form-element">
+                        <label class="form-title">村落（区）</label>
+                        <select class="from-input" data-select2="村落（区）" name="Arear" />
+                        <option value="">--请选择--</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="nui-grid-50">
+                    <div class="form-element">
+                        <label class="form-title">住址</label>
+                        <input class="from-input" name="Alladdress" />
+                    </div>
+                </div>
+                <div class="nui-grid-50">
+                    <div class="form-element">
+                        <label class="form-title">网格名称</label>
+                        <select class="from-input" data-select2="网格名称" name="ArearNumber" />
+                        <option value="">--请选择--</option></select>
+                    </div>
+                </div>
+                <div class="nui-grid-50">
+                    <div class="form-element">
+                        <label class="form-title">二维码门牌</label>
+                        <input class="from-input" name="CodeNumber" />
+                    </div>
+                </div>
+                <div class="nui-grid-50">
+                    <div class="form-element">
+                        <label class="form-title">房屋性质</label>
+                        <select class="from-input" data-select2="房屋性质" name="HouseType" />
+                        <option value="">--请选择--</option></select>
+                    </div>
+                </div>
+                <div class="nui-grid-50">
+                    <div class="form-element">
+                        <label class="form-title">产权人</label>
+                        <input class="from-input" name="CQRen" />
+                    </div>
+                </div>
+                <div class="nui-grid-100">
+                    <div class="form-element">
+                        <label class="form-title"></label>
+                        <a class="nui-btn nui-btn-width" style="border-radius: 40px;" data-event="querySubmit">查询</a>
+                        <a class="nui-btn nui-btn-width nui-btn-default" style="border-radius: 40px;"
+                            data-event="queryReset">重置</a>
+                        <a class="nui-btn nui-btn-width nui-btn-default" style="border-radius: 40px;"
+                            data-event="hideSearchbox">最小化</a>
+                    </div>
+                </div>
+            </div>
+            <div style=" border-top: 1px solid #eaeaea;padding-top:10px;">
+                <div class="nui-grid" style="color:#404040;font-size: 12px;">
+                    <div class="nui-grid-33">
+                        <div class="from-dt" data-event="searchHome"><span>房屋总数</span><span
+                                data-count="HouseType">0</span></div>
+                        <div class="from-dd" data-event="searchHome"><span>宅基地</span><span data-count="宅基地">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchHome"><span>拆迁公寓</span><span data-count="拆迁公寓">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchHome"><span>临时建筑</span><span data-count="临时建筑">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchHome"><span>员工宿舍</span><span data-count="员工宿舍">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchHome"><span>商铺</span><span data-count="商铺">0</span></div>
+                        <div class="from-dd" data-event="searchHome"><span>门面房</span><span data-count="门面房">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchHome"><span>车库</span><span data-count="车库">0</span></div>
+                        <div class="from-dd" data-event="searchHome"><span>公房</span><span data-count="公房">0</span></div>
+                        <div class="from-dd" data-event="searchHome"><span>辅房</span><span data-count="辅房">0</span></div>
+                        <div class="from-dd" data-event="searchHome"><span>其他</span><span data-count="其他">0</span></div>
+                    </div>
+                    <div class="nui-grid-33">
+                        <div class="from-dt" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":""}'>
+                            <span>人员总数</span>
+                            <span data-count="RenAllCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"常住","ImpRen":""}'>
+                            <span>常住</span>
+                            <span data-count="HouseCZCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"老宅","ImpRen":""}'>
+                            <span>老宅</span>
+                            <span data-count="HouseLZCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"租住","ImpRen":""}'>
+                            <span>租住</span>
+                            <span data-count="HouseZZCount">0</span>
+                        </div>
+                    </div>
+                    <div class="nui-grid-33">
+                        <div class="from-dt" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"重点人员"}'>
+                            <span>重点人员</span>
+                            <span data-count="RenImpCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"低保人员"}'>
+                            <span>低保人员</span>
+                            <span data-count="RenDBCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"保边缘人员"}'>
+                            <span>保边缘人员</span>
+                            <span data-count="RenDBBYCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"残疾人员"}'>
+                            <span>残疾人员</span>
+                            <span data-count="RenCJRCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"孕妇"}'>
+                            <span>孕妇</span>
+                            <span data-count="RenYFCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"重病人员"}'>
+                            <span>重病人员</span>
+                            <span data-count="RenZBRYCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"高龄人员"}'>
+                            <span>高龄人员</span>
+                            <span data-count="RenGLCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"优抚对象"}'>
+                            <span>优抚对象</span>
+                            <span data-count="RenYFDXCount">0</span>
+                        </div>
+                        <div class="from-dd" data-event="searchUser" data-query='{"JZRenType":"","ImpRen":"其他"}'>
+                            <span>其他</span>
+                            <span data-count="RenQiCount">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="content"></div> -->
+        </div>
+    </div>
+    <!-- 依赖 -->
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/nui.min.js"></script>
+    <script src="assets/shaonq/index.js"></script>
+    <script src="assets/echarts.min.js"></script>
+    <!-- 地图 -->
+    <link rel="stylesheet" href="https://js.arcgis.com/3.40/esri/css/esri.css" />
+    <script src="https://js.arcgis.com/3.40/init.js"></script>
+    <script src="assets/terraformer.js"></script>
+    <script src="assets/terraformer-arcgis-parser.js"></script>
+    <script src="assets/TcMapUtil.js?v0.001"></script>
+    <script type="html/text" id="searchUserTpl">
+        <div style="padding-bottom: 20px;height: 100%;box-sizing: border-box;">
+            <div style="height: 100%; overflow-y: auto;padding-right: 8px;">
+                <div>
+                    <table class="nui-table from-table">
+                        <thead>
+                            <tr class="thead">
+                                <th width="26">序号</th>
+                                <th width="60">村居</th>
+                                <th width="60">网格名称</th>
+                                <th width="100">坐落详址</th>
+                                <th width="50">房屋类型</th>
+                                <!-- <th width="80">二维码门牌</th><th width="40">产权人</th> -->
+                                <th width="40">居住人</th>
+                                <th width="30">性别</th>
+                                <th width="50">居住类型</th>
+                                <th width="130">身份证号码</th>
+                                <th width="130">居住证号码</th>
+                                <th width="90">电话</th>
+                                <th width="80">居住地</th>
+                                <th width="110">户籍信息</th>
+                                <th width="90">职业</th>
+                                <th width="100">工作地址</th>
+                                <th width="60">重点人员</th>
+                                <th width="50">具体情况</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{# for(var i in d.data){var item=d.data[i];var index=+i+1;}}<tr  data-id="{{item.IDCard}}">
+                                <td>{{index}}</td>
+                                <td>{{item.Arear}}</td>
+                                <td>{{item.ArearNumber}}</td>
+                                <td>{{item.Address}}</td>
+                                <td>{{item.HouseType}}</td>
+                                <!-- <td>{{item.CodeNumber}}</td><td>{{item.CQRen}}</td> -->
+                                <td>{{item.JZRenName}}</td>
+                                <td>{{item.Sex}}</td>
+                                <td>{{item.JZRenType}}</td>
+                                <td>{{item.IDCard}}</td>
+                                <td>{{item.JZNumber}}</td>
+                                <td>{{item.Phone}}</td>
+                                <td>{{item.SJJZAddress}}</td>
+                                <td>{{item.HJInfo}}</td>
+                                <td>{{item.ZhiYe}}</td>
+                                <td>{{item.WordAddress}}</td>
+                                <td>{{item.ImpRen}}</td>
+                                <td>{{item.JTQingKuang}}</td>
+                                <td>{{item.Note}}</td>
+                            </tr>{{# } }}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="html/text" id="searchHomeTpl">
+        <div style="padding-bottom: 20px;height: 100%;box-sizing: border-box;">
+            <div style="height: 100%;max-height:590px; overflow-y: auto;padding-right: 8px;">
+                <div >
+                 <table class="nui-table from-table">
+                     <thead>
+                         <tr class="thead">
+                             <th width="26">序号</th>
+                             <th width="60">村居</th>
+                             <th width="60">网格名称</th>
+                             <th>坐落详址</th>
+                             <th width="50">房屋性质</th>
+                             <th width="40">总人数</th>
+                             <th width="40">定位</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         {{# for(var i in d.data){var item=d.data[i];var index=+i+1;}}<tr data-key="{{item.HouseType}}"  data-id="{{item.ID}}">
+                             <td>{{index}}</td>
+                             <td>{{item.Arear}}</td>
+                             <td>{{item.ArearNumber}}</td>
+                             <td>{{item.Address}}</td>
+                             <td>{{item.HouseType}}</td>
+                             <td>{{item.RenAllCount}}</td>
+                             <td data-tpl-graphic="{{item.adX}},{{item.Ady}}" class="icon-svg-point u-center"><i ></i></td>
+                         </tr>{{# } }}
+                     </tbody>
+                 </table>
+                </div>
+             </div>
+        </div>
+    </script>
+    <script type="html/text" id="diyHomeTpl">
+        <div class="from-card">
+            <div class="from-card-hd"> <span class="from-title">房屋信息</span></div>
+            <div class="from-card-bd">
+                <div class="u-flex">
+                    <div style="width:180px;min-width:180px;height:120px;background:#f3f3f3;border-radius: 6px;"> </div>
+                    <div style="margin-left: 30px;">
+                        <div>
+                            <div class="nui-inline" style="width:260px">
+                                <div class="form-element">
+                                    <label class="form-title">所属网格</label> <span style="font-size: 13px;" data-tpl="ArearNumber"></span>
+                                </div>
+                            </div>
+                            <div class="nui-inline" style="width:260px">
+                                <div class="form-element">
+                                    <label class="form-title">二维码门牌</label> <span style="font-size: 13px;" data-tpl="CodeNumber"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="nui-inline" style="width:260px">
+                                <div class="form-element">
+                                    <label class="form-title">详细地址</label> <span style="font-size: 13px;" data-tpl="AllAddress"></span>
+                                </div>
+                            </div>
+                            <div class="nui-inline" style="width:260px">
+                                <div class="form-element">
+                                    <label class="form-title">产权人</label> <span style="font-size: 13px;" data-tpl="CQRen"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="nui-inline">
+                                <div class="form-element">
+                                    <label class="form-title">房屋人员</label> <span style="font-size: 13px;" data-tpl="Name"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="u-flex u-flex--start" style="margin-top:10px">
+            <div class="u-flex__item" style="min-width:490px">
+                <div class="from-card">
+                    <div class="from-card-hd"><span class="from-title">房屋列表</span></div>
+                    <div class="from-card-bd">
+                        <div class="from-tag active" data-tpl-event="searchHome">
+                            <span>房屋总数</span><span data-tpl-count="HouseType">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>宅基地</span><span data-tpl-count="宅基地">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>拆迁公寓</span><span data-tpl-count="拆迁公寓">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>临时建筑</span><span data-tpl-count="临时建筑">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>员工宿舍</span><span data-tpl-count="员工宿舍">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>商铺</span><span data-tpl-count="商铺">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>门面房</span><span data-tpl-count="门面房">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>车库</span><span data-tpl-count="车库">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>公房</span><span data-tpl-count="公房">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>辅房</span><span data-tpl-count="辅房">0</span>
+                        </div>
+                        <div class="from-tag" data-tpl-event="searchHome">
+                            <span>其他</span><span data-tpl-count="其他">0</span>
+                        </div>
+                        <div style="height:387px;margin-top:12px"> {{ d.table }}</div>
+                    </div>
+                </div>
+            </div>
+            <div style="width:12px;"></div>
+            <div class="u-flex__item">
+                <div class="from-card">
+                    <div class="from-card-hd"> <span class="from-title">人口信息</span></div>
+                    <div class="from-card-bd" style="border-bottom: 1px solid #f6f6f6;padding: 12px;">
+                        <div class="u-flex" style="justify-content: space-between;">
+                            <div class="from-dt" style="width:100px;min-width:100px;padding-right:12px"
+                                data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":""}'>
+                                <span>人员总数</span>
+                                <span data-tpl-count="RenAllCount">0</span>
+                            </div>
+                            <div class="u-flex__item" style="border-left: 1px solid #eee; padding-left: 30px;">
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"常住","ImpRen":""}'>
+                                    <span>常住</span>
+                                    <span data-tpl-count="HouseCZCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"老宅","ImpRen":""}'>
+                                    <span>老宅</span>
+                                    <span data-tpl-count="HouseLZCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"租住","ImpRen":""}'>
+                                    <span>租住</span>
+                                    <span data-tpl-count="HouseZZCount">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="from-card-bd" style=" padding: 12px;">
+                        <div class="u-flex" style="justify-content: space-between;">
+                            <div class="from-dt" style="width:100px;min-width:100px;padding-right:12px"
+                                data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"重点人员"}'>
+                                <span>重点人员</span>
+                                <span data-tpl-count="RenImpCount">0</span>
+                            </div>
+                            <div class="u-flex__item"  style="border-left: 1px solid #eee;padding-left: 30px;">
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"低保人员"}'>
+                                    <span>低保人员</span>
+                                    <span data-tpl-count="RenDBCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"保边缘人员"}'>
+                                    <span>保边缘人员</span>
+                                    <span data-tpl-count="RenDBBYCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"残疾人员"}'>
+                                    <span>残疾人员</span>
+                                    <span data-tpl-count="RenCJRCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"孕妇"}'>
+                                    <span>孕妇</span>
+                                    <span data-tpl-count="RenYFCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"重病人员"}'>
+                                    <span>重病人员</span>
+                                    <span data-tpl-count="RenZBRYCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"高龄人员"}'>
+                                    <span>高龄人员</span>
+                                    <span data-tpl-count="RenGLCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"优抚对象"}'>
+                                    <span>优抚对象</span>
+                                    <span data-tpl-count="RenYFDXCount">0</span>
+                                </div>
+                                <div class="from-dd" data-tpl-event="searchUser" data-query='{"JZRenType":"","ImpRen":"其他"}'>
+                                    <span>其他</span>
+                                    <span data-tpl-count="RenQiCount">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-element" style="padding: 42px 12px 0;justify-content: center;">
+                    <a class="nui-btn nui-btn-width nui-btn-btn" style="border-radius: 40px;">清除记录</a>
+                    <a class="nui-btn nui-btn-width nui-btn-default" style="border-radius: 40px;margin-left:24px;">关闭</a>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script>
+        $(function () {
+            // 加载查询条件
+            function loadSelectInfo() {
+                $.post('https://cctv.tcfuqiao.com/mes/mesapi/GetDataItemDetail', function (res) {
+                    var list = res.data;
+                    if (list) {
+                        list.forEach(function (item) {
+                            $("[data-select2='" + item.ItemName + "']").append("<option value='" + item.ItemValue + "'>" + item.ItemValue + "</option>")
+                        })
+                        // select2
+                    }
+                }).error(function () { shaonq.toast('网络超时') })
+            }
+            // 地图初始化
+            new TcMapUtil({
+                el: 'area',
+                domain: 'http://dt.tcfuqiao.com',
+                onReady: function (map, mapUtil) {
+                    window.map = map;
+                    mapUtil.centerAndZoom([121.20051808655272, 31.604549381333538], 13);
+                    init(map, mapUtil);
+                }
+            });
+            loadSelectInfo();
+            // 创建搜索窗口
+            nui.open({
+                title: "条件查询",
+                content: '',
+                skin: 'from-layer from-layer-search',
+                offset: "20%",
+                close: false,
+                shadow: false,
+                success: function (that) {
+                    $('.from-searchbox').show().parent().contents().appendTo(that.css({ zIndex: 999 }).find(".nui-open-bd"));
+                    that.hide()
+                }
+            })
+            function init(map, mapUtil) {
+                // 记录地图上的点
+                var graphics = [];
+                // 记录点击的点
+                var selectGraphics = [];
+                // 数据统计
+                function homesCount(list) {
+                    // 数据统计
+                    var count = { HouseType: 0 };
+                    // HouseLZCount  老宅 | HouseCZCount 常住 | HouseZZCount 租住 ;
+                    var countKeys = ["HouseLZCount", "HouseCZCount", "HouseZZCount", "RenAllCount", "RenImpCount", "RenDBCount", "RenDBBYCount", "RenCJRCount", "RenYFCount", "RenZBRYCount", "RenGLCount", "RenYFDXCount", "RenQiCount"];
+                    countKeys.forEach(function (key) { count[key] = 0 });
+                    var _HouseType = "宅基地0拆迁公寓0临时建筑0员工宿舍0商铺0门面房0车库0公房0辅房0其他".split("0");
+                    for (var key in _HouseType) count[_HouseType[key]] = 0;
+                    list.forEach(function (item) {
+                        // @TODO: 数据统计 分类求和
+                        countKeys.forEach(function (key) { count[key] += (item[key] || 0) });
+                        // 房屋类型
+                        count.HouseType += 1;
+                        if (typeof item.HouseType === "string") count[item.HouseType] += 1;
+                    })
+                    return count;
+                }
+                function clearSelectGraphics() {
+                    selectGraphics = [];
+                    graphics.forEach(function (graphic) { mapUtil.changeMarkerIcon(graphic, 'blue') })
+                    $(".area--point").html('')
+                }
+
+                // 公共事件
+                var dataEvent = {
+                    showMapWxt: function () {
+                        var that = $(this);
+                        mapUtil.loadTaiCangMapSync(function (el) {
+                            el.visible ? (el.hide(), that.removeClass("active")) : (el.show(), that.addClass("active"))
+                        })
+                    },
+                    showTcGeo: function () {
+                        var ids = map.graphicsLayerIds;
+                        var that = $(this);
+                        if (ids && ids.length) {
+                            var el = map.getLayer(ids[0]);
+                            el.visible ? (el.hide(), that.removeClass("active")) : (el.show(), that.addClass("active"))
+                        } else {
+                            mapUtil.addGeoJsonLayer("./assets/geoJSON.json");
+                            that.addClass("active")
+                        }
+                    },
+                    showSearchbox: function () {
+                        $(this).addClass("active")
+                        $(".from-layer-search").show();
+                    },
+                    hideSearchbox: function () {
+                        $(this).removeClass("active")
+                        $(".from-layer-search").hide();
+                    },
+                    queryReset: function () {
+                        $(".from-searchbox [name]").each(function () {
+                            $(this).val("");
+                        })
+                        dataEvent.querySubmit();
+                    },
+                    searchUser: function () {
+                        var that = $(this);
+                        var data = that.data("query") || {};
+                        $(".from-searchbox [name]").each(function () {
+                            var that = $(this);
+                            data[that.attr("name")] = that.val()
+                        })
+                        var spans = [];
+                        that.find("span").each(function () {
+                            spans.push(this.innerText)
+                        })
+                        // JZRenType ImpRen
+                        if (!+spans[1]) return shaonq.toast("无查询数据");
+                        shaonq.showLoading("正在读取用户")
+                        $.ajax({
+                            url: 'https://cctv.tcfuqiao.com/mes/mesapi/GetRenInfo',
+                            data: JSON.stringify(data),
+                            type: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            timeout: 1e4,
+                            success: function (res) {
+                                if (res.data) {
+                                    shaonq.hideToast();
+                                    dataEvent._searchUser(res.data, "用户列表 - " + spans[0]);
+                                } else shaonq.toast('查询出错')
+                            },
+                            error: function () {
+                                shaonq.toast('网络超时')
+                            }
+                        });
+                    },
+                    _searchUser: function (data, title) {
+                        nui.open({
+                            content: nui.tpl($("#searchUserTpl").html(), { data: data }),
+                            title: title,
+                            shadow: false,
+                            skin: "from-layer",
+                            full: true,
+                            width: ["90%", "80%"],
+                            fixed: true,
+                            shadeClose: true,
+                            success: function ($parent) {
+                                $parent.css({ zIndex: 999 });
+                                // $parent.find(".nui-btn").on("click", function () {
+                                //     var search = {};
+                                //     $parent.find("[name]").each(function () {
+                                //         var that = $(this), name = that.attr("name");
+                                //         search[name] = that.val();
+                                //     })
+                                //     var newData = data;
+                                //     for (var key in search) {
+                                //         newData = newData.filter(function (item) {
+                                //             if (!search[key]) return true
+                                //             if (~item[key].indexOf(search[key])) return true
+                                //             return false
+                                //         })
+                                //     }
+                                //     var newDataIds = newData.map(function (item) { return item.IDCard });
+                                //     $parent.find("tr[data-id]").each(function () {
+                                //         var that = $(this), id = that.data("id");
+                                //         that.hide();
+                                //         if (~newDataIds.indexOf(id)) that.show();
+                                //         shaonq.toast("查询完毕")
+                                //     })
+                                // })
+
+                            }
+                        })
+                    },
+                    searchDiyUser: function () {
+                        var that = $(this);
+                        var data = that.data("query") || {};
+                        $(".from-searchbox [name]").each(function () {
+                            var that = $(this);
+                            data[that.attr("name")] = that.val()
+                        })
+                        var spans = [];
+                        that.find("span").each(function () {
+                            spans.push(this.innerText)
+                        })
+                        // JZRenType ImpRen
+                        if (!+spans[1]) return shaonq.toast("无查询数据");
+                        shaonq.showLoading("正在读取用户")
+                        $.ajax({
+                            url: 'https://cctv.tcfuqiao.com/mes/mesapi/GetRenInfo',
+                            data: JSON.stringify(data),
+                            type: 'POST',
+                            timeout: 1e4,
+                            headers: { 'Content-Type': 'application/json' },
+                            success: function (res) {
+                                if (res.data) {
+                                    shaonq.hideToast();
+                                    dataEvent._searchUser(res.data, "用户列表 - " + spans[0]);
+                                } else shaonq.toast('查询出错')
+                            },
+                            error: function () {
+                                shaonq.toast('网络超时')
+                            }
+                        });
+                    },
+                    searchHome: function () {
+                        var that = $(this);
+                        var spans = [];
+                        that.find("span").each(function () {
+                            spans.push(this.innerText)
+                        })
+                        if (!+spans[1]) return shaonq.toast("无查询数据");
+                        var list = [], graphicsExtData = graphics.map(function (item) { return item.extData }).filter(function (item) { return item })
+                        switch (spans[0]) {
+                            case "房屋总数":
+                                list = graphicsExtData;
+                                break;
+                            default:
+                                list = graphicsExtData.filter(function (item) { return item.HouseType == spans[0] });
+                                break
+                        }
+                        var $parent = that.parents(".from-layer");
+                        var offset = $parent.offset();
+                        var $layer = $(".from-layer__home");
+                        var title = "房屋列表 - " + spans[0];
+                        var content = nui.tpl($("#searchHomeTpl").html(), { data: list });
+                        if ($layer[0]) {
+                            $layer.find(".nui-open-title").text(title);
+                            $layer.find(".nui-open-bd").html(content);
+                        } else nui.open({
+                            content: content,
+                            title: title,
+                            shadow: false,
+                            skin: "from-layer from-layer__home",
+                            width: "600px",
+                            zIndex: 999,
+                            offset: [offset.top + 'px', (Math.max(offset.left - $parent.width(), 0)) + 'px'],
+                            fixed: true,
+                            shadeClose: true,
+                            success: function (that, closeIndex) {
+                                dataEvent._bindDataTplGraphic(that, closeIndex)
+                            }
+                        })
+                    },
+                    // 提交查询      
+                    querySubmit: function (notLoading) {
+                        var showLoading = !notLoading;
+                        var data = {};
+                        $(".from-searchbox [name]").each(function () {
+                            var that = $(this);
+                            data[that.attr("name")] = that.val()
+                        })
+                        showLoading && shaonq.showLoading('加载中');
+                        $.ajax({
+                            url: 'https://cctv.tcfuqiao.com/mes/mesapi/GetHouseInfo',
+                            data: JSON.stringify(data),
+                            type: 'POST',
+                            timeout: 1e4,
+                            headers: { 'Content-Type': 'application/json' },
+                            success: function (res) {
+                                if (res.data) {
+                                    // 清楚记录
+                                    graphics.forEach(function (marker) { map.graphics.remove(marker) });
+                                    graphics = [];
+                                    res.data.forEach(function (item) {
+                                        var marker = mapUtil.addMarker({
+                                            position: [+item.adX, +item.Ady],
+                                            extData: item,
+                                            icon: 'blue'
+                                        });
+                                        map.graphics.add(marker);
+                                        graphics.push(marker);
+                                    });
+                                    var count = homesCount(res.data);
+                                    // console.log(count);
+                                    for (var key in count) $(".from-searchbox [data-count='" + key + "']").text(count[key]);
+                                    showLoading && shaonq.showSuccess("查询成功")
+                                    // 清楚锚点
+                                    clearSelectGraphics()
+                                } else shaonq.toast('查询出错');
+
+                                typeof notLoading === "function" && notLoading()
+                            },
+                            error: function () {
+                                shaonq.toast('网络超时')
+                            }
+                        });
+                    },
+                    // 房子转用户
+                    _homesToUser: function (opts) {
+                        var list = opts.list;
+                        var title = opts.title;
+                        nui.open({
+                            content: nui.tpl($("#diyHomeTpl").html(), { table: nui.tpl($("#searchHomeTpl").html(), { data: list }) }),
+                            title: title,
+                            shadow: false,
+                            skin: "from-layer",
+                            width: top.window === window ? "1030px" : "830px",
+                            fixed: true,
+                            shadeClose: true,
+                            success: function (that, closeIndex) {
+                                var $parent = that;
+                                that.css({ zIndex: 999 });
+                                var count = homesCount(list);
+                                for (var key in count) that.find("[data-tpl-count='" + key + "']").text(count[key]);
+                                var ids = list.map(function (item, index) { index || setHomeInfo(item.ID); return item.ID }).join(',');
+                                $("[data-tpl-event]").on("click", function () {
+                                    var that = $(this);
+                                    var funcName = this.getAttribute("data-tpl-event");
+                                    var data = that.data("query") || {};
+                                    var spans = [];
+                                    that.addClass("active").siblings().removeClass("active");
+                                    data.ID = ids, that.find("span").each(function () { spans.push(this.innerText) })
+                                    switch (funcName) {
+                                        case "searchUser":
+                                            // JZRenType ImpRen
+                                            if (!+spans[1]) return shaonq.toast("无查询数据");
+                                            shaonq.showLoading("正在读取用户")
+                                            $.ajax({
+                                                url: 'https://cctv.tcfuqiao.com/mes/mesapi/GetRenInfoAdx',
+                                                data: JSON.stringify(data),
+                                                type: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                timeout: 1e4,
+                                                success: function (res) {
+                                                    if (res.data) {
+                                                        shaonq.hideToast();
+                                                        // nui.open({
+                                                        //     content: nui.tpl($("#searchUserTpl").html(), { data: res.data }),
+                                                        //     title: title + "人员 - " + spans[0],
+                                                        //     shadow: false,
+                                                        //     skin: "from-layer",
+                                                        //     full: true,
+                                                        //     width: ["90%", "80%"],
+                                                        //     fixed: true,
+                                                        //     shadeClose: true,
+                                                        //     success: function (that) {
+                                                        //         that.css({ zIndex: 999 })
+                                                        //     }
+                                                        // })
+                                                        dataEvent._searchUser(res.data, title + "人员 - " + spans[0]);
+                                                    } else shaonq.toast('查询出错')
+                                                },
+                                                error: function () {
+                                                    shaonq.toast('网络超时')
+                                                }
+                                            });
+                                            break;
+                                        case "searchHome":
+                                            var $tr = $parent.find("table tbody tr");
+                                            $tr.each(function () {
+                                                var that = $(this);
+                                                var key = that.data("key");
+                                                if (spans[0] == "房屋总数") that.show();
+                                                else {
+                                                    key === spans[0] ? that.show() : that.hide()
+                                                }
+                                            });
+                                            if (spans[0] == "房屋总数") $parent.find(".nui-open-title").text(title);
+                                            else $parent.find(".nui-open-title").text(title + "(筛选) - " + spans[0]);
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                                });
+                                // 填充用户信息
+                                function setHomeInfo(id) {
+                                    if (!id) return;
+                                    var data = list.filter(function (item) { return item.ID === id })[0];
+                                    if (data) {
+                                        $parent.find("[data-tpl]").each(function () {
+                                            var that = $(this), name = that.data("tpl");
+                                            that.text(data[name] || "")
+                                        })
+                                        $parent.find("[data-id='" + id + "']").addClass("active").siblings().removeClass("active");
+                                    }
+                                }
+
+
+                                // 选择房屋
+                                dataEvent._bindDataTplGraphic($parent, closeIndex);
+                                $parent.find("tr[data-key]").each(function () {
+                                    $(this).on("click", function (e) {
+                                        var that = $(this), id = that.data("id");
+                                        setHomeInfo(id);
+                                        return false
+                                    })
+
+                                    // $(this).find("[data-tpl-graphic]").on("click", function (e) {
+                                    //     var that = $(this);
+                                    //     mapUtil.centerAndZoom(this.getAttribute("data-tpl-graphic"), 17);
+                                    //     var id = that.parent("tr").data("id");
+                                    //     if (id) {
+                                    //         graphics.filter(function (item) {
+                                    //             return item.extData.ID === id;
+                                    //         }).forEach(function (graphic) {
+                                    //             var node = graphic.getNode();
+                                    //             console.time()
+                                    //             node.classList.add("svg-active");
+                                    //             setTimeout(function () {
+                                    //                 node.classList.remove("svg-active");
+                                    //                 console.timeEnd()
+                                    //             }, 4960)
+                                    //         })
+                                    //     }
+                                    //     nui.close(closeIndex)
+                                    //     return false
+                                    // })
+                                })
+                                // 其他事件
+                                $parent.find(".nui-btn").on("click", function () {
+                                    var that = $(this), index = that.index();
+                                    if (!index) clearSelectGraphics();
+                                    nui.close(closeIndex)
+                                })
+                            }
+                        })
+                    },
+                    // 数据转列表
+                    _graphicDataToList: function (data) {
+                        return graphics.map(function (item) { return item.extData }).filter(function (item) {
+                            return data.Ady == item.Ady && data.adX == item.adX
+                        })
+                    },
+                    showSelected: function () {
+                        if (selectGraphics.length) {
+                            var list = graphics.map(function (e) { return e.extData }).filter(function (item) {
+                                // if (~selectGraphics.indexOf(item.ID)) console.log(item)
+                                return ~selectGraphics.indexOf(item.ID)
+                            });
+                            dataEvent._homesToUser({ list: list, title: '自选房屋' })
+                        }
+                    },
+                    _bindDataTplGraphic: function (that, closeIndex) {
+                        that.find("[data-tpl-graphic]").on("click", function (e) {
+                            var that = $(this);
+                            mapUtil.centerAndZoom(this.getAttribute("data-tpl-graphic"), 17);
+                            var id = that.parent("tr").data("id");
+                            if (id) {
+                                graphics.filter(function (item) {
+                                    return item.extData.ID === id;
+                                }).forEach(function (graphic) {
+                                    var node = graphic.getNode();
+                                    node.classList.add("svg-active");
+                                    setTimeout(function () { node.classList.remove("svg-active") }, 4960)
+                                })
+                            }
+                            nui.close(closeIndex)
+                            return false
+                        })
+
+                    }
+
+                };
+                dataEvent.querySubmit(function () { $(".area--tc").trigger("click") /** 修复地图加载问题*/ });
+                $("[data-event]").on("click", function () {
+                    var func = dataEvent[this.getAttribute("data-event")];
+                    func && func.call(this);
+                })
+
+                // @TODO: 锚点点击事件
+                map.graphics.on("click", function (e) {
+                    var item = e.graphic.extData;
+                    if (!item.ID) throw 'graphics not ID Error';
+                    var list = dataEvent._graphicDataToList(item);
+                    list.forEach(function (item) {
+                        var index = selectGraphics.indexOf(item.ID);
+                        if (index == -1) {
+                            mapUtil.changeMarkerIcon(e.graphic, 'red');
+                            selectGraphics.push(item.ID);
+                        } else {
+                            mapUtil.changeMarkerIcon(e.graphic, 'blue');
+                            selectGraphics.splice(index, 1);
+                        }
+                    })
+                    $(".area--point").html(selectGraphics.length ? ("<span>" + selectGraphics.length + "</span>") : "")
+                });
+                map.graphics.on("dbl-click", function (e) {
+                    var item = e.graphic.extData;
+                    var list = dataEvent._graphicDataToList(item);
+                    dataEvent._homesToUser({
+                        list: list,
+                        title: item.AllAddress
+                    })
+                });
+                $(".area--user").on("click", function () {
+                    nui.open({
+                        content: ' <div> <div class="form-element"> <label class="form-title">居住人</label> <input class="from-input" name="JZRenName"> </div> </div> <div> <div class="form-element"> <label class="form-title">身份证号码</label> <input class="from-input" name="IDCard"> </div> </div> <div class="u-center" style="padding:40px 0"> <a class="nui-btn nui-btn-blue nui-btn-width nui-btn-radius">查询</a><a class="nui-btn nui-btn-default nui-btn-width nui-btn-radius">关闭</a> </div> '
+                        , skin: "from-layer",
+                        title: '用户查询',
+                        area: "360px",
+                        zIndex: 999,
+                        success: function ($parent, closeIndex) {
+                            $parent.find(".nui-btn-blue").on("click", function () {
+                                var data = {};
+                                $parent.find("[name]").each(function () {
+                                    var that = $(this), name = that.attr("name");
+                                    data[name] = that.val();
+                                })
+                                shaonq.showLoading("加载中")
+                                $.ajax({
+                                    url: 'https://cctv.tcfuqiao.com/mes/mesapi/GetRenInfoList',
+                                    data: JSON.stringify(data),
+                                    type: 'POST',
+                                    timeout: 1e4,
+                                    headers: { 'Content-Type': 'application/json' },
+                                    success: function (res) {
+                                        if (res.data) {
+                                            shaonq.hideToast();
+                                            if (res.data.length) {
+                                                nui.close(closeIndex)
+                                                dataEvent._searchUser(res.data, "用户搜索");
+                                            } else {
+                                                shaonq.toast('没有查询到用户数据')
+                                            }
+                                        } else shaonq.toast('查询出错')
+                                    },
+                                    error: function () {
+                                        shaonq.toast('网络超时')
+                                    }
+                                });
+                            });
+                            $(".nui-btn-default").on("click", function () {
+                                nui.close(closeIndex)
+                            })
+                        }
+                    })
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>

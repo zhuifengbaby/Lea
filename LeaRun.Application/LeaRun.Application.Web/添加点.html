@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图</title>
+    <meta name="keywords" content="浮桥地图" />
+    <meta name="description" content="浮桥地图" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="assets/nui.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body style="padding: 20px;">
+    <div class="card">
+        <div class="nui-form-group">
+            <label class="nui-form-label">输入地址</label>
+            <div class="nui-form-block">
+                <input class="nui-input" placeholder="请输入地址" />
+            </div>
+        </div>
+        <div class="nui-form-group">
+            <div class="nui-form-block">
+                <!-- { Syart 地图区域 -->
+                <div id="area" style="height:500px;"> </div>
+                <!-- 地图区域 End }-->
+            </div>
+        </div>
+        <div class="nui-form-group">
+            <label class="nui-form-label">地址坐标</label>
+            <div class="nui-form-block" id="msg"> </div>
+        </div>
+    </div>
+    <script src="./assets/jquery.min.js"></script>
+    <!-- { Start 天地图 -->
+    <script src=" https://api.tianditu.gov.cn/api?v=4.0&tk=0a36d511144d97a52b7071bf141218e9"></script>
+    <script src=" ./assets/geoJSON.js"> </script>
+    <script src="./assets/d3.min.js"></script>
+    <script src=" ./assets/map.js?v=1.0039"> </script>
+    <!-- 天地图  End } -->
+    <script>
+        $("input").on("change", function () {
+            // 搜索的地址
+            var title = this.value;
+            // 获取地址
+            function changePoint(lnglat) {
+                $("#msg").html('lng: ' + lnglat.lng + ',lat: ' + lnglat.lat)
+            }
+            mapFn.getPoint(title, function (point) {
+                changePoint(point);
+                map.getOverlays().map(function (m) { map.removeOverLay(m) })
+                map.panTo(point, 16);
+                var marker = new T.Marker(point, { title: title, draggable: true });
+                marker.on("dragend", function (e) { changePoint(e.lnglat) })
+                map.addOverLay(marker);
+            }, function (err) {
+                alert("搜索错误")
+            })
+        })
+    </script>
+</body>
+
+</html>

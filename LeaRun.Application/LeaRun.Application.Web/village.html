@@ -1,0 +1,261 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图 - 小区</title>
+    <meta name="keywords" content="浮桥地图 - 小区" />
+    <meta name="description" content="浮桥地图 - 小区" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="assets/nui.min.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: #f1f1f1;
+            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .card {
+            padding: 20px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(37, 38, 45, 0.1);
+        }
+
+        /** map area 100%*100%  */
+        .area {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .u-area-table th {
+            font-weight: 700;
+            width: 150px;
+            background: #f6f8fa;
+        }
+
+        .amap-marker-label {
+            pointer-events: visible;
+            padding: 0.25em 1em;
+            line-height: 1.5;
+            background: #fff;
+            border-color: transparent;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(37, 38, 45, 0.1);
+            color: #212121;
+        }
+
+        .amap-copyright {
+            font-size: 0;
+        }
+
+        .amap-marker-label {
+            box-shadow: none;
+            background: transparent;
+            text-shadow: 0px 0px 2px #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="area" id="area"></div>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/nui.min.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=0c5d1ec493c1681b8da91b3beb28478a"></script>
+
+    <script>
+        !function () {
+            var map = new AMap.Map("area", {
+                zoom: 12,
+                zooms: [11, 18],
+                center: [121.163, 31.583]
+            });
+
+            $.post("https://mobile.tcfuqiao.com/WebService.asmx/GetCommunityList", function (xml) {
+                var data = [];
+                $(xml).find("A_Community").each(function (index, item) {
+                    var that = $(this);
+                    data.push({
+                        Community: that.find("Community").text(),
+                        Type: that.find("Type").text(),
+                        Arear: that.find("Arear").text(),
+                        WYName: that.find("WYName").text(),
+                        HuCount: that.find("HuCount").text(),
+                        FWDate: that.find("FWDate").text(),
+                        ArearDuty: that.find("ArearDuty").text(),
+                        ArearDutyPhone: that.find("ArearDutyPhone").text(),
+                        WYDuty: that.find("WYDuty").text(),
+                        WYPhone: that.find("WYPhone").text(),
+                        WYLeader: that.find("WYLeader").text(),
+                        WYLDPhone: that.find("WYLDPhone").text(),
+                        Adx: that.find("Adx").text(),
+                        Ady: that.find("Ady").text(),
+                        PicUrl: that.find("PicUrl").text(),
+                    })
+                })
+
+
+
+                var markers = [];
+                data.forEach(function (item, index) {
+                    if (item.Adx && item.Ady) {
+                        var mk = new AMap.Marker({
+                            position: new AMap.LngLat(item.Adx, item.Ady),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+                            title: item.Community,
+                            animation: "AMAP_ANIMATION_DROP",
+                            extData: item,
+                            size: new AMap.Size(25, 34),
+                            icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTgxNjA4NjExNzYzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI2NzY5IiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik04NTIuNCAxMDA3LjdIMTI2LjZWNjA2LjhsMzE4LjItMjc5LjUgNDQuNy0zOS4yIDM2Mi45IDMxOC43eiIgZmlsbD0iI0ZDRDE3MCIgcC1pZD0iMjY3NzAiPjwvcGF0aD48cGF0aCBkPSJNODUyLjQgMTAxNy43SDEyNi42Yy01LjUgMC0xMC00LjUtMTAtMTB2LTQwMWMwLTIuOSAxLjItNS42IDMuNC03LjVsMzYyLjktMzE4LjdjMy44LTMuMyA5LjQtMy4zIDEzLjIgMEw4NTkgNTk5LjNjMi4yIDEuOSAzLjQgNC42IDMuNCA3LjV2NDAxYzAgNS40LTQuNSA5LjktMTAgOS45eiBtLTcxNS44LTIwaDcwNS44VjYxMS4zTDQ4OS41IDMwMS40IDEzNi42IDYxMS4zdjM4Ni40eiIgZmlsbD0iIiBwLWlkPSIyNjc3MSI+PC9wYXRoPjxwYXRoIGQ9Ik0yNS44IDY4OS44bDQ2My43LTQwMS4xIiBmaWxsPSIjRkNEMTcwIiBwLWlkPSIyNjc3MiI+PC9wYXRoPjxwYXRoIGQ9Ik0yNS44IDY5OS44Yy0yLjggMC01LjYtMS4yLTcuNi0zLjUtMy42LTQuMi0zLjItMTAuNSAxLTE0LjFMNDgzIDI4MS4xYzQuMi0zLjYgMTAuNS0zLjIgMTQuMSAxIDMuNiA0LjIgMy4yIDEwLjUtMSAxNC4xTDMyLjMgNjk3LjRjLTEuOSAxLjYtNC4yIDIuNC02LjUgMi40eiIgZmlsbD0iIiBwLWlkPSIyNjc3MyI+PC9wYXRoPjxwYXRoIGQ9Ik05NDYuNSA2ODkuOEw0ODIuOCAyODguNyIgZmlsbD0iI0ZDRDE3MCIgcC1pZD0iMjY3NzQiPjwvcGF0aD48cGF0aCBkPSJNOTQ2LjUgNjk5LjhjLTIuMyAwLTQuNi0wLjgtNi41LTIuNEw0NzYuMyAyOTYuMmMtNC4yLTMuNi00LjYtOS45LTEtMTQuMSAzLjYtNC4yIDkuOS00LjYgMTQuMS0xbDQ2My43IDQwMS4yYzQuMiAzLjYgNC42IDkuOSAxIDE0LjEtMiAyLjMtNC44IDMuNC03LjYgMy40eiIgZmlsbD0iIiBwLWlkPSIyNjc3NSI+PC9wYXRoPjxwYXRoIGQ9Ik02MjUuNCAxMDA3LjdIMzUzLjZWNzAzLjVjMC0yLjQgMS45LTQuMyA0LjMtNC4zaDI2My4zYzIuNCAwIDQuMyAxLjkgNC4zIDQuM3YzMDQuMnoiIGZpbGw9IiNENjRGMzQiIHAtaWQ9IjI2Nzc2Ij48L3BhdGg+PHBhdGggZD0iTTYyNS40IDEwMTcuN0gzNTMuNmMtNS41IDAtMTAtNC41LTEwLTEwVjcwMy41YzAtNy45IDYuNC0xNC4zIDE0LjMtMTQuM2gyNjMuM2M3LjkgMCAxNC4zIDYuNCAxNC4zIDE0LjN2MzA0LjNjLTAuMSA1LjQtNC42IDkuOS0xMC4xIDkuOXogbS0yNjEuOC0yMGgyNTEuOFY3MDkuMkgzNjMuNnYyODguNXoiIGZpbGw9IiIgcC1pZD0iMjY3NzciPjwvcGF0aD48cGF0aCBkPSJNOTk2LjkgNDQxLjNjMCAxNjcuNy05OC43IDIzNi40LTIyMC41IDIzNi40UzU1NS44IDYwOSA1NTUuOCA0NDEuMyA3NzYuMyAzIDc3Ni4zIDNzMjIwLjYgMjcwLjYgMjIwLjYgNDM4LjN6IiBmaWxsPSIjRkZGRkZGIiBwLWlkPSIyNjc3OCI+PC9wYXRoPjxwYXRoIGQ9Ik03NzYuMyA3NTFjLTExLjkgMC0yMS41LTkuNi0yMS41LTIxLjVWMTgyLjFjMC0xMS45IDkuNi0yMS41IDIxLjUtMjEuNXMyMS41IDkuNiAyMS41IDIxLjV2NTQ3LjRjMCAxMS45LTkuNiAyMS41LTIxLjUgMjEuNXoiIGZpbGw9IiNGRkZGRkYiIHAtaWQ9IjI2Nzc5Ij48L3BhdGg+PHBhdGggZD0iTTk2MS42IDQzNy41YzAgMTQ2LjItODMgMjA2LjEtMTg1LjMgMjA2LjFTNTkxIDU4My43IDU5MSA0MzcuNXMxODUuMy0zODIgMTg1LjMtMzgyIDE4NS4zIDIzNS44IDE4NS4zIDM4MnoiIGZpbGw9IiM2MEMxM0QiIHAtaWQ9IjI2NzgwIj48L3BhdGg+PHBhdGggZD0iTTc3Ni4zIDY1My42Yy01Ni42IDAtMTA0LjMtMTcuNy0xMzguMS01MS4xLTM4LTM3LjYtNTcuMi05My4xLTU3LjItMTY0LjkgMC02Mi41IDMxLjYtMTQ2LjkgOTQuMS0yNTFDNzIxLjIgMTA5LjcgNzY4IDUwIDc2OC41IDQ5LjRjMS45LTIuNCA0LjgtMy44IDcuOS0zLjhzNiAxLjQgNy45IDMuOGMwLjUgMC42IDQ3LjIgNjAuMyA5My40IDEzNy4yIDYyLjQgMTA0LjEgOTQuMSAxODguNSA5NC4xIDI1MSAwIDcxLjgtMTkuMyAxMjcuMy01Ny4yIDE2NC45LTMzLjkgMzMuNC04MS43IDUxLjEtMTM4LjMgNTEuMXogbTAtNTgxLjZjLTE1LjEgMjAuMS00OS44IDY3LjgtODQuMiAxMjUtNDEuNSA2OS40LTkxLjEgMTY3LjMtOTEuMSAyNDAuNSAwIDY2LjMgMTcuMyAxMTcgNTEuMyAxNTAuNyAyOS45IDI5LjYgNzIuOCA0NS4zIDEyNCA0NS4zczk0LjEtMTUuNyAxMjQtNDUuM2MzNC0zMy44IDUxLjMtODQuNSA1MS4zLTE1MC43IDAtNzMuMi00OS41LTE3MS4yLTkxLjEtMjQwLjUtMzQuMy01Ny4yLTY5LTEwNC45LTg0LjItMTI1eiIgZmlsbD0iIiBwLWlkPSIyNjc4MSI+PC9wYXRoPjxwYXRoIGQ9Ik03NzYuMyA3MjIuNmMtNS41IDAtMTAtNC41LTEwLTEwVjE2NS4yYzAtNS41IDQuNS0xMCAxMC0xMHMxMCA0LjUgMTAgMTB2NTQ3LjRjMCA1LjUtNC41IDEwLTEwIDEweiIgZmlsbD0iIiBwLWlkPSIyNjc4MiI+PC9wYXRoPjxwYXRoIGQ9Ik03NzYuMyA0MDcuMWMtMi43IDAtNS41LTEuMS03LjQtMy4zbC05NS40LTEwNi4yYy0zLjctNC4xLTMuNC0xMC40IDAuOC0xNC4xIDQuMS0zLjcgMTAuNC0zLjQgMTQuMSAwLjhsOTUuNCAxMDYuMmMzLjcgNC4xIDMuNCAxMC40LTAuOCAxNC4xLTEuOSAxLjctNC4zIDIuNS02LjcgMi41ek03NzYuMyA1ODguNGMtMi44IDAtNS42LTEuMi03LjYtMy41TDYzNC42IDQyNy40Yy0zLjYtNC4yLTMuMS0xMC41IDEuMS0xNC4xIDQuMi0zLjYgMTAuNS0zLjEgMTQuMSAxLjFsMTM0LjEgMTU3LjVjMy42IDQuMiAzLjEgMTAuNS0xLjEgMTQuMS0xLjkgMS42LTQuMiAyLjQtNi41IDIuNHpNNzc2LjMgMzAwLjljLTIuNiAwLTUuMS0xLTcuMS0yLjktMy45LTMuOS0zLjktMTAuMiAwLTE0LjFsNjQuNy02NC43YzMuOS0zLjkgMTAuMi0zLjkgMTQuMSAwIDMuOSAzLjkgMy45IDEwLjIgMCAxNC4xTDc4My40IDI5OGMtMiAxLjktNC41IDIuOS03LjEgMi45ek03ODIuNiA0OTEuNGMtMi43IDAtNS41LTEuMS03LjQtMy4zLTMuNy00LjEtMy4zLTEwLjQgMC44LTE0LjFsOTQuMy04NC41YzQuMS0zLjcgMTAuNC0zLjMgMTQuMSAwLjggMy43IDQuMSAzLjMgMTAuNC0wLjggMTQuMWwtOTQuMyA4NC41Yy0xLjkgMS42LTQuMyAyLjUtNi43IDIuNXoiIGZpbGw9IiIgcC1pZD0iMjY3ODMiPjwvcGF0aD48L3N2Zz4="
+                        })
+                        mk.setLabel({
+                            offset: new AMap.Pixel(0, 5),  //设置文本标注偏移量
+                            content: item.Community, //设置文本标注内容
+                            direction: 'bottom' //设置文本标注方位
+                        });
+                        AMap.event.addListener(mk, 'click', function (e) {
+                            showTable(item, e)
+                        });
+                        markers.push(mk);
+                        var points = [];
+                        // https://ditu.amap.com/detail/get/detail?id=B020001IF1
+                        // ('121.246184,31.560756;121.246086,31.5618;121.248372,31.562042;121.248492,31.560928;121.246184,31.560756').split(";").map(function (item) {
+                        //     points.push(item.split(","))
+                        // })
+                        // var polygons = new AMap.Polygon({
+                        //     map: map,
+                        //     path: points,
+                        //     strokeColor: "blue", //线颜色    
+                        //     strokeOpacity: 0.8, //线透明度    
+                        //     strokeWeight: 2, //线宽    
+                        //     fillColor: "#0091fc", //填充色    
+                        //     fillOpacity: 0.6,//填充透明度    
+                        // });
+                        // polygons.setMap(map);
+                    }
+                })
+                map.add(markers);
+            }, 'xml').error(function (err) {
+                nui.toast("数据加载错误")
+            });
+            function showTable(item) {
+                getVideos(item.Community, function (list) {
+                    //  console.log(list)
+                    nui.open({
+                        content: nui.tpl('{{# var ti=d.ti,list=d.list;}}' +
+                            '<ul class="nui-flex"><li><img src="{{ti.PicUrl}}"/></li><li><table class="nui-table u-area-table">' +
+                            '<tr><th>小区名</th><td>{{ti.Community}}</td></tr>' +
+                            '<tr><th>类型</th><td>{{ti.Type}}</td></tr>' +
+                            '<tr><th>所属区域</th><td>{{ti.Arear}}</td></tr>' +
+                            '<tr><th>物业名称</th><td>{{ti.WYName}}</td></tr>' +
+                            '<tr><th>总户数</th><td>{{ti.HuCount}}</td></tr>' +
+                            '<tr><th>服务期限</th><td>{{ti.FWDate}}</td></tr>' +
+                            '<tr><th>社区负责人</th><td>{{ti.ArearDuty}}</td></tr>' +
+                            '<tr><th>社区负责人电话</th><td>{{ti.ArearDutyPhone}}</td></tr>' +
+                            '<tr><th>物业负责人</th><td>{{ti.WYDuty}}</td></tr>' +
+                            '<tr><th>物业负责人电话</th><td>{{ti.WYPhone}}</td></tr>' +
+                            '<tr><th>物业经理</th><td>{{ti.WYLeader}}</td></tr>' +
+                            '<tr><th>物业经理电话</th><td>{{ti.WYLDPhone}}</td></tr>' +
+                            '</table></li></ul><table class="nui-table nui-mt"><tr class="thead"><td>监控名称</td><td width="30">监控</td></tr>' +
+                            '{{# for(var i in list){var item=list[i];}}<tr>' +
+                            '<th>{{item.JKName}}</th>' +
+                            '<td>{{# if(item.Channel&&item.Channel !=="0"){}}<div data-ext=\'{{JSON.stringify(item)}}\' data-click={"fn":"palyVideo"}><img src="./assets/play.svg" width="24"/></div>{{# }}}</td>' +
+                            '</tr>{{# } }}</table>', { ti: item, list: list }),
+                        shadow: .6,
+                        title: item.Community,
+                        width: ["80%", "70%"],
+                        full: true,
+                        offset: ["10%"],
+                        fixed: true,
+                        shadeClose: true,
+                    });
+
+                })
+            }
+            function getVideos(name, cb) {
+                var loai = nui.showLoading("加载中");
+                $.post("https://mobile.tcfuqiao.com/WebService.asmx/GetGGJKong", { CName: name || '' }, function (xml) {
+                    var data = [];
+                    var xmls = $(xml).find("GGJKong");
+                    nui.hideToast(loai);
+                    if (!xmls.length) {
+                        cb && cb([]);
+                    } else xmls.each(function (index, item) {
+                        var that = $(this);
+                        data.push({
+                            JKName: that.find("JKName").text(),
+                            Adx: that.find("Adx").text(),
+                            Ady: that.find("Ady").text(),
+
+                            JKUser: that.find("JKUser").text(),
+                            JKPassword: that.find("JKPassword").text(),
+                            IP: that.find("IP").text(),
+                            Channel: that.find("Channel").text(),
+                            Show: that.find("Show").text(),
+                        })
+                        cb && cb(data);
+                    });
+                }, 'xml').error(function (err) {
+                    nui.hideToast(loai);
+                    nui.toast("数据加载错误")
+                });
+            }
+            var data_click_fn = {
+                palyVideo: function (data) {
+                    var that = $(this), ext = data || that.data("ext");
+                    nui.open({
+                        title: ext.JKName,
+                        content: "video.html?JKUser=" + ext.JKUser + "&JKPassword=" + ext.JKPassword + "&IP=" + ext.IP + "&Channel=" + ext.Channel + "&Show=" + ext.Show,
+                        shadow: .6,
+                        width: ["905px", "645px"],
+                        full: true,
+                        offset: ["10%"],
+                        fixed: true,
+                        type: 2
+                    });
+                }
+            }
+            $("body").on("click", "[data-click]", function (e) {
+                var that = $(this), ops = that.data("click");
+                var fn = data_click_fn[ops.fn];
+                if (typeof fn === "function") {
+                    fn.call(this, ops);
+                    e.stopPropagation()
+                }
+            })
+            getVideos('', function (data) {
+                var markers = [];
+                data.forEach(function (item) {
+                    console.log(item)
+                    var mk = new AMap.Marker({
+                        position: new AMap.LngLat(item.Adx, item.Ady),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+                        title: item.Community,
+                        animation: "AMAP_ANIMATION_DROP",
+                        extData: item,
+                        size: new AMap.Size(25, 34),
+                        icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTgxNjA3ODc2MTA0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEyMzI0IiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik0xNjIuOSA4MjcuOUw4MiA5MDEuOFY1MzAuMmw4MC45IDIwLjZ6IiBmaWxsPSIjMzAzMDMwIiBwLWlkPSIxMjMyNSI+PC9wYXRoPjxwYXRoIGQ9Ik04MiA5MTkuMmMtMi40IDAtNC43LTAuNS03LTEuNS02LjMtMi44LTEwLjQtOS0xMC40LTE1LjlWNTMwLjJjMC01LjQgMi41LTEwLjQgNi43LTEzLjcgNC4yLTMuMyA5LjctNC40IDE0LjktMy4xbDgwLjkgMjAuN2M3LjcgMiAxMy4xIDguOSAxMy4xIDE2LjhWODI4YzAgNC45LTIgOS41LTUuNiAxMi44bC04MC45IDczLjljLTMuMiAyLjktNy40IDQuNS0xMS43IDQuNXogbTE3LjQtMzY2Ljd2MzA5LjlsNDYuMi00Mi4ydi0yNTZsLTQ2LjItMTEuN3oiIGZpbGw9IiMyMzIzMjMiIHAtaWQ9IjEyMzI2Ij48L3BhdGg+PHBhdGggZD0iTTc0MS41IDY5NC41TDIwNyAzOTUuMmMtMjAuNy0xMS42LTI3LjYtMzguOC0xNS40LTYwLjZMMjk3LjIgMTQ2YzEyLjItMjEuOSAzOS0zMC4yIDU5LjctMTguNmw1NzkuNyAzMjkuMS0xOTUuMSAyMzh6IiBmaWxsPSIjRURGNEZDIiBwLWlkPSIxMjMyNyI+PC9wYXRoPjxwYXRoIGQ9Ik03NDEuNSA3MTEuOGMtMi45IDAtNS44LTAuNy04LjUtMi4yTDE5OC41IDQxMC4zYy0xNC4yLTgtMjQuMy0yMS4yLTI4LjQtMzcuMy00LTE1LjgtMS44LTMyLjQgNi40LTQ2LjlsMTA1LjYtMTg4LjZjOC4xLTE0LjUgMjEuMS0yNS4xIDM2LjctMjkuOSAxNS45LTQuOSAzMi41LTMuMyA0Ni43IDQuN2w1NzkuOCAzMjkuMmM0LjQgMi41IDcuNiA2LjkgOC41IDExLjkgMC45IDUtMC40IDEwLjItMy42IDE0LjJMNzU0LjkgNzA1LjVjLTMuNCA0LjEtOC4zIDYuMy0xMy40IDYuM3pNMzM2LjggMTM5LjVjLTIuNiAwLTUuMiAwLjQtNy43IDEuMi03IDIuMi0xMi45IDcuMS0xNi43IDEzLjdMMjA2LjggMzQzYy0zLjcgNi43LTQuOCAxNC4zLTMgMjEuNCAxLjcgNi44IDUuOSAxMi4zIDExLjcgMTUuNmw1MjEuOCAyOTIuMiAxNzIuOC0yMTAuOC01NjEuNy0zMTguOWMtMy42LTEuOS03LjUtMy0xMS42LTN6IiBmaWxsPSIjMjMyMzIzIiBwLWlkPSIxMjMyOCI+PC9wYXRoPjxwYXRoIGQ9Ik02ODYuMSA3MjYuOGwtNDYwLjctMjU4Yy05LjEtNS4xLTEyLjMtMTYuNi03LjItMjUuNmwxOC4xLTMyLjMgNTA1LjIgMjgyLjktMTEuNiAyMC43Yy04LjcgMTUuNS0yOC4zIDIxLTQzLjggMTIuM3oiIGZpbGw9IiM4M0NBRkYiIHAtaWQ9IjEyMzI5Ij48L3BhdGg+PHBhdGggZD0iTTY5Mi42IDczOS44Yy0xMi40IDAtMjQuNi0zLjItMzUuNy05LjRMMjI5IDQ5MC44Yy0xMS43LTYuNS0yMC4xLTE3LjItMjMuNy0zMC4xLTMuNi0xMi45LTItMjYuNCA0LjUtMzhsMTEuMy0yMC4yYzQuNy04LjQgMTUuMy0xMS4zIDIzLjYtNi43bDUwNS4yIDI4Mi45YzQgMi4yIDcgNiA4LjIgMTAuNCAxLjMgNC40IDAuNyA5LjItMS42IDEzLjItOS42IDE3LjEtMjUuMiAyOS40LTQ0IDM0LjctNi41IDEuOC0xMy4yIDIuOC0xOS45IDIuOHpNMjQyLjkgNDM0LjVsLTIuOSA1LjFjLTIgMy42LTIuNSA3LjctMS40IDExLjcgMS4xIDMuOSAzLjcgNy4yIDcuMyA5LjJsNDI3LjkgMjM5LjZjMTMuMSA3LjMgMjguNyA2LjIgNDAuNC0xLjdMMjQyLjkgNDM0LjV6IiBmaWxsPSIjMjMyMzIzIiBwLWlkPSIxMjMzMCI+PC9wYXRoPjxwYXRoIGQ9Ik00MTIuNiA1NzYuNGwtNTMuNy0zMS4xTDI4OSA2NjYuNEgxNjguN3Y2MmgxNTYuMXoiIGZpbGw9IiMzMDMwMzAiIHAtaWQ9IjEyMzMxIj48L3BhdGg+PHBhdGggZD0iTTMyNC44IDc0NS44SDE2OC43Yy05LjYgMC0xNy40LTcuOC0xNy40LTE3LjR2LTYyYzAtOS42IDcuOC0xNy40IDE3LjQtMTcuNEgyNzlsNjQuOS0xMTIuNGM0LjgtOC4zIDE1LjQtMTEuMSAyMy43LTYuNGw1My43IDMxYzguMyA0LjggMTEuMSAxNS40IDYuNCAyMy43bC04Ny41IDE1MS41Yy0zIDUuNi04LjcgOS40LTE1LjQgOS40eiBtLTEzOC43LTM0LjdoMTI4LjdsNzQuMS0xMjguNC0yMy43LTEzLjdMMzA0IDY3NWMtMy4xIDUuNC04LjggOC43LTE1IDguN0gxODYuMXYyNy40eiIgZmlsbD0iIzIzMjMyMyIgcC1pZD0iMTIzMzIiPjwvcGF0aD48cGF0aCBkPSJNMzU4LjMgMjQxbS0yMS44IDBhMjEuOCAyMS44IDAgMSAwIDQzLjYgMCAyMS44IDIxLjggMCAxIDAtNDMuNiAwWiIgZmlsbD0iI0VBMzkzNCIgcC1pZD0iMTIzMzMiPjwvcGF0aD48cGF0aCBkPSJNNzg2LjggNzMzLjFjLTMuOSAwLTcuOS0xLjMtMTEuMS00LTcuNC02LjEtOC4zLTE3LjEtMi4yLTI0LjRMOTI4LjcgNTE5YzYuMS03LjQgMTcuMS04LjMgMjQuNC0yLjIgNy40IDYuMSA4LjMgMTcuMSAyLjIgMjQuNEw4MDAuMSA3MjYuOGMtMy40IDQuMi04LjQgNi4zLTEzLjMgNi4zeiIgZmlsbD0iIzIzMjMyMyIgcC1pZD0iMTIzMzQiPjwvcGF0aD48L3N2Zz4="
+                    })
+                    mk.setLabel({
+                        offset: new AMap.Pixel(0, 5),  //设置文本标注偏移量
+                        content: item.JKName, //设置文本标注内容
+                        direction: 'bottom' //设置文本标注方位
+                    });
+                    AMap.event.addListener(mk, 'click', function (e) {
+                        data_click_fn.palyVideo(item, e)
+                    });
+                    markers.push(mk)
+                })
+                map.add(markers);
+            })
+        }()
+    </script>
+</body>
+
+</html>

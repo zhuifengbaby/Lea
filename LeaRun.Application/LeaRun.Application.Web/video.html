@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图 - 监控</title>
+    <meta name="keywords" content="浮桥地图 - 监控" />
+    <meta name="description" content="浮桥地图 - 监控" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="assets/nui.min.css">
+
+<body style="background:rgb(52,52,52);">
+    <div id="divPlugin" style="width: 900px;height: 600px;margin: 0 auto;"></div>
+</body>
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/nui.min.js"></script>
+<script src="./assets/webVideoCtrl.js"></script>
+<script>
+    $(function () {
+        // 检查插件是否已经安装过
+        var iRet = WebVideoCtrl.I_CheckPluginInstall();
+        if (-2 == iRet) {
+            nui.alert("您的浏览器版本过高，不支持NPAPI插件！");
+            return;
+        } else if (-1 == iRet) {
+            nui.alert("您还未安装过插件，双击开发包目录里的WebComponentsKit.exe安装！");
+            return;
+        }
+
+        var oPlugin = {
+            iWidth: 900,			// plugin width
+            iHeight: 600			// plugin height
+        };
+
+        // 初始化插件参数及插入插件
+        WebVideoCtrl.I_InitPlugin(oPlugin.iWidth, oPlugin.iHeight, {
+            bWndFull: true,//是否支持单窗口双击全屏，默认支持 true:支持 false:不支持
+            iWndowType: 1,
+            cbSelWnd: function (xmlDoc) {
+
+            }
+        });
+        WebVideoCtrl.I_InsertOBJECTPlugin("divPlugin");
+
+        // 检查插件是否最新
+        if (-1 == WebVideoCtrl.I_CheckPluginVersion()) {
+            nui.alert("检测到新的插件版本，双击开发包目录里的WebComponentsKit.exe升级！");
+            return;
+        }
+
+        function play(opt) {
+            var oLiveView = {
+                iProtocol: 1,			// protocol 1：http, 2:https
+                szIP: opt.IP,	// protocol ip
+                szPort: "80",			// protocol port
+                szUsername: opt.JKUser,	// device username
+                szPassword: opt.JKPassword,	// device password
+                iStreamType: 1,			// stream 1：main stream  2：sub-stream  3：third stream  4：transcode stream
+                iChannelID: opt.Channel,			// channel no
+                bZeroChannel: false		// zero channel
+            };
+
+            // 登录设备
+            WebVideoCtrl.I_Login(oLiveView.szIP, oLiveView.iProtocol, oLiveView.szPort, oLiveView.szUsername, oLiveView.szPassword, {
+                success: function (xmlDoc) {
+                    // 开始预览
+                    WebVideoCtrl.I_StartRealPlay(oLiveView.szIP, {
+                        iStreamType: oLiveView.iStreamType,
+                        iChannelID: oLiveView.iChannelID,
+                        bZeroChannel: oLiveView.bZeroChannel
+                    });
+                }
+            });
+
+            // 关闭浏览器
+            $(window).unload(function () {
+                WebVideoCtrl.I_Stop();
+            });
+        }
+
+        var opt = {
+            JKUser: nui.get.query('JKUser'),
+            JKPassword: nui.get.query('JKPassword'),
+            sns123456: nui.get.query('sns123456'),
+            IP: nui.get.query('IP'),
+            Channel: nui.get.query('Channel'),
+            Show: nui.get.query('Show'),
+        }
+        if (opt.Channel) {
+            play(opt)
+        }
+    });
+</script>
+
+</html>

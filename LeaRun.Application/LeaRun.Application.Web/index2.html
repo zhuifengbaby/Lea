@@ -1,0 +1,681 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图</title>
+    <meta name="keywords" content="浮桥地图" />
+    <meta name="description" content="浮桥地图" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="assets/nui.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body>
+    <h1 class="card titl"> 浮桥镇拆迁大数据系统</h1>
+    <ul class="u-flex">
+        <li style="width: 10px;"></li>
+        <li>
+            <div class="card">
+                <ul class="u-flex now--data">
+                    <li style="color:#f78207;">
+                        <h2>14<small>户</small></h2>
+                        <p>企业</p>
+                        <p><span class="nui-ml" style="color:#F55253">签约 5</span><span class="nui-ml"
+                                style="color:#178B50">完成 5</span><span class="nui-ml" style="color:#888">未签约 4</span>
+                        </p>
+                    </li>
+                    <li style="color:#f78207;">
+                        <h2>57<small>户</small></h2>
+                        <p>居民房</p>
+                        <p><span class="nui-ml" style="color:#F55253">签约 5</span><span class="nui-ml"
+                                style="color:#178B50">完成 6</span><span class="nui-ml" style="color:#888">未签约 46</span>
+                        </p>
+                    </li>
+                    <li style="color:#f78207;">
+                        <h2>67<small>户</small></h2>
+                        <p>门店</p>
+                        <p><span class="nui-ml" style="color:#F55253">签约 7</span><span class="nui-ml"
+                                style="color:#178B50">完成 6</span><span class="nui-ml" style="color:#888">未签约 54</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="card">
+                <!-- <div class="chart--title" style="color: #4f78f2;">浮桥镇每日居家观察人数变动表</div>
+                <div class="chart--body" id="line"></div> -->
+                <ul class="u-flex">
+                    <li>
+                        <div class="chart--title">企业</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">居民房</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">门店</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                    <li>
+                        <div class="chart--title">门店</div>
+                        <div class="pie--chart chart--body"></div>
+                    </li>
+                </ul>
+                <div class="pie--legend"></div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="card">
+                <div class="chart--title" style="color: #4f78f2;text-align: left; padding-left: 1em;">浮桥镇村社区人数</div>
+                <div class="chart--body" id="bar"></div>
+                <div class="bar--nav nui-btn-group"></div>
+            </div>
+        </li>
+        <li style="width: 10px;"></li>
+        <li>
+            <div class="card">
+                <div class="area" id="area"></div>
+            </div>
+            </div>
+        </li>
+        <li style="width: 10px;"></li>
+
+    </ul>
+    <div style="margin: 10px;">
+        <div class="card">
+            <a id="speedInfo" href="javascript:;">进度详情</a>
+        </div>
+    </div>
+
+
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/nui.min.js"></script>
+    <script src="./assets/echarts.min.js"></script>
+    <script src="./assets/xml2json.js"></script>
+    <script src="./assets/main.js?v=1.0051"></script>
+    <!-- 服务器端 -->
+    <script src="http://cctv.tcfuqiao.com:52420/Content/scripts/plugins/dialog/dialog.js"></script>
+    <script src="http://cctv.tcfuqiao.com:52420/Content/scripts/utils/js"></script>
+
+    <script>
+        var LOAD_TIME = 5 * 6e4;
+        !function () {
+            // 地图初始化           
+            // @TODO 全局事件
+            var allfn = {
+                showTable: function (attr) {
+                    var loai = nui.showLoading("加载中");
+                    $api.getXianQin(attr, function (data) {
+                        // console.log(data)
+                        nui.hideToast(loai);
+                        var num = 0;
+                        data.map(function (a) { num += +a.JZMianJi || 0 });
+                        var title = attr.Name + '/' + (['', '全部', '签约', '完成', '未签约',][attr.Type] || "") + "/合计 " + data.length + " 户/共 " + num + " m²";
+                        // <div class="nui-lh30">总共居住面积 {{d.num}} m²</div>
+                        nui.open({
+                            content: nui.tpl('<table class="nui-table"><tr class="thead"><th width="90">区域</th><th width="120"> 地址</th>' +
+                                '<th width="60">居住面积</th><th width="90"> 当事人</th><th width="85">预计完成时间</th></th><th width="160">工作进度</th>' +
+                                '<th width="70"> 签约日期 </th><th width="85"> 实际完成日期</th></tr>' +
+                                '{{# for(var i in d.data){var item=d.data[i];}}<tr>' +
+                                '<td>{{item.Arear||""}}</td><td>{{item.Adress||""}}</td><td>{{item.JZMianJi||""}}</td>' +
+                                '<td>{{item.DSR||""}}</td><td>{{item.YujiFinishDate||""}}</td><td>{{item.WorkJiDu||""}}</td><td>{{item.QianYuDate||""}}</td><td>{{item.ShiJiFinishDate||""}}</td>' +
+                                '</tr>{{# } }}</table><div class="nui-lh30" style="margin-top:10px;">合计：{{d.data.length}}户住宅，总居住面积 {{d.num}} m²</div>', { data: data, type: attr.type, num: num }),
+                            shadow: false,
+                            title: title,
+                            width: ["80%", "70%"],
+                            full: true,
+                            offset: ["10%"],
+                            fixed: true,
+                            shadeClose: true,
+                        })
+                    })
+                },
+                palyVideo: function () {
+                    var that = $(this), ext = that.data("ext");
+                    //console.log(ext)
+                    nui.open({
+                        // JKUser JKPassword IP Channel Show
+                        title: ext.Name + " " + (ext.Adress || ""),
+                        content: "video.html?JKUser=" + ext.JKUser + "&JKPassword=" + ext.JKPassword + "&IP=" + ext.IP + "&Channel=" + ext.Channel + "&Show=" + ext.Show,
+                        shadow: .6,
+                        width: ["905px", "645px"],
+                        full: true,
+                        offset: ["10%"],
+                        fixed: true,
+                        type: 2
+                    });
+                }
+            };
+            // @TODO 绑定全局事件
+            $("body").on("click", "[data-click]", function (e) {
+                var that = $(this), ops = that.data("click");
+                var fn = allfn[ops.fn];
+                if (typeof fn === "function") {
+                    fn.call(this, ops);
+                    e.stopPropagation()
+                }
+            });
+            // @TODO 初始化
+            function init() {
+                // @TODO 地图数据
+                function go() {
+                    console.log('--update ' + nui.util.date.format(new Date(), 'yyyy-MM-dd HH:mm:ss'));
+                    // @TODO 顶部条目数据 饼图
+                    $api.getCount(function (data) {
+                        var tpll = '';
+                        data.map(function (item, index) {
+                            tpll += '<li style="color:' + COLORS[0] + ';"> <h2 data-click=\'{"fn":"showTable","Type":1,"Name":"' + item.Type + '"}\'>' + item.Qty + '<small>户</small></h2> <p>' + item.Type +
+                                '</p><p><span data-click=\'{"fn":"showTable","Type":2,"Name":"' + item.Type + '"}\' class="nui-ml" style="color:' + COLORS[1] + '">签约 ' + item.QYQty +
+                                '</span><span data-click=\'{"fn":"showTable","Type":3,"Name":"' + item.Type + '"}\' class="nui-ml" style="color:' + COLORS[2] + '">完成 ' + item.WCQty +
+                                '</span><span data-click=\'{"fn":"showTable","Type":4,"Name":"' + item.Type + '"}\' class="nui-ml" style="color:' + COLORS[3] + '">未签约 ' + item.NoQty +
+                                '</span></p> </li>'
+                        })
+                        $(".now--data").html(tpll);
+                        // 饼图
+                        PIE_CHART.render(data)
+                    });
+                    // @TODO  柱状图
+                    $api.getCountList(function (data) {
+                        BAR_CHART.render(data)
+                    })
+                }
+                go();
+                setInterval(go, LOAD_TIME);
+            }
+            init();
+        }()
+
+
+    </script>
+</body>
+
+<style>
+    .area {
+        width: 100%;
+        height: 782px;
+        position: relative;
+        background-color: #f5f4ee;
+    }
+
+    .area--s {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 500;
+        padding: 5px;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 0;
+        box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+    }
+
+    .area--s input {
+        padding: 0 8px;
+        border: none;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #242424;
+    }
+
+    .area--s__w {
+        position: relative;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .area--s__w>* {
+        display: block;
+        line-height: 20px;
+        padding: 6px 8px;
+        cursor: pointer;
+
+    }
+
+    .area--s__w a.active,
+    .area--s__w a:hover {
+        background: rgba(0, 0, 0, .06);
+    }
+
+    .area--tc {
+        right: 45px;
+    }
+
+    .area--geo {
+        right: 80px;
+    }
+
+    .area--tc::after {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5MTA4NjA1NjMzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjQ3NzMiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTgxMi44IDU1MS4yMzJjNTYtNzIuMzg0IDk5LjAwOC0xMzMuODI0IDk5LjAwOC0yMDMuMzI4IDAtMTEyLjg5Ni05NC44NDgtMjA0LjM1Mi0yMTEuOTY4LTIwNC4zNTJzLTIxMS45NjggOTEuNTItMjExLjk2OCAyMDQuMzUyYzAgNjIuNCAzNi44NjQgMTIxLjk4NCA4NS4wNTYgMTg2LjM2OGwtNTcuOTg0IDE4LjU2TDQwMi41NiA1MTcuMzEyQzQxNi40NDggNDk0LjA4IDQyNS4zNDQgNDcxLjU1MiA0MjUuMzQ0IDQ0Ny4yOTZjMC02NC4wNjQtNTEuODQtMTE1Ljk2OC0xMTUuNzEyLTExNS45NjgtNjMuOTM2IDAtMTE1LjcxMiA1MS45MDQtMTE1LjcxMiAxMTUuOTY4IDAgMjYuNzUyIDExLjcxMiA1Mi42NzIgMjguNjcyIDc5LjQ4OEwyMjIuMDggNTI2Ljg0OCA2NCA4ODAuNTEybDIzOC44NDgtOTAuMTEyIDIxNy4zNDQgOTAuMTEyIDIwNC4wMzItOTAuMTEyTDk2MCA4ODAuNTEyIDgxMi44IDU1MS4yMzJ6TTY5OS45MDQgMjQ4LjY0YzU2LjgzMiAwIDEwMi45MTIgNDQuNDE2IDEwMi45MTIgOTkuMjY0cy00Ni4xNDQgOTkuMzI4LTEwMi45MTIgOTkuMzI4Yy01Ni44OTYgMC0xMDIuOTEyLTQ0LjQ4LTEwMi45MTItOTkuMzI4UzY0My4wMDggMjQ4LjY0IDY5OS45MDQgMjQ4LjY0ek0zMDkuNjk2IDM5MC45NzZjMzAuOTc2IDAgNTYuMTkyIDI1LjIxNiA1Ni4xOTIgNTYuMzIgMCAzMS4wNC0yNS4yMTYgNTYuMzItNTYuMTkyIDU2LjMyLTMxLjA0IDAtNTYuMTkyLTI1LjI4LTU2LjE5Mi01Ni4zMkMyNTMuNTA0IDQxNi4xOTIgMjc4LjY1NiAzOTAuOTc2IDMwOS42OTYgMzkwLjk3NnpNNzIwLjEyOCA3MzYuODMybC0yMDAuMDY0IDg2LjY1Ni0yMTMuMjQ4LTg2LjY1Ni0xNTkuMDQgNzIuNDQ4IDkxLjEzNi0yMzUuMTM2IDE0Ljg0OC0yLjgxNmMxOC4xMTIgMjQuMTkyIDM3Ljg4OCA0OS43MjggNTUuOTM2IDc4LjA4QzMzMi4xNiA2MTMuNTA0IDM1NS43NzYgNTgzLjY4IDM3NS45MzYgNTU2LjI4OEw1MTUuMDcyIDYwMC45Nmw4Ny4xMDQtMjguMzUyYzMxLjg3MiA0MC44OTYgNjYuMTc2IDg0LjAzMiA5Ny42NjQgMTMxLjU4NCAyOS41MDQtNDUuMzEyIDYwLjAzMi04NC44NjQgODguNjQtMTIxLjUzNmw5MS45MDQgMjI5LjUwNEw3MjAuMTI4IDczNi44MzJ6IiBwLWlkPSI0Nzc0IiBmaWxsPSIjNzA3MDcwIj48L3BhdGg+PC9zdmc+);
+    }
+
+    .area--geo::after {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5MjA2ODQxMDIwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjExMjY5IiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik01MTEuOTggOTYyLjE2MWMtMjQ3LjgzNSAwLTQ0OC43NDctMjAwLjkxMi00NDguNzQ3LTQ0OC43NDdTMjY0LjE0NiA2NC42NjggNTExLjk4IDY0LjY2OCA5NjAuNzI3IDI2NS41OCA5NjAuNzI3IDUxMy40MTQgNzU5LjgxNSA5NjIuMTYxIDUxMS45OCA5NjIuMTYxeiBtMC04MTUuOTAzYy0yMDIuNzc2IDAtMzY3LjE1NiAxNjQuMzgtMzY3LjE1NiAzNjcuMTU2UzMwOS4yMDQgODgwLjU3IDUxMS45OCA4ODAuNTdzMzY3LjE1Ni0xNjQuMzggMzY3LjE1Ni0zNjcuMTU2UzcxNC43NTcgMTQ2LjI1OCA1MTEuOTggMTQ2LjI1OHogbTE4My45NTQgNTgzLjkwOWwtMTAuNTc0IDYuMzQ4LTMwLjU5NiAxOS4xMjEtMTguMDMxIDEzLjUyNGMtMTMuNDA1IDYuNTYtMjcuNDAyIDExLjc0NS00MS44ODQgMTYuMTYzdi0xOC4yMTFsLTUuMTAzLTQyLjA3MnMtMi41NDYtMjQuMjItNi4zNzItMzAuNTk2Yy0zLjgyNy02LjM3Mi0xMi43NDktMTUuMjk4LTIxLjY3NC0xOS4xMjUtOC45MjItMy44MjMtMTUuMjk0LTMuODIzLTIwLjM5My0xMC4xOTktNS4wOTktNi4zNzItOC45MjYtMTcuODQ0LTE1LjMwMi0yOC4wNDMtNi4zNzItMTAuMTk5LTE0LjAyMS0yMC4zOTgtMTQuMDIxLTI1LjUwMVY1NTQuMjFsNi4zNzYtNDguNDQ0IDE0LjAyMS0xMC4xOTkgMTYuNTcxLTE5LjEyMSAxMS40NzYtMy44MjcgMzkuNTIyIDcuNjQ5aDI4LjA0N2wxMS40NzIgMjQuMjIgMjYuNzcgMjEuNjc0IDE2LjU3NSAyNi43NyAyMS42NzQgNy42NDloMjQuMjJsMTYuNTc1IDIwLjM5OCAxMC4xOTkgMjEuNjc0IDMuODIzIDE1LjI5OHYyNS40OTdsLTIuNjE5IDE1LjA2NmMtMTYuMjEyIDI3LjI2NC0zNi43MTIgNTEuMjMxLTYwLjc1MiA3MS42NTN6IG0tOTguNTQxLTQzOS44NTNsLTI4LjA0MyAxNS4zMDItMTAuMTk5IDI5LjMxOS0xNi41NzUgMTUuMjk4SDQ4Ny43NmwtMjUuNTAxIDEwLjE5OS0xLjI3MyAyMC4zOTgtMTAuMTk5IDE2LjU3NS0yLjU1IDE3Ljg0OCA1LjA5OSAxNS4yOTQgNi4zNzYgMTUuMzAyczE1LjI5NCAxNy44NDQgMCAzMC41OTZjMCAwLTE5LjEyNSAwLTIyLjk0Ny02LjM3Ni0zLjgyNy02LjM3Ni0zMS44NzMtMjQuMjItMzYuOTczLTI5LjMyNC01LjA5OS01LjA5NS0yMS42Ny0xMC4xOTktMjEuNjctMTAuMTk5bC0yMC40MDItNy42NDktMTkuMTIxLTEuMjczIDEuMjc3LTI2Ljc3LTEuMjc3LTIyLjk1MS03LjY0OS0xNi41NzEtMjEuNjctMTYuNTc1LTEuMjc3LTE3Ljg0OCAyLjY0NC05LjkwOWM1MS42MzQtNTEuMzYxIDEyMi43NTMtODMuMTUzIDIwMS4zMzItODMuMTUzIDQ0LjMzMiAwIDg1Ljc4NCAxMC45NjIgMTIzLjIyMiAyOC45OTNsLTAuODM2IDYuNzAzLTM2Ljk3MiAyNi43NzF6IiBwLWlkPSIxMTI3MCIgZmlsbD0iIzcwNzA3MCI+PC9wYXRoPjwvc3ZnPg==);
+    }
+
+    .area--title {
+        -webkit-animation: none !important;
+        animation: none !important;
+        min-width: auto;
+
+    }
+
+    .area--title .nui-open-bd {
+        padding: 1px 3px;
+
+    }
+
+    .dijitDialog {
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+        border-radius: 4px;
+    }
+</style>
+
+<!-- 地图 -->
+<link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css" />
+<script src="https://js.arcgis.com/3.32/init.js"></script> <!-- Terraformer -->
+<script src="assets/terraformer.js"></script>
+<script src="assets/terraformer-arcgis-parser.js"></script>
+<script>
+    var map;
+    //@api: https://developers.arcgis.com/javascript/3/jsapi/map-amd.html
+    require(["esri/map", "esri/layers/WebTiledLayer", "./assets/geojsonlayer.js", "dojo/domReady!"], function (Map, WebTiledLayer, GeoJsonLayer) {
+        // window.navigation =navigation;
+        // 请求私有数据 
+        var SYSTEM_TOKEN;
+        // Add the layer
+        function addGeoJsonLayer(url) {
+            // Create the layer
+            var geoJsonLayer = new GeoJsonLayer({
+                url: url
+            });
+            // Zoom to layer
+            geoJsonLayer.on("update-end", function (e) {
+                map.setExtent(e.target.extent.expand(1.2));
+            });
+            // Add to map
+            map.addLayer(geoJsonLayer);
+        }
+        function getToken(callback) {
+            const tokenServerUrl = "http://122.193.93.198:8080/RemoteTokenServer"
+            const username = 'fuqiao';  // 用户名
+            const password = 'fq123456';  // 密码
+            const clientid = 'ref.localhost';  // 有2种认证方式，referrer和ip，web页面适合使用referrer方式。生产环境中，需要把localhost替换为生产环境的域名
+            const expiration = 30; // token的有效时间，单位是分钟
+            // 使用jquery发送请求，获取token，存在跨域的问题，所以以jsonp方式发送请求
+            $.ajax({
+                url: tokenServerUrl,
+                jsonp: "callback",
+                dataType: "jsonp",
+                data: {
+                    request: "getToken",
+                    username: username,
+                    password: password,
+                    clientid: clientid,
+                    expiration: expiration,
+                    format: "json"
+                }
+            }).then(function (data) {
+                // 返回的数据中，data.token即为认证的token
+                SYSTEM_TOKEN = data.token;
+                callback(data.token)
+            });
+        }
+        // 正文开始
+        map = new Map("area", { zoom: 12, minZoom: 10, logo: false, slider: false });//minZoom: 11,
+        // 加载动态地图 地图坐标标识
+        var tileInfo = new esri.layers.TileInfo({
+            "rows": 256,
+            "cols": 256,
+            "compressionQuality": 0,
+            "origin": {
+                "x": -180,
+                "y": 90
+            },
+            "spatialReference": {
+                "wkid": 4326
+            },
+            "lods": [
+                {
+                    "level": 2,
+                    "resolution": 0.3515625,
+                    "scale": 147748796.52937502
+                },
+
+                {
+                    "level": 3,
+                    "resolution": 0.17578125,
+                    "scale": 73874398.264687508
+                },
+
+                {
+                    "level": 4,
+                    "resolution": 0.087890625,
+                    "scale": 36937199.132343754
+                },
+
+                {
+                    "level": 5,
+                    "resolution": 0.0439453125,
+                    "scale": 18468599.566171877
+                },
+
+                {
+                    "level": 6,
+                    "resolution": 0.02197265625,
+                    "scale": 9234299.7830859385
+                },
+
+                {
+                    "level": 7,
+                    "resolution": 0.010986328125,
+                    "scale": 4617149.8915429693
+                },
+
+                {
+                    "level": 8,
+                    "resolution": 0.0054931640625,
+                    "scale": 2308574.9457714846
+                },
+
+                {
+                    "level": 9,
+                    "resolution": 0.00274658203125,
+                    "scale": 1154287.4728857423
+                },
+
+                {
+                    "level": 10,
+                    "resolution": 0.001373291015625,
+                    "scale": 577143.73644287116
+                },
+
+                {
+                    "level": 11,
+                    "resolution": 0.0006866455078125,
+                    "scale": 288571.86822143558
+                },
+
+                {
+                    "level": 12,
+                    "resolution": 0.00034332275390625,
+                    "scale": 144285.93411071779
+                },
+
+                {
+                    "level": 13,
+                    "resolution": 0.000171661376953125,
+                    "scale": 72142.967055358895
+                },
+
+                {
+                    "level": 14,
+                    "resolution": 8.58306884765625e-005,
+                    "scale": 36071.483527679447
+                },
+
+                {
+                    "level": 15,
+                    "resolution": 4.291534423828125e-005,
+                    "scale": 18035.741763839724
+                },
+
+                {
+                    "level": 16,
+                    "resolution": 2.1457672119140625e-005,
+                    "scale": 9017.8708819198619
+                },
+
+                {
+                    "level": 17,
+                    "resolution": 1.0728836059570313e-005,
+                    "scale": 4508.9354409599309
+                },
+
+                {
+                    "level": 18,
+                    "resolution": 5.3644180297851563e-006,
+                    "scale": 2254.4677204799655
+                }
+            ]
+        })
+        // 关闭双击缩放
+        map.disableDoubleClickZoom();
+        // 添加动态地图服务 ArcGISTiledMapServiceLayer
+        // var geoqtiledUrl = "http://map.geoq.cn/arcgis/rest/services/ChinaOnlineStreetPurplishBlue/MapServer";
+        // var geoqTiledLayer = new esri.layers.ArcGISTiledMapServiceLayer(geoqtiledUrl);
+        // map.addLayer(geoqTiledLayer);
+        function loadTaiCangMapSync() {
+            if (!SYSTEM_TOKEN) return getToken(loadTaiCangMapSync)
+            var layerUrl = 'http://122.193.93.198:8080/OneMapServer/rest/services/tcyx_new/MapServer' + '?token=' + SYSTEM_TOKEN;
+            var layer = new esri.layers.ArcGISTiledMapServiceLayer(layerUrl);
+            map.addLayer(layer);
+            return layer;
+        }
+        function loadTaiCangMapSync2() {
+            if (!SYSTEM_TOKEN) return getToken(loadTaiCangMapSync)
+            var layerUrl = 'http://122.193.93.198:8080/OneMapServer/rest/services/tcczjx/MapServer' + '?token=' + SYSTEM_TOKEN;
+            var layer = new esri.layers.ArcGISTiledMapServiceLayer(layerUrl);
+            map.addLayer(layer);
+            return layer;
+        }
+        // web墨卡托(3857)转经纬度坐标(4326)
+        // map.on("click", function (event) { var value = esri.geometry.webMercatorToGeographic(event.mapPoint); console.log(value) console.log(event) })
+        // 默认没有地图需添加一次动态地图,系统才能正确的转换识别4490坐标
+        var tempLayer = loadTaiCangMapSync();
+        if (typeof tempLayer === 'object') tempLayer.hide();
+        // 添加一个点
+        function addPoint(lng, lat, wkid) {
+            return new esri.geometry.Point(lng, lat, new esri.SpatialReference({ wkid: wkid || 4490 }))
+        }
+        // 模拟高得地图 Marker
+        function addMarker(opts) {
+            opts = opts || {};
+            var position = opts.position;
+            var wkid = opts.wkid; //|| 4326;
+            var icon = opts.icon = opts.icon;
+            var iconSize = opts.iconSize = typeof opts.iconSize === "object" && opts.iconSize.length === 2 ? opts.iconSize : [19, 31];
+            // 绘图 graphic , 点 point , 图片标记符 PictureMarkerSymbol
+            var point = addPoint(position[0], position[1], wkid);
+            var image = new esri.symbol.PictureMarkerSymbol(icon, iconSize[0], iconSize[1]);
+            // image.setOffset(0, 27.5);//y轴方向向上偏移27.5个像素
+            var graphic = new esri.Graphic(point, image);
+            // 扩展一个 extData 字段
+            graphic.extData = opts.extData || {};
+            // graphic.point = point;
+            return graphic
+        }
+
+        var markerData = [];
+        function go(callback) {
+            $api.getMapList({}, function (data) {
+                var markers = data.filter(function (item) { return item.adX && item.adY });
+                markerData = [];
+                markers.map(function (item, index) {
+                    var iconUrl;
+                    switch (item.Status) {
+                        case "签约":
+                            iconUrl = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAMAAAD3TXL8AAAAzFBMVEUAAAAOXHs/a68+bKw5bKIQXH0kZIsXX4EqZ5EgY4hDab9Dars+bKk8bKcvaJUnZo0mZY0RXX1Ba7UgYog3a502a5w0apktaJIdYYYbYYUaYIQWX4FYgeT///9WgORMeeFWf+NVfd9OeuJMctBPdtVTe91SfONLcczi6vvV4PiYse9eheS2yPNbguRJeOFRetlOdNOFo+v7/f7b5PnS3vjF0/alu/CIpet2l+ny9f7o7fvf5vrP2/e6zPSsv/KUru6MqOyCoer0+P3z9/3WwhDaAAAAHHRSTlMACOXhxw9pLYVY/vjb1Jp1cRTvU7u4rY1GQDspfdm3VgAAAdBJREFUOMuFkulW4kAQhTsLCIgIuOult6xkIQRFcNeZ93+n6QpyQsac4/ejT1ff3K6qVLNf6fRHrj213VG/0zi3xsPID5RUgR8Nx1YtHLmeAsAlN6vy3KO9cGv75lgIvlvg27c74Y6EkJfZ6/w1K3lI0l2VwzWC2D7MdjxshZFcyjX2AL15mu152mjAG5tyHYVw+3dW82eroZwOO4vA+ZxOnt+T95g2c84R9dnIhy4pXqcLsUjXtC01/BFzA4jMRHEaAghTcmUCgctsxUF1PS5ALB6pPnBls6mU+b2JPgQI8WH297mUU+YYz/w/z9x4HHZeQLzRd6jygPxvAsU56y2hP2eUVgohZEbbT41lj90MwPOXqo1kk1SNveQcgxtmDRXE12pWs/oSUEOL0XXQyaoWEg1zGY3tWILrTfwtxKXmkMfV8C4KGFearOPneJ2k2kTFBQn0Tw1ShHmah0JSEJ1VinUSgOBSSg4iOLFYRddDE6/LiN3wDqGxfXPqNS2nbM/EVocWe8JYbWq3UKYAe4I6S11eozCi7qnupaYfoYKeUxPLLUAU9G6bXA9ADK7ZDy59I/iXPwWaUzWXFq6WWF6xNiZO4ExYK11qshWrd1jxPwdSUHvcogFEAAAAAElFTkSuQmCC";
+                            break;
+                        case "完成":
+                            iconUrl = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDODY5NzgyOUU5QkIxMUU1ODREMEFBRkZGMjU5QzgwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozREY3QzZEMTg3QzIxMUVBQjM4QUI5RjJGMjYxOUY5NCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozREY3QzZEMDg3QzIxMUVBQjM4QUI5RjJGMjYxOUY5NCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjliNWU4M2UyLWRkYjYtMDc0MS1iMTI5LTVkZmM4NzQyOTA3NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDODY5NzgyOUU5QkIxMUU1ODREMEFBRkZGMjU5QzgwRiIvPiA8L3JkZjpEZXNj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";
+                            break;
+                        default:
+                            iconUrl = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDODY5NzgyOUU5QkIxMUU1ODREMEFBRkZGMjU5QzgwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MDUwOTJCMjg3QzIxMUVBOEIzNTk1N0U5NzYwNDY1OSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MDUwOTJCMTg3QzIxMUVBOEIzNTk1N0U5NzYwNDY1OSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjliNWU4M2UyLWRkYjYtMDc0MS1iMTI5LTVkZmM4NzQyOTA3NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDODY5NzgyOUU5QkIxMUU1ODREMEFBRkZGMjU5QzgwRiIvPiA8L3JkZjpEZXNj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"
+                            break;
+                    }
+                    //天地图 坐标wkid: 4490
+                    var marker = addMarker({
+                        position: [+item.adX, +item.adY],
+                        extData: item,
+                        icon: iconUrl,
+                        wkid: 4490,
+                        iconSize: [25, 41]
+                    });
+                    markerData.push(marker);
+                });
+                //console.log(markerData[0])
+                callback && callback();
+            });
+        };
+        function calerMarkers() { markerData.map(function (marker) { map.graphics && map.graphics.remove(marker) }) }
+        function allMarkers() { calerMarkers(); markerData.map(function (marker) { map.graphics && map.graphics.add(marker) }) }
+        // 在地图加载完毕后开始画图层上面的数据
+        map.on("load", function () {
+            function addGeo() {
+                addGeoJsonLayer("./assets/geoJSON.json");
+            }
+            var baseMap = new WebTiledLayer("http://\${subDomain}.tianditu.com/DataServer?T=vec_c&X=\${col}&Y=\${row}&L=\${level}&tk=0a36d511144d97a52b7071bf141218e9", {
+                "copyright": "",
+                "id": "Tianditu",
+                "subDomains": ["t0", "t1", "t2"],
+                tileInfo: tileInfo
+
+            });
+            var baseMapMarker = new WebTiledLayer("http://\${subDomain}.tianditu.com/DataServer?T=cva_c&X=\${col}&Y=\${row}&L=\${level}&tk=0a36d511144d97a52b7071bf141218e9", {
+                "copyright": "",
+                "id": "Tianditu2",
+                "subDomains": ["t0", "t1", "t2"],
+                "tileInfo": tileInfo
+            });
+            map.addLayer(baseMap);
+            map.addLayer(baseMapMarker);
+            map.centerAndZoom(addPoint(121.20051808655272, 31.604549381333538), 13);
+            go(function () { allMarkers() });
+            setInterval(go, LOAD_TIME);
+            //事件监听
+            map.graphics.on("click", function (e) {
+                var item = e.graphic.extData;
+                // console.log(item);
+                if (!item.Type) throw new Error('marker open url error');
+                var dialogOpen = window.dialogOpen || top.dialogOpen;
+                top.contentPath = "";
+                dialogOpen && dialogOpen({
+                    id: 'Form',
+                    title: '编辑H_ChaiHouse',
+                    url: '/BaseManage/H_ChaiHouse/H_ChaiHouseForm?keyValue=' + item.ID,
+                    width: '1700px',
+                    height: '800px',
+                    callBack: function (iframeId) {
+                        top.frames[iframeId].AcceptClick();
+                    }
+                })
+            })
+            var tclayer = loadTaiCangMapSync();
+            // var tclayer2 = loadTaiCangMapSync2();
+            tclayer.hide();
+            // tclayer2.hide();
+            // 地图数据搜索
+            var $t = $('<div class="area--s"><div><input placeholder="请输入住址或户主"></div><div class="area--s__w"></div></div>');
+            var $tools = $('<i class="area--full"></i><i class="area--tc"></i><i class="area--geo"></i>');
+
+            $t.appendTo(map.container);
+            $tools.appendTo(map.container);
+            var $mapEl = $(map.container);//parentNode
+            $mapEl.find(".area--full").on("click", function () {
+                var that = $(this), style = that.attr("style") || "", oldStyle = that.attr("data-style");
+                // console.log(oldStyle === undefined)
+                if (oldStyle === undefined) {
+                    that.attr("data-style", style);
+                    $mapEl.css({
+                        position: "fixed",
+                        right: 0,
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        height: "auto",
+                        zIndex: 2000,
+                    });
+                    // map.panTo(new T.LngLat(121.163, 31.583));
+                } else {
+                    //$mapEl.removeAttr("style");
+                    $mapEl.attr("style", oldStyle);
+                    that.removeAttr("data-style", style);
+                }
+                map.resize();
+            });
+            $mapEl.find('.area--tc').on("click", function () {
+                this.style.backgroundColor = tclayer.visible ? '' : '#ddd';
+                if (tclayer.visible) {
+                    tclayer.hide();
+                    //  tclayer2.hide()
+                } else {
+                    tclayer.show();
+                    //   tclayer2.show()
+                }
+            });
+            $mapEl.find('.area--geo').on("click", function () {
+                var ids = map.graphicsLayerIds;
+                if (ids && ids.length) {
+                    var el = map.getLayer(ids[0]);
+                    el.visible ? el.hide() : el.show()
+                } else {
+                    addGeo();
+                }
+            });
+            var $input = $t.find("input");
+            $input.on("input", function () {
+                var value = this.value.replace(/\s*/g, "");
+                calerMarkers();
+                var $w = $(".area--s__w");
+                $w.html('');
+                if (!value) return allMarkers();
+                var i = 0;
+                markerData.map(function (item) {
+                    var text = item.extData.Adress + ' - ' + item.extData.Name;
+                    if (~text.indexOf(value)) {
+                        if (i > 4) return;
+                        map.graphics && map.graphics.add(item);
+                        $w.append($('<a style="color: #555;">' + text + '</a>').on("click", function () {
+                            $w.find('a').removeClass('active');
+                            this.className += " active";
+                            map.centerAndZoom(item.geometry, 19);
+                        }))
+                        i++;
+                    }
+                });
+                if (value && i > 0) $w.append($('<span style="color:#ed5636;">清除搜索</span>').on("click", function () {
+                    $input.val(''); $w.html(''); allMarkers();
+                }))
+            });
+            // 时间实现
+            // map.graphics.on("mouse-move", function (ev) { console.log(ev.type) })
+            var a_index;
+            map.graphics.on("mouse-out", function (ev) {
+                a_index && $("#nui-open" + a_index).remove();
+            })
+            map.graphics.on("mouse-drag", function (ev) {
+                a_index && $("#nui-open" + a_index).remove();
+            })
+            map.graphics.on("mouse-over", function (ev) {
+                var item = ev.graphic.extData;
+                a_index = nui.open({
+                    content: '<div class="nui-inline">' + item.Adress + ' - ' + item.Name + '</div>',
+                    skin: 'area--title',
+                    type: 4, time: 0,
+                    elem: ev.target,
+                    width: ["auto", "auto"],
+                    title: false
+                });
+            })
+
+        });
+        $("#speedInfo").on("click", function () {
+            nui.open({
+                content: '/BaseManage/H_JinDuZong/H_JinDuZongIndex',
+                type: 2,
+                width: ["80%", "80%"],
+                title: false
+            });
+        })
+    });
+</script>
+
+</html>

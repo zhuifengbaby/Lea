@@ -1,0 +1,138 @@
+﻿@{
+    ViewBag.Title = "机构管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<script>
+    var keyValue = request('keyValue');
+    var parentId = request('parentId');
+    $(function () {
+        initControl();
+    })
+    //初始化控件
+    function initControl() {
+        //上级公司
+        $("#ParentId").ComboBoxTree({
+            url: "../../BaseManage/BaseManage/GetTreeJson",
+            description: "==请选择==",
+            height: "260px",
+            allowSearch: true
+        });
+        //公司性质
+        $("#Nature").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "CompanyNature" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "==请选择==",
+            height: "200px"
+        });
+
+        //获取表单
+        if (!!keyValue) {
+            $.SetForm({
+                url: "../../BaseManage/Organize/GetFormJson",
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $("#form1").SetWebControls(data);
+                    $("#FoundedTime").val(formatDate(data.FoundedTime, "yyyy-MM-dd"));
+                    $("#ProvinceId").trigger("change");
+                    if (data.CityId != undefined) {
+                        $("#CityId").ComboBoxSetValue(data.CityId).trigger("change");
+                        $("#CountyId").ComboBoxSetValue(data.CountyId);
+                    }
+                }
+            });
+        } else {
+            $("#ParentId").ComboBoxTreeSetValue(parentId);
+        }
+    }
+    //保存表单
+    function AcceptClick() {
+        if (!$('#form1').Validform()) {
+            return false;
+        }
+        var postData = $("#form1").GetWebControls(keyValue);
+        postData["Manager"] = $("#ManagerId").attr('data-text');
+        if (postData["ParentId"] == "") {
+            postData["ParentId"] = 0;
+        }
+        $.SaveForm({
+            url: "../../BaseManage/BaseManage/SaveComForm?keyValue=" + keyValue,
+            param: postData,
+            loading: "正在保存数据...",
+            success: function () {
+                $.currentIframe().$("#gridTable").resetSelection();
+                $.currentIframe().$("#gridTable").trigger("reloadGrid");
+            }
+        })
+    }
+</script>
+<div style="margin-left: 10px; margin-top: 20px; margin-right: 30px;">
+    <table class="form">
+        <tr>
+            <th class="formTitle">村落(小区)名<font face="宋体">*</font></th>
+            <td class="formValue">
+                <input id="ComName" type="text" class="form-control" />
+            </td>
+            <th class="formTitle">所属村(小区)</th>
+            <td class="formValue">
+                <div id="ParentID" type="selectTree" class="ui-select">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th class="formTitle">物业公司名称</th>
+            <td class="formValue">
+                <input id="WYName" type="text" class="form-control" />
+            </td>
+            <th class="formTitle">服务期限</th>
+            <td class="formValue">
+                <input id="FWDate" type="text" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <th class="formTitle">社区负责人</th>
+            <td class="formValue">
+                <input id="SQDuty" type="text" class="form-control">
+            </td>
+            <th class="formTitle">社区负责人电话</th>
+            <td class="formValue">
+                <input id="SQDutyPhone" type="text" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <th class="formTitle">物业负责人</th>
+            <td class="formValue">
+                <input id="WYDuty" type="text" class="form-control" />
+            </td>
+            <th class="formTitle">物业负责人电话</th>
+            <td class="formValue">
+                <input id="WYDutyPhone" type="text" class="form-control" />
+            </td>
+
+        </tr>
+        <tr>
+            <th class="formTitle">物业经理</th>
+            <td class="formValue">
+                <input id="WYLeader" type="text" class="form-control" />
+            </td>
+            <th class="formTitle">物业经理电话</th>
+            <td class="formValue">
+                <input id="WYLeadrPhone" type="text" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <th class="formTitle">户总数</th>
+            <td class="formValue" colspan="3">
+                <input id="HuCount" type="text" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <th class="formTitle" valign="top" style="padding-top: 4px;">备注
+            </th>
+            <td class="formValue" colspan="3">
+                <textarea id="Note" class="form-control" style="height: 70px;"></textarea>
+            </td>
+        </tr>
+    </table>
+</div>

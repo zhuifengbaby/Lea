@@ -1,0 +1,249 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>浮桥地图</title>
+    <meta name="keywords" content="浮桥地图" />
+    <meta name="description" content="浮桥地图" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="../assets/nui.min.css">
+    <link rel="stylesheet" href="pad.css">
+    <script>!function (k, g, c) { function a() { } function p() { return "function" != typeof g.createElement ? g.createElement(arguments[0]) : r ? g.createElementNS.call(g, "http://www.w3.org/2000/svg", arguments[0]) : g.createElement.apply(g, arguments) } var t = [], q = []; c = { w: "3.3.1", a: { l: "", m: !0, o: !0, s: !0 }, h: [], A: function (f, b) { var a = this; setTimeout(function () { b(a[f]) }, 0) }, c: function (f, b, a) { q.push({ name: f, b: b, options: a }) }, i: function (a) { q.push({ name: null, b: a }) } }; a.prototype = c; var a = new a, l = g.documentElement, r = "svg" === l.nodeName.toLowerCase(), u = c.a.s ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""]; c.v = u; a.c("csscalc", function () { var a = p("a"); return a.style.cssText = "width:" + u.join("calc(10px);width:"), !!a.style.length }); (c.B = function (a, b, e, c) { var d, f, m, k, n = p("div"), h; m = g.body; h = (m || (m = p(r ? "svg" : "body"), m.g = !0), m); if (parseInt(e, 10)) for (; e--;)m = p("div"), m.id = c ? c[e] : "modernizr" + (e + 1), n.appendChild(m); return d = p("style"), d.type = "text/css", d.id = "smodernizr", (h.g ? h : n).appendChild(d), h.appendChild(n), d.styleSheet ? d.styleSheet.cssText = a : d.appendChild(g.createTextNode(a)), n.id = "modernizr", h.g && (h.style.background = "", h.style.overflow = "hidden", k = l.style.overflow, l.style.overflow = "hidden", l.appendChild(h)), f = b(n, a), h.g ? (h.parentNode.removeChild(h), l.style.overflow = k, l.offsetHeight) : n.parentNode.removeChild(n), !!f })("#modernizr { width: 50vw; }", function (f) { var b = parseInt(k.innerWidth / 2, 10); f = parseInt((k.getComputedStyle ? getComputedStyle(f, null) : f.currentStyle).width, 10); a.c("cssvwunit", f == b) }); (function () { var f, b, e, c, d, g; for (g in q) if (q.hasOwnProperty(g)) { if (f = [], b = q[g], b.name && (f.push(b.name.toLowerCase()), b.options && b.options.f && b.options.f.length)) for (e = 0; e < b.options.f.length; e++)f.push(b.options.f[e].toLowerCase()); e = "function" === typeof b.b ? b.b() : b.b; for (c = 0; c < f.length; c++)d = f[c], d = d.split("."), 1 === d.length ? a[d[0]] = e : (!a[d[0]] || a[d[0]] instanceof Boolean || (a[d[0]] = new Boolean(a[d[0]])), a[d[0]][d[1]] = e), t.push((e ? "" : "no-") + d.join("-")) } })(); (function (c) { var b = l.className, e = a.a.l || ""; if (r && (b = b.j), a.a.o) b = b.replace(new RegExp("(^|\\s)" + e + "no-js(\\s|$)"), "$1" + e + "js$2"); a.a.m && (b += " " + e + c.join(" " + e), r ? l.className.j = b : l.className = b) })(t); delete c.c; delete c.i; for (c = 0; c < a.h.length; c++)a.h[c](); k.Modernizr = a }(window, document); (function () { function k() { a.style.fontSize = 100 * a.getBoundingClientRect().width / c + "px" } var c = 1920, a = document.documentElement; Modernizr && Modernizr.csscalc && Modernizr.cssvwunit ? a.style.fontSize = "calc(100vw/" + c / 100 + ")" : (a.style.fontSize = "100px", window.addEventListener("resize", k), k()) })();
+    </script>
+</head>
+
+<body>
+    <div class="page"><canvas id="cover" style="opacity: .2;"></canvas></div>
+    <div class="page">
+        <div class="head">
+            <h1>浮桥镇拆迁大数据系统</h1>
+            <div class="weather">
+                <span id="showTime"></span>
+            </div>
+        </div>
+        <ul class="u-flex">
+            <li style="width: 0.15rem"></li>
+            <li style="width: 30%;">
+                <!-- 左边 -->
+                <div class="card" style="height:3.1rem">
+                    <div class="card--title">浮桥镇拆迁 - 住房</div>
+                    <div style="height: calc(100% - 30px);" id="echart4"></div>
+                    <div class="card--fd"></div>
+                </div>
+                <div class="card" style="height:3.1rem">
+                    <div class="card--title">浮桥镇拆迁 - 住房</div>
+                    <div style="height: calc(100% - 30px);" id="echart5"></div>
+                    <div class="card--fd"></div>
+                </div>
+                <div class="card" style="height:3.1rem">
+                    <ul class="u-flex">
+                        <li>
+                            <div style="height: 3rem;" class="pie--chart"></div>
+                        </li>
+                        <li>
+                            <div style="height: 3rem;" class="pie--chart"></div>
+                        </li>
+                        <li>
+                            <div style="height: 3rem;" class="pie--chart"></div>
+                        </li>
+                    </ul>
+                    <div class="card--fd"></div>
+
+                </div>
+            </li>
+            <li style="width: 0.15rem"></li>
+            <li>
+                <!-- 中边 -->
+                <div class="now--data " style="height: 1.8rem;">
+                    <ul class="u-flex"></ul>
+                </div>
+                <div class="card" style="padding: 0;height:7.35rem;">
+                    <div class="area" style="height: 100%;" id="area"></div>
+                    <div class="card--fd"></div>
+                </div>
+            </li>
+            <li style="width: 0.15rem"></li>
+            <li style="width: 30%;">
+                <!-- 右边 -->
+                <div class="card" style="height:3.1rem">
+                    <div class="card--title">浮桥镇拆迁 - 住房</div>
+                    <div class="bar--el" style="height: calc(100% - 30px);"></div>
+                    <div class="card--fd"></div>
+                </div>
+                <div class="card" style="height:3.1rem">
+                    <div class="card--title">浮桥镇拆迁 - 企业</div>
+                    <div class="bar--el" style="height: calc(100% - 30px);"></div>
+                    <div class="card--fd"></div>
+                </div>
+                <div class="card" style="height:3.1rem">
+                    <div class="card--title">浮桥镇拆迁 - 门店</div>
+                    <div class="bar--el" style="height: calc(100% - 30px);"></div>
+                    <div class="card--fd"></div>
+                </div>
+            </li>
+            <li style="width: 0.15rem"></li>
+
+        </ul>
+    </div>
+
+
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/nui.min.js"></script>
+    <script src="../assets/echarts.min.js"></script>
+    <script src="../assets/xml2json.js"></script>
+    <!-- { Start 天地图 -->
+    <script src=" https://api.tianditu.gov.cn/api?v=4.0&tk=0a36d511144d97a52b7071bf141218e9"></script>
+    <script src=" ../assets/geoJSON.js"> </script>
+    <script src="../assets/d3.min.js"></script>
+    <script src=" ../assets/map.js?v=1.0039"> </script>
+    <!-- 天地图  End } -->
+    <script src="main.js?v=1.0039"></script>
+    <script src="pad.js?v=1.0039"></script>
+    <script src="js.js?v=1.0039"></script>
+    <script> new Build(document.getElementById("cover")).anim() </script>
+    <script>
+        !function () {
+            var LOAD_TIME = 5 * 6e4;
+
+            // @TODO 全局事件
+            var allfn = {
+                showTable: function (attr) {
+                    var loai = nui.showLoading("加载中");
+                    $api.getXianQin(attr, function (data) {
+                        // console.log(data)
+                        nui.hideToast(loai);
+                        let title = attr.Name + '/' + (['', '全部', '签约', '完成', '未签约',][attr.Type] || "") + "/共" + data.length + "人";
+                        nui.open({
+                            content: nui.tpl('<table class="nui-table"><tr class="thead"><th width="90">区域</th><th width="120"> 地址</th>' +
+                                '<th width="60">居住面积</th><th width="90"> 当事人</th><th width="85">预计完成时间</th></th><th width="160">工作进度</th>' +
+                                '<th width="70"> 签约日期 </th><th width="85"> 实际完成日期</th></tr>' +
+                                '{{# for(var i in d.data){var item=d.data[i];}}<tr>' +
+                                '<td>{{item.Arear||""}}</td><td>{{item.Adress||""}}</td><td>{{item.JZMianJi||""}}</td>' +
+                                '<td>{{item.DSR||""}}</td><td>{{item.YujiFinishDate||""}}</td><td>{{item.WorkJiDu||""}}</td><td>{{item.QianYuDate||""}}</td><td>{{item.ShiJiFinishDate||""}}</td>' +
+                                '</tr>{{# } }}</table>', { data: data, type: attr.type }),
+                            shadow: false,
+                            title: title,
+                            width: ["80%", "70%"],
+                            full: true,
+                            offset: ["10%"],
+                            fixed: true,
+                            shadeClose: true,
+                        })
+                    })
+                }
+            };
+            // @TODO 绑定全局事件
+            $("body").on("click", "[data-click]", function (e) {
+                var that = $(this), ops = that.data("click");
+                var fn = allfn[ops.fn];
+                if (typeof fn === "function") {
+                    fn.call(this, ops);
+                    e.stopPropagation()
+                }
+            });
+            // @TODO 初始化
+            function init() {
+                function go() {
+                    console.log('--update ' + nui.util.date.format(new Date(), 'yyyy-MM-dd HH:mm:ss'));
+                    // @TODO 顶部条目数据 饼图
+                    $api.getCount(function (data) {
+                        var tpll = '';
+                        data.map(function (item, index) {
+                            tpll += '<li><p>' + item.Type + '(户)</p><h2 data-click=\'{"fn":"showTable","Type":1,"Name":"' + item.Type + '"}\'>' + item.Qty + '</h2> <p>' +
+                                '<p><span data-click=\'{"fn":"showTable","Type":2,"Name":"' + item.Type + '"}\'>签约 ' + item.QYQty +
+                                '</span><span data-click=\'{"fn":"showTable","Type":3,"Name":"' + item.Type + '"}\'>完成 ' + item.WCQty +
+                                '</span><span data-click=\'{"fn":"showTable","Type":4,"Name":"' + item.Type + '"}\'>未签约 ' + item.NoQty +
+                                '</span></p> </li>'
+                        })
+                        $(".now--data ul").html(tpll);
+                        // 饼图
+                        PIE_CHART.render(data)
+                    });
+                    // @TODO  柱状图
+                    $api.getCountList(function (data) {
+                        // BAR_CHART.render(data)
+                        $(".bar--el").each(function (index) {
+                            new BarChart(data, this, ["住房", "企业", "门店"][index]);
+                        })
+
+                        new BarChart(data, document.getElementById("echart4"), "住房");
+                        new BarChart(data, document.getElementById("echart5"), "住房");
+                    })
+                    // @TODO 地图数据
+                    var MAPS = {
+                        markers: [],
+                    };
+                    $api.getMapList({}, function (data) {
+                        data = data.filter(function (item) {
+                            return item.adX && item.adY
+                        })
+                        // console.log(data)
+                        MAPS.markers.map(function (marker) {
+                            map.removeOverLay(marker)
+                        })
+                        MAPS.markers = [];
+                        data.map(function (item) {
+                            var marker = new T.Marker(new T.LngLat(item.adY, item.adX), {
+                                title: item.Adress,
+                                zIndexOffset: 999,
+                                extData: item,
+                                // icon: new T.Icon({ iconUrl: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTgwOTEzNDE2MjgzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjY0MzMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTUxNi41IDUzMC42bS00MjguOSAwYTQyOC45IDQyOC45IDAgMSAwIDg1Ny44IDAgNDI4LjkgNDI4LjkgMCAxIDAtODU3LjggMFoiIGZpbGw9IiNFNjEyMTEiIHAtaWQ9IjY0MzQiPjwvcGF0aD48cGF0aCBkPSJNNTE2LjUgNTMwLjZtLTM2Ny44IDBhMzY3LjggMzY3LjggMCAxIDAgNzM1LjYgMCAzNjcuOCAzNjcuOCAwIDEgMC03MzUuNiAwWiIgZmlsbD0iI0ZGRkZGRiIgcC1pZD0iNjQzNSI+PC9wYXRoPjxwYXRoIGQ9Ik01MTYuNSA1MzAuNm0tMzI0LjQgMGEzMjQuNCAzMjQuNCAwIDEgMCA2NDguOCAwIDMyNC40IDMyNC40IDAgMSAwLTY0OC44IDBaIiBmaWxsPSIjRTYxMjExIiBwLWlkPSI2NDM2Ij48L3BhdGg+PHBhdGggZD0iTTcxNS42IDU4OC42SDU3NC41djE0MS4xSDQ1OC42VjU4OC42SDMxNy41VjQ3Mi43aDE0MS4xVjMzMS42aDExNS45djE0MS4xaDE0MS4xeiIgZmlsbD0iI0ZGRkZGRiIgcC1pZD0iNjQzNyI+PC9wYXRoPjwvc3ZnPg==", iconSize: new T.Point(32, 32), })
+                            })
+                            MAPS.markers.push(marker);
+                            map.addOverLay(marker);
+                            marker.addEventListener('click', function (e) {
+                                var item = e.target.options.extData;
+                                // console.log(item)
+                                var url = "";
+                                if (item.Type === "居民房") { url = "/BaseManage/H_ChaiHouse/H_ChaiHouseForm?keyValue" }
+                                if (item.Type === "企业") { url = "/BaseManage/H_ChaiHouse/H_QiyeForm?keyValue" }
+                                if (item.Type === "店面") { url = "/BaseManage/H_ChaiHouse/H_StreetForm?keyValue" }
+                                if (!url) return;
+                                nui.open({
+                                    content: url + '=' + item.ID,
+                                    shadow: false,
+                                    type: 2,
+                                    title: item.Adress || '',
+                                    width: ["80%", "70%"],
+                                    full: true,
+                                    offset: ["10%"],
+                                    fixed: true,
+                                    shadeClose: true,
+                                    success: function () {
+                                        if (top.window.Loading) top.window.Loading(false)
+                                    }
+                                })
+                            });
+                        })
+                    })
+                }
+                go();
+                setInterval(go, LOAD_TIME);
+            }
+            init();
+        }()
+
+
+    </script>
+    <script>
+        var t = null;
+        t = setTimeout(time, 1000);
+        function time() {
+            clearTimeout(t);
+            dt = new Date();
+            var y = dt.getFullYear();
+            var mt = dt.getMonth() + 1;
+            var day = dt.getDate();
+            var h = dt.getHours();
+            var m = dt.getMinutes();
+            var s = dt.getSeconds();
+            document.getElementById("showTime").innerHTML = y + "年" + mt + "月" + day + "日" + h + "时" + m + "分" + s + "秒";
+            t = setTimeout(time, 1000);
+        }
+
+    </script>
+</body>
+
+</html>

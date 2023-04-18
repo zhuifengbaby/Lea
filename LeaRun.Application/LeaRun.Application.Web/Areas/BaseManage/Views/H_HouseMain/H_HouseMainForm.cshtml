@@ -1,0 +1,690 @@
+﻿@{;
+ViewBag.Title = "表单页面";
+Layout = "~/Views/Shared/_OrderForm.cshtml";
+}
+<script src="~/Content/scripts/plugins/uploadify/ajaxfileupload.js"></script>
+<style>
+    .u-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed;
+    }
+
+        .u-table th,
+        .u-table td {
+            padding: 5px 5px;
+            border: 1px solid #e1e4e8;
+            font-weight: 400;
+        }
+
+        .u-table thead,
+        .u-table .thead {
+            background-color: #f6f8fa;
+        }
+</style>
+<script>
+    var change = "0";
+    var keyValue = request('keyValue');
+    $(function () {
+        InitialPage();
+        GetOrderEntryGrid();
+        initControl();
+    });
+    //初始化页面
+    //function img_upload(callback) {
+    //    // 上传应用图标
+    //    $.ajaxFileUpload({
+    //        url: "../../BaseManage/H_HouseMain/UploadFile?keyValue=" + keyValue,
+    //        secureuri: false,
+    //        fileElementId: 'uploadFile',
+    //        dataType: 'json',
+    //        success: function (data) {
+    //            dialogMsg(data.message, 1);
+    //            callback && callback()
+    //        },
+    //        error: function (err) {
+    //            console.log(err);
+    //            callback && callback()
+    //        }
+    //    });
+    //}
+    function InitialPage() {;
+
+        //$('#uploadFile').on("change", function () {
+        //    //  console.log('change')
+        //    var f = this.files[0];
+        //    var fileReader = new FileReader()
+        //    fileReader.readAsDataURL(f);
+        //    fileReader.onload = function () {
+        //        document.getElementById('uploadPreview').setAttribute("src", fileReader.result);
+        //    }
+        //    // console.log(f);
+        //    change = "1";
+        //    // var src = window.URL.createObjectURL(f);
+        //    //_upload()
+        //});
+    }
+    // table 3  开始
+    var t3idx = 1;
+    function addt3row(data) {
+        var rowdata = {
+            Index: t3idx,
+            Number: '<input name="Number" class="editable"/>',
+            FHType: '<input name="FHType" class="editable" />',
+            FHTX: '<input name="FHTX" class="editable"/>',
+            Area: '<input name="Area" class="editable" />',
+            FHStatus: '<input name="FHStatus" class="editable"/>',
+            FQty: '<input name="FQty" type="text" class="editable"/>',
+            Add: t3idx === 1 ? "<a href='javascript:;' onclick='addt3row()'>新增</a>" : "<a onclick='deltr(this)' href='javascript:;'>删除</a>",
+        }
+        var tr = "<tr>";
+        for (var key in rowdata) tr += "<td>" + rowdata[key] + "</td>";
+        tr += "</tr>";
+        var $tr = $(tr);
+        t3idx++;
+        //   赋值
+        if (typeof data == 'object') {
+            for (var key in data) {
+                $tr.find('[name=' + key + ']').val(data[key]);
+            }
+        }
+        $("#gridTable3 tbody").append($tr);
+        return t3idx
+    }
+    // table 3  结束
+
+
+
+    // table 1 开始
+    var t1idx = 1;
+    function addt1row(data) {
+        var rowdata = {
+            Index: t1idx,
+            Name: '<input name="Name" class="editable"/>',
+            Sex: '<input name="Sex" class="editable" />',
+            CardNumber: '<input name="CardNumber" class="editable"/>',
+            SheBaoNumber: '<input name="SheBaoNumber" class="editable" />',
+            Phone: '<input name="Phone" class="editable"/>',
+            WorkAdress: '<input name="WorkAdress" type="text" class="editable"/>',
+            HJD: '<input name="HJD" class="editable"/>',
+            JuZhuDi: '<input name="JuZhuDi" class="editable" />',
+            JuZhuNumber: '<input name="JuZhuNumber" class="editable"/>',
+            HuGuanX: '<input name="HuGuanX" class="editable" />',
+            Add: t1idx === 1 ? "<a href='javascript:;' onclick='addt1row()'>新增</a>" : "<a onclick='deltr(this)' href='javascript:;'>删除</a>",
+        }
+        var tr = "<tr>";
+        for (var key in rowdata) tr += "<td>" + rowdata[key] + "</td>";
+        tr += "</tr>";
+        var $tr = $(tr);
+        t1idx++;
+        //   赋值
+        if (typeof data == 'object') {
+            for (var key in data) {
+                $tr.find('[name=' + key + ']').val(data[key]);
+            }
+        }
+        $("#gridTable").append($tr);
+        return t1idx
+    }
+    // table 1 结束
+
+    //table 2 开始
+    var t2idx = 1;
+    function addt2row(data) {
+        var rowdata = {
+            Index: t2idx,
+            Name: '<input name="Name" class="editable"/>',
+            Sex: '<input name="Sex" class="editable" />',
+            CardNumber: '<input name="CardNumber" class="editable"/>',
+            SheBaoNumber: '<input name="SheBaoNumber" class="editable" />',
+            Phone: '<input name="Phone" class="editable"/>',
+            WorkAdress: '<input name="WorkAdress" type="text" class="editable"/>',
+            HJD: '<input name="HJD" class="editable"/>',
+            JuZhuDi: '<input name="JuZhuDi" class="editable" />',
+            JuZhuNumber: '<input name="JuZhuNumber" class="editable"/>',
+            ZhuHu: '<input name="ZhuHu" class="editable"/>',
+            HuGuanX: '<input name="HuGuanX" class="editable" />',
+            FHouseNumber: '<input name="FHouseNumber" class="editable"/>',
+            Add: t2idx === 1 ? "<a href='javascript:;' onclick='addt2row()'>新增</a>" : "<a onclick='deltr(this)' href='javascript:;'>删除</a>",
+        }
+        var tr = "<tr>";
+        for (var key in rowdata) tr += "<td>" + rowdata[key] + "</td>";
+        tr += "</tr>";
+        var $tr = $(tr);
+        t2idx++;
+        //   赋值
+        if (typeof data == 'object') {
+            for (var key in data) {
+                $tr.find('[name=' + key + ']').val(data[key]);
+            }
+        }
+        $("#gridTable2").append($tr);
+        return t2idx
+    }
+    //table 2 结束
+
+    function deltr(o) {
+        $(o).parent().parent().remove()
+    }
+
+
+
+    //加载明细表
+    // edit
+    //$("body").on("click", "[data-grid-add]", function () {
+    //    var $el = $(document.getElementById(this.getAttribute("data-grid-add")));
+    //    if(!$el[0])throw new Error('no id')
+    //    var id = (+new Date).toString(32);
+    //    $el.jqGrid('addRowData', id, {}, "last");
+    //    $el.jqGrid('editRow', id, { keys: true });
+    //    $el.editRow(id, true)
+    //})
+    //
+    function GetOrderEntryGrid() {
+        var $grid = $('#gridTable');
+        var $grid2 = $('#gridTable2');
+        var $grid3 = $('#gridTable3');
+
+    }
+    //初始化控件
+    function initControl() {
+        $("#HouseType").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "HouseType" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "==请选择==",
+            height: "170px"
+        })
+        $("#HouseStatus").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "HouseStatus" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "==请选择==",
+            height: "170px"
+        })
+        $("#HouseTX").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "HouseTX" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "==请选择==",
+            height: "170px"
+        })
+        $("#CQZ").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "CQZ" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "==请选择==",
+            height: "170px"
+        })
+        $("#ArearName").ComboBox({
+            url: "../../SystemManage/DataItemDetail/GetDataItemListJson",
+            param: { EnCode: "Arear" },
+            id: "ItemValue",
+            text: "ItemName",
+            description: "==请选择==",
+            height: "170px"
+        })
+
+        //获取表单
+        if (!!keyValue) {
+            $.SetForm({
+                url: "../../BaseManage/H_HouseMain/GetFormJson",
+                param: { keyValue: keyValue },
+                success: function (data) {
+                    $("#form1").SetWebControls(data.entity);
+                    //document.getElementById('uploadPreview').src = "/Content/Redimages/" + data.entity.Url;
+
+                    //明细
+                    var childEntity = data.childEntity;
+                    var childEntity2 = data.childEntity2;
+                    var childEntity4 = data.childEntity4;
+
+
+                    for (var i = 0; i < Math.max(data.childEntity4.length, 1) ; i++) {
+                        addt3row(data.childEntity4[i] || '');
+                    }
+
+                    for (var i = 0; i < Math.max(data.childEntity.length, 1) ; i++) {
+                        addt1row(data.childEntity[i] || '');
+                    }
+                    for (var i = 0; i < Math.max(data.childEntity2.length, 1) ; i++) {
+                        addt2row(data.childEntity2[i] || '');
+                    }
+
+
+                    golaglat(data.entity.t_lng, data.entity.t_lat)
+                }
+            })
+        } else {
+            // 新增一个空行
+            addt3row();
+            addt1row();
+            addt2row();
+        }
+    }
+    // 先传图片
+    function AcceptClick() {
+        //if (!change) _AcceptClick()
+        //else img_upload(_AcceptClick)
+
+        _AcceptClick()
+    }
+    //保存表单;
+    function _AcceptClick() {
+        if (!$('#form1').Validform()) {
+            return false;
+        }
+        var postData = $("#form1").GetWebControls(keyValue);
+        var childEntryJson = [];
+        var childEntryJson2 = [];
+        var childEntryJson3 = [];
+        // 赋值
+        $('#gridTable3 tr').each(function () {
+            var o = { FInterID: keyValue }
+            $(this).find("[name]").each(function () {
+                var that = $(this);
+                o[that.attr("name")] = that.val()
+            })
+            childEntryJson3.push(o)
+        })
+
+        $('#gridTable tr').each(function () {
+            var o = { FInterID: keyValue }
+            $(this).find("[name]").each(function () {
+                var that = $(this);
+                o[that.attr("name")] = that.val()
+            })
+            childEntryJson.push(o)
+        })
+
+        $('#gridTable2 tr').each(function () {
+            var o = { FInterID: keyValue }
+            $(this).find("[name]").each(function () {
+                var that = $(this);
+                o[that.attr("name")] = that.val()
+            })
+            childEntryJson2.push(o)
+        })
+
+
+        if (change == "1") {
+            var fname = document.getElementById('uploadFile').files[0].name;
+        }
+        //alert(childEntryJson);
+        $.SaveForm({
+            url: "../../BaseManage/H_HouseMain/SaveForm?keyValue=" + keyValue,
+            param: { "strEntity": JSON.stringify(postData), "strChildEntitys": JSON.stringify(childEntryJson), "strChildEntitys2": JSON.stringify(childEntryJson2), "strChildEntitys3": JSON.stringify(childEntryJson3), 'fname': fname },
+            loading: "正在保存数据...",
+            success: function () {
+                //$.currentIframe().$("#gridTable").trigger("reloadGrid");
+                //$.currentIframe().$("#gridTable2").trigger("reloadGrid");
+            }
+        })
+    }
+</script>
+<div class="bills" style="padding:5px;">
+    <div class="nui-mb">
+        <ul class="nui-flex">
+            <li>
+                <table class="form" style="width: 100%;">
+                    <tr>
+                        <th class="formTitle">村(社区)</th>
+
+                        <td class="formValue">
+                            @*<td class="formValue"><input id="ArearName" type="text" class="form-control"></td>*@
+                            <div id="ArearName" type="select" class="ui-select"></div>
+                        </td>
+                        <th class="formTitle">村落(小区)</th>
+                        <td class="formValue"><input id="CommunityName" type="text" class="form-control"></td>
+                        <th class="formTitle">房屋地址门牌<font face="宋体">*</font></th>
+                        <td class="formValue"><input id="Address" type="text" class="form-control" isvalid="yes" checkexpession="NotNull"></td>
+                        @*<th class="formTitle">
+                            红线图
+                        </th>*@
+                   
+                    </tr>
+                    <tr>
+                        <th class="formTitle">户主</th>
+                        <td class="formValue"><input id="HuName" type="text" class="form-control"></td>
+                        <th class="formTitle">宅基地批复</th>
+                        <td class="formValue"><input id="TDNumber" type="text" class="form-control"></td>
+                        <th class="formTitle">宅基地登记面积</th>
+                        <td class="formValue"><input id="Area" type="number" class="form-control" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <th class="formTitle">产权证</th>
+                        @*<td class="formValue"><input id="CQZ" type="text" class="form-control"></td>*@
+                        <td class="formValue">
+                            @*@*<td class="formValue"><input id="HouseStatus" type="text" class="form-control"></td>*@
+                            <div id="CQZ" type="select" class="ui-select"></div>
+                        </td>
+                        <th class="formTitle">产权证号</th>
+                        <td class="formValue"><input id="CQZNumber" type="text" class="form-control"></td>
+                        <th class="formTitle">房子属性</th>
+                        <td class="formValue">
+                            @*<input id="HouseType" type="text" class="form-control">*@
+                            <div id="HouseType" type="select" class="ui-select"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="formTitle">房屋状态</th>
+                        <td class="formValue">
+                            @*@*<td class="formValue"><input id="HouseStatus" type="text" class="form-control"></td>*@
+                            <div id="HouseStatus" type="select" class="ui-select"></div>
+                        </td>
+                        <th class="formTitle">房屋特性</th>
+                        <td>
+                            @*<td class="formValue"><input id="HouseTX" type="text" class="form-control"></td>*@
+                            <div id="HouseTX" type="select" class="ui-select"></div>
+                        </td>
+                        <th class="formTitle">违建面积</th>
+                        <td class="formValue"><input id="FeiFArea" type="number" class="form-control" value="0.00"></td>
+                    </tr>
+                    @*<tr>
+                        <td colspan="6">
+                            <!-- -->
+                            <div style="overflow-y:scroll">
+                                <table class="u-table">
+                                    <colgroup>
+                                        <col width="20" />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col width="80" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th></th>
+                                            <th>编号</th>
+                                            <th>类型</th>
+                                            <th>特性</th>
+                                            <th>面积</th>
+                                            <th>状态</th>
+                                            <th>间数</th>
+                                            <th>新增</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="overflow-y:scroll;height:187px">
+                                <table class="u-table" id="gridTable3">
+                                    <colgroup>
+                                        <col width="30" />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col width="80" />
+                                    </colgroup>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                            <!-- -->
+                        </td>
+                    </tr>*@
+                </table>
+            </li>
+
+            <li style="width:10px"></li>
+            @*红线图*@
+            @*<li style="width:200px">
+                <img id="uploadPreview" style="width: 200px; height: 300px;" src="" />
+                <input type="file" name="uploadFile" id="uploadFile">
+            </li>*@
+            @*地图*@
+            @*<li style="width:10px"></li>
+            <li style="width:300px;">
+                <div id="ditu" style="height:300px;"></div>
+                <input id="t_lat" type="text" class="form-control" style="display:none">
+                <input id="t_lng" type="text" class="form-control" style="display:none">
+            </li>*@
+
+        </ul>
+    </div>
+    <div class="gridPanel">
+        <table>
+
+            <tr>
+                @*<td>
+                        <table id="gridTable" style="width: 1400px; "></table>
+                    </td>*@
+                <!-- -->
+                <td>
+                    <div style="overflow-y:scroll">
+                        <table class="u-table">
+                            <colgroup>
+                                <col width="20" />
+                                <col width="95" />
+                                <col width="50" />
+                                <col width="160" />
+                                <col width="100" />
+                                <col width="100" />
+                                <col width="210" />
+                                <col width="210" />
+                                <col width="210" />
+                                <col width="140" />
+                                <col width="80" />
+                                <col width="50" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>身份证号码</th>
+                                    <th>社保号码</th>
+                                    <th>手机号码</th>
+                                    <th>工作单位</th>
+                                    <th>户籍地</th>
+                                    <th>居住地</th>
+                                    <th>居住证号</th>
+                                    <th>与户主关系</th>
+                                    <th>新增</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="overflow-y:scroll;height:187px">
+                        <table class="u-table" id="gridTable">
+
+                            <colgroup>
+                                <col width="20" />
+                                <col width="95" />
+                                <col width="50" />
+                                <col width="160" />
+                                <col width="100" />
+                                <col width="100" />
+                                <col width="210" />
+                                <col width="210" />
+                                <col width="210" />
+                                <col width="140" />
+                                <col width="80" />
+                                <col width="50" />
+                            </colgroup>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </td>
+                <!-- -->
+            </tr>
+            <tr>
+                <td>
+                    <div style="overflow-y:scroll">
+                        <table class="u-table">
+                            <colgroup>
+                                <col width="20" />
+                                <col width="95" />
+                                <col width="50" />
+                                <col width="150" />
+                                <col width="100" />
+                                <col width="100" />
+                                <col width="200" />
+                                <col width="190" />
+                                <col width="190" />
+                                <col width="130" />
+                                <col width="50" />
+                                <col width="70" />
+                                <col width="70" />
+                                <col width="50" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>身份证号码</th>
+                                    <th>社保号码</th>
+                                    <th>手机号码</th>
+                                    <th>工作单位</th>
+                                    <th>户籍地</th>
+                                    <th>居住地</th>
+                                    <th>居住证号</th>
+                                    <th>所属户</th>
+                                    <th>与户关系</th>
+                                    <th>租房编号</th>
+                                    <th>新增</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="overflow-y:scroll;height:187px">
+                        <table class="u-table" id="gridTable2">
+                            <colgroup>
+                                <col width="20" />
+                                <col width="95" />
+                                <col width="50" />
+                                <col width="150" />
+                                <col width="100" />
+                                <col width="100" />
+                                <col width="200" />
+                                <col width="190" />
+                                <col width="190" />
+                                <col width="130" />
+                                <col width="50" />
+                                <col width="70" />
+                                <col width="70" />
+                                <col width="50" />
+
+                            </colgroup>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<script src="https://webapi.amap.com/maps?v=1.4.15&key=0c5d1ec493c1681b8da91b3beb28478a&plugin=AMap.Geocoder"></script>
+<script>
+    var map = new AMap.Map("ditu", {
+        zoom: 12,
+        zooms: [11, 18],
+        center: [121.163, 31.583],
+    });
+
+    var $lng = $("#t_lng"), $lat = $("#t_lat");
+    var geocoder = new AMap.Geocoder({ city: "0512" });
+    var marker = new AMap.Marker({
+        offset: new AMap.Pixel(-13, -30),
+        // 设置是否可以拖拽
+        draggable: true,
+        cursor: 'move',
+        // 设置拖拽效果
+        raiseOnDrag: true
+    });
+    AMap.event.addListener(marker, 'dragend', function (e) {
+        var v = e.lnglat;
+        // console.log(v);
+        $lng.val(v.lng);
+        $lat.val(v.lat);
+    });
+    function geoCode(address, callback) {
+        geocoder.getLocation(address, function (status, result) {
+            if (status === 'complete' && result.geocodes.length) {
+                var lnglat = result.geocodes[0].location;
+                // console.log(lnglat)
+                marker.setPosition(lnglat);
+                map.add(marker);
+                map.setFitView(marker);
+                callback(lnglat)
+            } else {
+                $.dialog({ title: '提示', content: '根据地址查询位置失败' });
+                callback({
+                    lng: "",
+                    lat: ""
+                })
+            }
+        });
+    };
+    function go2laglat() {
+        geoCode($("#Address").val(), function (v) {
+            $lng.val(v.lng);
+            $lat.val(v.lat);
+        })
+    }
+    function golaglat(lng, lat) {
+        //console.log(lng,lat)
+        if (lng && lat) {
+            marker.setPosition([$lng.val(), $lat.val()]);
+            map.add(marker);
+            map.setFitView(marker);
+        }
+    }
+    $("#t_2").on("click", go2laglat);
+    $("#Address").on("blur", go2laglat);
+    //console.log($("#Address").val())
+    // 显示点
+    if ($lng.val() && $lat.val()) {
+        marker.setPosition([$lng.val(), $lat.val()]);
+        map.add(marker);
+        map.setFitView(marker);
+    }
+
+</script>
+
+
+
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .bills {
+        overflow: hidden;
+        border-radius: 0px;
+        position: relative;
+        background: #FFFFFF;
+        border: 0px solid rgb(204, 204, 204);
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    .ui-widget-content {
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+    }
+</style>
+
+@*<script>
+    $(function () {
+        $("#uploadPreview").on("click", function () {
+            var src = this.getAttribute('src');
+            if (src) {
+                top.layer.open({ content: '<div class="img-center"><img src="' + src + '"/></div>', area: ["800px", "600px"] })
+            }
+        });
+
+    })
+</script>*@
